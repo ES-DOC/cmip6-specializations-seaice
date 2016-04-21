@@ -94,7 +94,7 @@ SUB_PROCESSES_DETAILS['redistribution_details'] = {
     'properties': [
         ('processes', 'ENUM:redistribution_types', '0,N',
          'Additional processes which can redistribute sea ice.'),        
-        ('ice_strength_formulation','text','0.1',
+        ('ice_strength_formulation', 'str', '0.1',
          'Describe how ice-strength is formulated'),
     ]
 }
@@ -111,9 +111,17 @@ ENUMERATIONS = OrderedDict()
 ENUMERATIONS['transport_methods'] = {
     'description': 'Transport Methods',
     'members': [
-        ('Incremental Re-mapping','(including Semi-Lagrangian)'),
+        ('Incremental Re-mapping', '(including Semi-Lagrangian)'),
         ('Prather', None),
         ('Eulerian', None)
+    ]
+}
+
+ENUMERATIONS['redistribution_types'] = {
+    'description':'Sea Ice Redistribution Types',
+    'members': [
+        ('Rafting', None),
+        ('Ridging', None),
     ]
 }
 
@@ -123,7 +131,7 @@ ENUMERATIONS['rheology_types'] = {
         ('free-drift', None),
         ('Mohr-Coloumb', None),
         ('visco-plastic', None),
-        ('elastic-visco-plastic','EVP'),
+        ('elastic-visco-plastic', 'EVP'),
         ('granular', None),
         ('other', None)
     ]

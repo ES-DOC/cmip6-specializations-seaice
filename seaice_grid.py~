@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------
 # See http://wordpress.es-doc.org for documentation on how to create
-# CMIP6 process specialisations
+# CMIP6 grid specialisations
 # --------------------------------------------------------------------
 
 # ====================================================================
@@ -20,7 +20,7 @@ QC_STATUS = 'draft'
 # --------------------------------------------------------------------
 # GRID IDENTIFIER
 #
-# Set to 'cmip6.<REALM>.<PROCESS>'
+# Set to 'cmip6.<REALM>.grid'
 # --------------------------------------------------------------------
 ID = ''
 
@@ -35,49 +35,47 @@ from collections import OrderedDict
 # ====================================================================
 
 # --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
+# GRID: DESCRIPTION
 #
-# Scientific context of the process
+# Scientific context of the grid
 # --------------------------------------------------------------------
 DESCRIPTION = ''
 
 # --------------------------------------------------------------------
-# PROCESS: DETAILS
+# GRID: DETAILS
 #
-# Sets of details for the process
+# Sets of details for the grid
 # --------------------------------------------------------------------
 DETAILS = OrderedDict()
 
 # --------------------------------------------------------------------
-# PROCESS: SUB PROCESSES
+# GRID: DISCRETISATION
 #
-# Sets of discrete portions of the process
+# Description of the numerics of the discretisation
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
-
-SUB_PROCESSES['si_radiative_process_methods'] = {
-    'description': 'Collected properties of radiation in sea ice thermodynamics',
-    'details': ['radiative_process_details',]
-}
+DISCRETISATION = OrderedDict()
 
 # --------------------------------------------------------------------
-# PROCESS: SUB PROCESSES: DETAILS
+# GRID: DISCRETISATION: DETAILS
 #
-# Sets of details for the sub processes
+# Sets of details for the discretisation
 # --------------------------------------------------------------------
-SUB_PROCESSES_DETAILS = OrderedDict()
-
-SUB_PROCESSES_DETAILS['radiative_process_methods'] = {
-    'description':'Additional information about radiative processes in sea ice.',
-    'properties': [
-        ('surface_albedo', 'str', '0.1',
-         'Method used to handle surface albedo'),
-        ('ice_radiation_transmission', 'str', '0.1',
-         'Method by which solar radiation through ice is handled'),
-    ]
-}
+DISCRETISATION_DETAILS = OrderedDict()
 
 # --------------------------------------------------------------------
-# ENUMERATIONS
+# GRID: ENUMERATIONS
+#
+# URL of process.html#enuemrations
+# Convention: Do not include the process name in the enumeration 
 # --------------------------------------------------------------------
 ENUMERATIONS = OrderedDict()
+
+ENUMERATIONS['layering_types'] = {
+    'descrip[tion': 'Sea Ice Layering Types',
+    'id': 'cmip6.si.prop.layer.types',
+    'members': [
+            ('2-levels', 'Simulation uses two layers.'),
+            ('Multi-level', 'Simulation uses more than two layers'),
+            ('Ice-Types', 'Simulation does not use layers, but has multiple ice types per grid cell'),
+        ]
+    }

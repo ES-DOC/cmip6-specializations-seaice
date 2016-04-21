@@ -108,7 +108,7 @@ SUB_PROCESSES_DETAILS['vertical_heat_diffusion_details'] = {
          'Number of layers used for vertical heat diffusion'),
         ('regular_grid', 'bool', '0.1',
          'If multiple layers, are they regularly distributed?'),
-        ('based_on_semtner', 'bool','1.1',
+        ('based_on_semtner', 'bool', '1.1',
          'Is method based on semtner 1976?')
     ]
 }
