@@ -61,7 +61,7 @@ SUB_PROCESSES['si_radiative_process_methods'] = {
 }
 
 # --------------------------------------------------------------------
-# PROCESS: SUB PROCESSES: DETAILS
+# PROCESS: SUB PROCESSES DETAILS
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
@@ -78,6 +78,6 @@ SUB_PROCESSES_DETAILS['radiative_process_methods'] = {
 }
 
 # --------------------------------------------------------------------
-# ENUMERATIONS
+# PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
 ENUMERATIONS = OrderedDict()

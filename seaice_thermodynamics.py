@@ -76,7 +76,7 @@ SUB_PROCESSES['vertical_heat_diffusion'] = {
               
 
 # --------------------------------------------------------------------
-# PROCESS: SUB PROCESSES: DETAILS
+# PROCESS: SUB PROCESSES DETAILS
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
@@ -114,7 +114,7 @@ SUB_PROCESSES_DETAILS['vertical_heat_diffusion_details'] = {
 }
 
 # --------------------------------------------------------------------
-# ENUMERATIONS
+# PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
 ENUMERATIONS = OrderedDict()
 

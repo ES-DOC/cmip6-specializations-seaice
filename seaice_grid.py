@@ -56,7 +56,7 @@ DETAILS = OrderedDict()
 DISCRETISATION = OrderedDict()
 
 # --------------------------------------------------------------------
-# GRID: DISCRETISATION: DETAILS
+# GRID: DISCRETISATION DETAILS
 #
 # Sets of details for the discretisation
 # --------------------------------------------------------------------
