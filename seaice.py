@@ -1,14 +1,21 @@
 # --------------------------------------------------------------------
-# See http://wordpress.es-doc.org for documentation on how to create
-# CMIP6 realm specialisations
+# INTERNAL VARIABLES (do not change)
 # --------------------------------------------------------------------
+_TYPE = 'cim.2.science.scientific_realm'
 
-# ====================================================================
-# FILE VARIABLES
-# ====================================================================
-CONTACT = ''
+# --------------------------------------------------------------------
+# CONTACT
+#
+# Set to realm specialization co-ordinator.
+# --------------------------------------------------------------------
+CONTACT = None
 
-AUTHORS = ''
+# --------------------------------------------------------------------
+# CONTACT
+#
+# Set to realm specialization authors.
+# --------------------------------------------------------------------
+AUTHORS = None
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -24,16 +31,6 @@ QC_STATUS = 'draft'
 # --------------------------------------------------------------------
 ID = 'cmip6.seaice'
 
-# ====================================================================
-# INTERNAL VARIABLES (do not change)
-# ====================================================================
-_TYPE = 'cim.2.science.grid'
-from collections import OrderedDict
-
-# ====================================================================
-# MODEL DESCRIPTION VARIABLES
-# ====================================================================
-
 # --------------------------------------------------------------------
 # REALM: REALM
 #
@@ -46,7 +43,7 @@ REALM = 'seaice'
 #
 # The grid used to layout the variables
 # --------------------------------------------------------------------
-GRID = ['grid']
+GRID = 'seaice_grid'
 
 # --------------------------------------------------------------------
 # REALM: KEY PROPERTIES
@@ -54,13 +51,15 @@ GRID = ['grid']
 # Key properties for the domain which differ from model defaults
 # (grid, timestep etc)
 # --------------------------------------------------------------------
-KEY_PROPERTIES = []
+KEY_PROPERTIES = None
 
 # --------------------------------------------------------------------
 # REALM: PROCESSES
 #
 # Processes simulated within the realm
 # --------------------------------------------------------------------
-PROCESSES = ['thermodynamics',
-             'dynamics',
-             'radiative_processes']
+PROCESSES = [
+    'seaice_dynamics',
+	'seaice_thermodynamics',
+    'seaice_radiative_processes'
+    ]
