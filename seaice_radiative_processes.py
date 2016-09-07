@@ -13,14 +13,14 @@ from collections import OrderedDict
 #
 # Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = '<NEED CONTACT>'
+CONTACT = 'NEED CONTACT'
 
 # --------------------------------------------------------------------
 # AUTHORS
 #
 # Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = '<NEED AUTHORS>'
+AUTHORS = 'NEED AUTHORS'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS

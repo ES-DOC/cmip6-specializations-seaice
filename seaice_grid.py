@@ -62,7 +62,7 @@ DISCRETISATION['discretisation'] = {
 DISCRETISATION_DETAILS = OrderedDict()
 
 DISCRETISATION_DETAILS['type'] = {
-    'description': '<NEEDS DESCRIPTION>',
+    'description': 'NEEDS DESCRIPTION',
     'properties': [
         ('layering_type', 'ENUM:layering_types', '1.1',
             'Type of sea` ice layering')

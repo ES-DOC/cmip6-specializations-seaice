@@ -13,14 +13,14 @@ from collections import OrderedDict
 #
 # Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = '<NEED CONTACT>'
+CONTACT = 'NEED CONTACT'
 
 # --------------------------------------------------------------------
 # AUTHORS
 #
 # Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = '<NEED AUTHORS>'
+AUTHORS = 'NEED AUTHORS'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -78,7 +78,7 @@ SUB_PROCESSES['rheology'] = {
 SUB_PROCESS_DETAILS = OrderedDict()
 
 SUB_PROCESS_DETAILS['horizontal_advection:transport_method'] = {
-    'description': '<NEEDS DESCRIPTION>',
+    'description': 'NEEDS DESCRIPTION',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
              'Method of horizontal advection')
@@ -86,7 +86,7 @@ SUB_PROCESS_DETAILS['horizontal_advection:transport_method'] = {
 }
 
 SUB_PROCESS_DETAILS['transport_in_thickness_space:transport_method'] = {
-    'description': '<NEEDS DESCRIPTION>',
+    'description': 'NEEDS DESCRIPTION',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
              'Method of ice migration in thickness')
@@ -94,7 +94,7 @@ SUB_PROCESS_DETAILS['transport_in_thickness_space:transport_method'] = {
 }
        
 SUB_PROCESS_DETAILS['redistribution:details'] = {
-    'description': '<NEEDS DESCRIPTION>',
+    'description': 'NEEDS DESCRIPTION',
     'properties': [
         ('processes', 'ENUM:redistribution_types', '0.N',
              'Additional processes which can redistribute sea ice.'),        
@@ -104,7 +104,7 @@ SUB_PROCESS_DETAILS['redistribution:details'] = {
 }
 
 SUB_PROCESS_DETAILS['rheology:ice_deformation_method'] = {
-    'description': '<NEEDS DESCRIPTION>',
+    'description': 'NEEDS DESCRIPTION',
     'properties': [
         ('ice_deformation_method', 'ENUM:rheology_types', '1.1',
              'Ice deformation method')

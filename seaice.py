@@ -22,7 +22,7 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence, David Hassell'
 #
 # Set to realm specialization contributors (comma delimited).
 # --------------------------------------------------------------------
-CONTRIBUTORS = '<NEED CONTRIBUTORS>'
+CONTRIBUTORS = '&lt;NEED CONTRIBUTORS&gt;'
 
 # --------------------------------------------------------------------
 # CHANGE HISTORY

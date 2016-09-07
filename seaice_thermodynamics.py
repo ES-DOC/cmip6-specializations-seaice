@@ -13,14 +13,14 @@ from collections import OrderedDict
 #
 # Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = '<NEED CONTACT>'
+CONTACT = 'NEED CONTACT'
 
 # --------------------------------------------------------------------
 # AUTHORS
 #
 # Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = '<NEED AUTHORS>'
+AUTHORS = 'NEED AUTHORS'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -89,7 +89,7 @@ SUB_PROCESS_DETAILS['thermo_processes:details'] = {
 }
 
 SUB_PROCESS_DETAILS['snow_processes:process_type'] = {
-    'description': '<NEEDS DESCRIPTION>',
+    'description': 'NEEDS DESCRIPTION',
     'properties': [
         ('process_type', 'ENUM:snow_process_types', '1.N', 
              'Snow processes in sea ice thermodynamics')
