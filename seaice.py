@@ -1,21 +1,37 @@
-# --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
-# --------------------------------------------------------------------
-_TYPE = 'cim.2.science.scientific_realm'
+"""A realm sepecialization.
+
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+"""
 
 # --------------------------------------------------------------------
 # CONTACT
 #
 # Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = None
+CONTACT = 'Ruth Petrie'
 
 # --------------------------------------------------------------------
-# CONTACT
+# AUTHORS
 #
-# Set to realm specialization authors.
+# Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = None
+AUTHORS = 'Ruth Petrie, Bryan Lawrence, David Hassell'
+
+# --------------------------------------------------------------------
+# CONTRIBUTORS
+#
+# Set to realm specialization contributors (comma delimited).
+# --------------------------------------------------------------------
+CONTRIBUTORS = '<NEED CONTRIBUTORS>'
+
+# --------------------------------------------------------------------
+# CHANGE HISTORY
+#
+# Set to list: (version, date, comment, who).
+# --------------------------------------------------------------------
+CHANGE_HISTORY = [
+	("0.1.0", "2016-05-24", "Initialised", "David Hassell"),
+     ]
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -25,11 +41,11 @@ AUTHORS = None
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# REALM IDENTIFIER
+# REALM: DESCRIPTION
 #
-# Set to 'cmip6.<REALM>'
+# Scientific context of this scientific realm
 # --------------------------------------------------------------------
-ID = 'cmip6.seaice'
+DESCRIPTION = 'Sea-ice realm specialization'
 
 # --------------------------------------------------------------------
 # REALM: REALM
@@ -51,7 +67,7 @@ GRID = 'seaice_grid'
 # Key properties for the domain which differ from model defaults
 # (grid, timestep etc)
 # --------------------------------------------------------------------
-KEY_PROPERTIES = None
+KEY_PROPERTIES = 'seaice_key_properties'
 
 # --------------------------------------------------------------------
 # REALM: PROCESSES
@@ -60,6 +76,6 @@ KEY_PROPERTIES = None
 # --------------------------------------------------------------------
 PROCESSES = [
     'seaice_dynamics',
-	'seaice_thermodynamics',
-    'seaice_radiative_processes'
-    ]
+    'seaice_thermodynamics',
+    'seaice_radiative_processes',
+]

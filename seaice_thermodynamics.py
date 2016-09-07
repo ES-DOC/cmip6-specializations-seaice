@@ -1,14 +1,26 @@
-# --------------------------------------------------------------------
-# See http://wordpress.es-doc.org for documentation on how to create
-# CMIP6 process specialisations
-# --------------------------------------------------------------------
+"""A realm process sepecialization.
 
-# ====================================================================
-# FILE VARIABLES
-# ====================================================================
-CONTACT = ''
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+"""
 
-AUTHORS = ''
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
+from collections import OrderedDict
+
+# --------------------------------------------------------------------
+# CONTACT
+#
+# Set to realm specialization co-ordinator.
+# --------------------------------------------------------------------
+CONTACT = '<NEED CONTACT>'
+
+# --------------------------------------------------------------------
+# AUTHORS
+#
+# Set to realm specialization authors (comma delimited).
+# --------------------------------------------------------------------
+AUTHORS = '<NEED AUTHORS>'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -16,23 +28,6 @@ AUTHORS = ''
 # Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>'
-# --------------------------------------------------------------------
-ID = 'cmip6.seaice.thermodynamics'
-
-# ====================================================================
-# INTERNAL VARIABLES (do not change)
-# ====================================================================
-_TYPE = 'cim.2.science.process'
-from collections import OrderedDict
-
-# ====================================================================
-# MODEL DESCRIPTION VARIABLES
-# ====================================================================
 
 # --------------------------------------------------------------------
 # PROCESS: DESCRIPTION
@@ -61,28 +56,27 @@ SUB_PROCESSES = OrderedDict()
 
 SUB_PROCESSES['thermo_processes'] = {
     'description': 'Information about basal heat flux and brine inclusions',
-    'details': ['thermo_processes_details']
+    'details': ['details'],
 }
 
 SUB_PROCESSES['snow_processes'] = {
     'description': 'Snow processes in sea ice thermodynamics',
-    'details': ['process_type']
+    'details': ['process_type'],
 }
 
 SUB_PROCESSES['vertical_heat_diffusion'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
-    'details:' ['vertical_heat_diffusion_details']
+    'details': ['details'],
 }
-              
 
 # --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES DETAILS
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESSES_DETAILS = OrderedDict()
+SUB_PROCESS_DETAILS = OrderedDict()
 
-SUB_PROCESSES_DETAILS['thermo_processes_details'] = {
+SUB_PROCESS_DETAILS['thermo_processes:details'] = {
     'description': 'Information about basal heat flux and brine inclusions',
     'properties': [
         ('brine_inclusion_method', 'ENUM:thermo_brine_types', '0.1',
@@ -94,14 +88,15 @@ SUB_PROCESSES_DETAILS['thermo_processes_details'] = {
     ]
 }
 
-
-SUB_PROCESSES_DETAILS['process_type'] = (
-    'ENUM:snow_process_types', '1.N', 
-    'Snow processes in sea ice thermodynamics',)
+SUB_PROCESS_DETAILS['snow_processes:process_type'] = {
+    'description': '<NEEDS DESCRIPTION>',
+    'properties': [
+        ('process_type', 'ENUM:snow_process_types', '1.N', 
+             'Snow processes in sea ice thermodynamics')
+    ]
 }
 
-
-SUB_PROCESSES_DETAILS['vertical_heat_diffusion_details'] = {
+SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
     'properties': [
         ('num_of_layers', 'int', '1.1',
@@ -120,6 +115,7 @@ ENUMERATIONS = OrderedDict()
 
 ENUMERATIONS['thermo_brine_types'] = {
     'description': 'Brine Inclusion Methodology',
+    'is_open': True,
     'members': [
         ('None', 'No brine inclusions included in sea ice thermodynamics'),
         ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
@@ -130,6 +126,7 @@ ENUMERATIONS['thermo_brine_types'] = {
 
 ENUMERATIONS['snow_process_types'] = {
     'description': 'Types of snow processes',
+    'is_open': True,
     'members': [
         ('single-layered heat diffusion', None),
         ('multi-layered heat diffusion', None),

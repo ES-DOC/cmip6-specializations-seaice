@@ -1,14 +1,25 @@
-# --------------------------------------------------------------------
-# See http://wordpress.es-doc.org for documentation on how to create
-# CMIP6 grid specialisations
-# --------------------------------------------------------------------
+"""A realm grid sepecialization.
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+"""
 
-# ====================================================================
-# FILE VARIABLES
-# ====================================================================
-CONTACT = ''
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
+from collections import OrderedDict
 
-AUTHORS = ''
+# --------------------------------------------------------------------
+# CONTACT
+#
+# Set to realm specialization co-ordinator.
+# --------------------------------------------------------------------
+CONTACT = 'Ruth Petrie'
+
+# --------------------------------------------------------------------
+# AUTHORS
+#
+# Set to realm specialization authors (comma delimited).
+# --------------------------------------------------------------------
+AUTHORS = 'Ruth Petrie'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -18,28 +29,11 @@ AUTHORS = ''
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# GRID IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.grid'
-# --------------------------------------------------------------------
-ID = ''
-
-# ====================================================================
-# INTERNAL VARIABLES (do not change)
-# ====================================================================
-_TYPE = 'cim.2.science.grid'
-from collections import OrderedDict
-
-# ====================================================================
-# MODEL DESCRIPTION VARIABLES
-# ====================================================================
-
-# --------------------------------------------------------------------
 # GRID: DESCRIPTION
 #
 # Scientific context of the grid
 # --------------------------------------------------------------------
-DESCRIPTION = ''
+DESCRIPTION = 'Sea ice grid and discretisation'
 
 # --------------------------------------------------------------------
 # GRID: DETAILS
@@ -55,6 +49,11 @@ DETAILS = OrderedDict()
 # --------------------------------------------------------------------
 DISCRETISATION = OrderedDict()
 
+DISCRETISATION['discretisation'] = {
+    'description': 'Type of discretisation scheme in ocean',
+    'details': ['type']
+}
+
 # --------------------------------------------------------------------
 # GRID: DISCRETISATION DETAILS
 #
@@ -62,7 +61,15 @@ DISCRETISATION = OrderedDict()
 # --------------------------------------------------------------------
 DISCRETISATION_DETAILS = OrderedDict()
 
-# --------------------------------------------------------------------
+DISCRETISATION_DETAILS['type'] = {
+    'description': '<NEEDS DESCRIPTION>',
+    'properties': [
+        ('layering_type', 'ENUM:layering_types', '1.1',
+            'Type of sea` ice layering')
+    ]
+}
+
+#-------------------------------------------------------
 # GRID: ENUMERATIONS
 #
 # URL of process.html#enuemrations
@@ -71,7 +78,8 @@ DISCRETISATION_DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 ENUMERATIONS['layering_types'] = {
-    'description': 'Sea Ice Layering Types',
+    'description': 'Sea ice layering types',
+    'is_open': True,
     'members': [
         ('2-levels', 'Simulation uses two layers.'),
         ('Multi-level', 'Simulation uses more than two layers'),
