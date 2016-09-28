@@ -50,8 +50,11 @@ DETAILS = OrderedDict()
 DISCRETISATION = OrderedDict()
 
 DISCRETISATION['discretisation'] = {
-    'description': 'Type of discretisation scheme in ocean',
-    'details': ['type']
+    'description': 'Types of sea ice discretisation',
+    'details': [
+        'horizontal',
+        'layering'
+        ]
 }
 
 # --------------------------------------------------------------------
@@ -61,11 +64,22 @@ DISCRETISATION['discretisation'] = {
 # --------------------------------------------------------------------
 DISCRETISATION_DETAILS = OrderedDict()
 
-DISCRETISATION_DETAILS['type'] = {
-    'description': 'NEEDS DESCRIPTION',
+DISCRETISATION_DETAILS['horizontal'] = {
+    'description': 'How the sea ice is horizontally discretised',
+    'properties': [
+        ('horizontal', 'ENUM:sea_ice_grid', '1.1',
+            'Type of sea` ice horizontal discretisation')
+
+    ]
+}
+
+DISCRETISATION_DETAILS['layering'] = {
+    'description': 'Method used to represent sea ice layering',
     'properties': [
         ('layering_type', 'ENUM:layering_types', '1.1',
-            'Type of sea` ice layering')
+            'Type of sea` ice layering'),
+        ('ice_types', 'ENUM:ice_types', '0.N',
+            'Type of sea` ice categories')
     ]
 }
 
@@ -77,12 +91,30 @@ DISCRETISATION_DETAILS['type'] = {
 # --------------------------------------------------------------------
 ENUMERATIONS = OrderedDict()
 
+ENUMERATIONS['sea_ice_grid'] = {
+    'description': 'Grid which is the sea ice horizontally discretised on',
+    'is_open': True,
+    'members': [
+        ('Ocean grid', 'Sea ice is horizontally discretised on the ocean grid'),
+        ('Atmosphere Grid', 'Sea ice is horizontally discretised on the atmospheric grid'),
+        ('Own Grid', 'Sea ice is horizontally discretised on it`s own independent grid'),
+    ]
+}
 ENUMERATIONS['layering_types'] = {
     'description': 'Sea ice layering types',
     'is_open': True,
     'members': [
         ('2-levels', 'Simulation uses two layers.'),
         ('Multi-level', 'Simulation uses more than two layers'),
-        ('Ice-Types', 'Simulation does not use layers, but has multiple ice types per grid cell'),
+        ('ice_types', 'Simulation does not use layers, but has multiple ice types per grid cell'),
+    ]
+}
+ENUMERATIONS['ice_types'] = {
+    'description': 'Detail of ice_types per grid cell',
+    'is_open': True,
+    'members': [
+        ('Number of ice categories', None),
+        ('Category limits',  None),
+        ('Ice thickness distribution scheme', None),
     ]
 }
