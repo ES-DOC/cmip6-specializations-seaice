@@ -1,0 +1,21 @@
+cmip6-id, cmip6-label, cmip6-type
+cmip6.seaice.grid.discretisation, Seaice > Grid > Discretisation, grid-discretisation
+cmip6.seaice.grid.discretisation.horizontal, Seaice > Grid > Discretisation > Horizontal, detail
+cmip6.seaice.grid.discretisation.layering, Seaice > Grid > Discretisation > Layering, detail
+, , 
+cmip6.seaice.key_properties.general, Seaice > Key Properties > General, detail
+cmip6.seaice.key_properties.seawater_properties, Seaice > Key Properties > Seawater Properties, detail
+cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation, key-properties-conservation
+cmip6.seaice.key_properties.conservation.details, Seaice > Key Properties > Conservation > Details, detail
+, , 
+cmip6.seaice.dynamics.horizontal_advection.transport_method, Seaice > Dynamics > Horizontal Advection > Transport Method, detail
+cmip6.seaice.dynamics.transport_in_thickness_space.transport_method, Seaice > Dynamics > Transport In Thickness Space > Transport Method, detail
+cmip6.seaice.dynamics.redistribution.details, Seaice > Dynamics > Redistribution > Details, detail
+cmip6.seaice.dynamics.rheology.ice_deformation_method, Seaice > Dynamics > Rheology > Ice Deformation Method, detail
+, , 
+cmip6.seaice.thermodynamics.thermo_processes.details, Seaice > Thermodynamics > Thermo Processes > Details, detail
+cmip6.seaice.thermodynamics.snow_processes.process_type, Seaice > Thermodynamics > Snow Processes > Process Type, detail
+cmip6.seaice.thermodynamics.vertical_heat_diffusion.details, Seaice > Thermodynamics > Vertical Heat Diffusion > Details, detail
+, , 
+cmip6.seaice.radiative_processes.si_radiative_process_methods.details, Seaice > Radiative Processes > Si Radiative Process Methods > Details, detail
+, , 

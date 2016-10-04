@@ -1,0 +1,35 @@
+cmip6-id, cmip6-label, cmip6-type
+cmip6.seaice.grid.discretisation.horizontal.horizontal, Seaice > Grid > Discretisation > Horizontal > Horizontal, detail-property
+cmip6.seaice.grid.discretisation.layering.layering_type, Seaice > Grid > Discretisation > Layering > Layering Type, detail-property
+cmip6.seaice.grid.discretisation.layering.ice_types, Seaice > Grid > Discretisation > Layering > Ice Types, detail-property
+, , 
+cmip6.seaice.key_properties.general.model_family, Seaice > Key Properties > General > Model Family, detail-property
+cmip6.seaice.key_properties.general.basic_approximations, Seaice > Key Properties > General > Basic Approximations, detail-property
+cmip6.seaice.key_properties.general.prognostic_variables, Seaice > Key Properties > General > Prognostic Variables, detail-property
+cmip6.seaice.key_properties.seawater_properties.eos_type, Seaice > Key Properties > Seawater Properties > Eos Type, detail-property
+cmip6.seaice.key_properties.seawater_properties.eos_functional_temp, Seaice > Key Properties > Seawater Properties > Eos Functional Temp, detail-property
+cmip6.seaice.key_properties.seawater_properties.eos_functional_salt, Seaice > Key Properties > Seawater Properties > Eos Functional Salt, detail-property
+cmip6.seaice.key_properties.seawater_properties.eos_functional_depth, Seaice > Key Properties > Seawater Properties > Eos Functional Depth, detail-property
+cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, detail-property
+cmip6.seaice.key_properties.seawater_properties.ocean_specific_heat, Seaice > Key Properties > Seawater Properties > Ocean Specific Heat, detail-property
+cmip6.seaice.key_properties.seawater_properties.ocean_reference_density, Seaice > Key Properties > Seawater Properties > Ocean Reference Density, detail-property
+cmip6.seaice.key_properties.conservation.details.scheme, Seaice > Key Properties > Conservation > Details > Scheme, detail-property
+cmip6.seaice.key_properties.conservation.details.consistency_properties, Seaice > Key Properties > Conservation > Details > Consistency Properties, detail-property
+, , 
+cmip6.seaice.dynamics.horizontal_advection.transport_method.transport_method, Seaice > Dynamics > Horizontal Advection > Transport Method > Transport Method, detail-property
+cmip6.seaice.dynamics.transport_in_thickness_space.transport_method.transport_method, Seaice > Dynamics > Transport In Thickness Space > Transport Method > Transport Method, detail-property
+cmip6.seaice.dynamics.redistribution.details.processes, Seaice > Dynamics > Redistribution > Details > Processes, detail-property
+cmip6.seaice.dynamics.redistribution.details.ice_strength_formulation, Seaice > Dynamics > Redistribution > Details > Ice Strength Formulation, detail-property
+cmip6.seaice.dynamics.rheology.ice_deformation_method.ice_deformation_method, Seaice > Dynamics > Rheology > Ice Deformation Method > Ice Deformation Method, detail-property
+, , 
+cmip6.seaice.thermodynamics.thermo_processes.details.brine_inclusion_method, Seaice > Thermodynamics > Thermo Processes > Details > Brine Inclusion Method, detail-property
+cmip6.seaice.thermodynamics.thermo_processes.details.basal_heat_flux, Seaice > Thermodynamics > Thermo Processes > Details > Basal Heat Flux, detail-property
+cmip6.seaice.thermodynamics.thermo_processes.details.brine_inclusions, Seaice > Thermodynamics > Thermo Processes > Details > Brine Inclusions, detail-property
+cmip6.seaice.thermodynamics.snow_processes.process_type.process_type, Seaice > Thermodynamics > Snow Processes > Process Type > Process Type, detail-property
+cmip6.seaice.thermodynamics.vertical_heat_diffusion.details.num_of_layers, Seaice > Thermodynamics > Vertical Heat Diffusion > Details > Num Of Layers, detail-property
+cmip6.seaice.thermodynamics.vertical_heat_diffusion.details.regular_grid, Seaice > Thermodynamics > Vertical Heat Diffusion > Details > Regular Grid, detail-property
+cmip6.seaice.thermodynamics.vertical_heat_diffusion.details.based_on_semtner, Seaice > Thermodynamics > Vertical Heat Diffusion > Details > Based On Semtner, detail-property
+, , 
+cmip6.seaice.radiative_processes.si_radiative_process_methods.details.surface_albedo, Seaice > Radiative Processes > Si Radiative Process Methods > Details > Surface Albedo, detail-property
+cmip6.seaice.radiative_processes.si_radiative_process_methods.details.ice_radiation_transmission, Seaice > Radiative Processes > Si Radiative Process Methods > Details > Ice Radiation Transmission, detail-property
+, , 
