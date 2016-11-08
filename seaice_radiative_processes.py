@@ -13,14 +13,14 @@ from collections import OrderedDict
 #
 # Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = 'NEED CONTACT'
+CONTACT = 'Ruth Petrie'
 
 # --------------------------------------------------------------------
 # AUTHORS
 #
 # Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'NEED AUTHORS'
+AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -34,7 +34,13 @@ QC_STATUS = 'draft'
 #
 # Scientific context of the process
 # --------------------------------------------------------------------
-DESCRIPTION = ''
+DESCRIPTION = 'Radiative processes in sea ice'
+
+IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
+
+KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
+
+CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
 
 # --------------------------------------------------------------------
 # PROCESS: DETAILS
@@ -51,7 +57,7 @@ DETAILS = OrderedDict()
 SUB_PROCESSES = OrderedDict()
 
 SUB_PROCESSES['si_radiative_process_methods'] = {
-    'description': 'Collected properties of radiation in sea ice thermodynamics',
+    'description': 'Properties of radiation in sea ice thermodynamics',
     'details': ['details'],
 }
 
@@ -68,7 +74,7 @@ SUB_PROCESS_DETAILS['si_radiative_process_methods:details'] = {
         ('surface_albedo', 'str', '0.1',
          'Method used to handle surface albedo'),
         ('ice_radiation_transmission', 'str', '0.1',
-         'Method by which solar radiation through ice is handled'),
+         'Method by which solar radiation through sea ice is handled'),
     ]
 }
 
