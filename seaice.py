@@ -1,6 +1,7 @@
 """A realm sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+
 """
 
 # --------------------------------------------------------------------
@@ -22,7 +23,7 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence, David Hassell'
 #
 # Set to realm specialization contributors (comma delimited).
 # --------------------------------------------------------------------
-CONTRIBUTORS = '&lt;NEED CONTRIBUTORS&gt;'
+CONTRIBUTORS = 'Jamie Rae (UKMO)'
 
 # --------------------------------------------------------------------
 # CHANGE HISTORY
@@ -31,9 +32,9 @@ CONTRIBUTORS = '&lt;NEED CONTRIBUTORS&gt;'
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
 	("0.1.0", "2016-05-24", "Initialised", "David Hassell"),
-	("0.1.1", "2016-09-28", "Modified seaice_grid", "Ruth Petrie"),
-	("0.1.1", "2016-09-28", "Added seaice_key_properties.py as a copy from ocean MUST update for sea ice", "Ruth Petrie")	
-     ]
+	("0.1.1", "2016-09-28", "Modified to include work done by Bryan Lawerence", "Petrie"),
+	("0.1.2", "2016-11-07", "Updated on the basis of discussion with Jamie Rae (UKMO)", "Ruth Petrie"),		
+    ]
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -47,7 +48,7 @@ QC_STATUS = 'draft'
 #
 # Scientific context of this scientific realm
 # --------------------------------------------------------------------
-DESCRIPTION = 'Sea-ice realm specialization'
+DESCRIPTION = 'Sea ice realm specialization'
 
 # --------------------------------------------------------------------
 # REALM: REALM
@@ -55,6 +56,10 @@ DESCRIPTION = 'Sea-ice realm specialization'
 # Canonical name for the domain of this scientific realm
 # --------------------------------------------------------------------
 REALM = 'seaice'
+
+NAME = ''
+
+LONG_NAME = ''
 
 # --------------------------------------------------------------------
 # REALM: GRID

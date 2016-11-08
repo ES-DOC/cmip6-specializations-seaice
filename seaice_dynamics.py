@@ -13,14 +13,14 @@ from collections import OrderedDict
 #
 # Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = 'NEED CONTACT'
+CONTACT = 'Ruth Petrie'
 
 # --------------------------------------------------------------------
 # AUTHORS
 #
 # Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'NEED AUTHORS'
+AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS
@@ -35,6 +35,12 @@ QC_STATUS = 'draft'
 # Scientific context of the process
 # --------------------------------------------------------------------
 DESCRIPTION = 'Characteristics of the Sea Ice Dynamics'
+
+IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
+
+KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
+
+CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
 
 # --------------------------------------------------------------------
 # PROCESS: DETAILS
@@ -61,8 +67,8 @@ SUB_PROCESSES['transport_in_thickness_space'] = {
 }
 
 SUB_PROCESSES['redistribution'] = {
-    'description': 'Sea Ice Redistribution',
-    'details': ['details']
+    'description': 'Sea Ice Mechanical Redistribution',
+    'details': ['ice_redistribution']
 }
 
 SUB_PROCESSES['rheology'] = {
@@ -78,7 +84,7 @@ SUB_PROCESSES['rheology'] = {
 SUB_PROCESS_DETAILS = OrderedDict()
 
 SUB_PROCESS_DETAILS['horizontal_advection:transport_method'] = {
-    'description': 'NEEDS DESCRIPTION',
+    'description': 'Horizontal advection of sea ice',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
              'Method of horizontal advection')
@@ -86,15 +92,15 @@ SUB_PROCESS_DETAILS['horizontal_advection:transport_method'] = {
 }
 
 SUB_PROCESS_DETAILS['transport_in_thickness_space:transport_method'] = {
-    'description': 'NEEDS DESCRIPTION',
+    'description': 'Method of migration of sea ice in thickness',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
              'Method of ice migration in thickness')
     ]
 }
        
-SUB_PROCESS_DETAILS['redistribution:details'] = {
-    'description': 'NEEDS DESCRIPTION',
+SUB_PROCESS_DETAILS['redistribution:ice_redistribution'] = {
+    'description': 'Methods of mechanical redistribution of sea ice',
     'properties': [
         ('processes', 'ENUM:redistribution_types', '0.N',
              'Additional processes which can redistribute sea ice.'),        
@@ -104,7 +110,7 @@ SUB_PROCESS_DETAILS['redistribution:details'] = {
 }
 
 SUB_PROCESS_DETAILS['rheology:ice_deformation_method'] = {
-    'description': 'NEEDS DESCRIPTION',
+    'description': 'Methods of sea ice deformation',
     'properties': [
         ('ice_deformation_method', 'ENUM:rheology_types', '1.1',
              'Ice deformation method')
@@ -143,6 +149,7 @@ ENUMERATIONS['rheology_types'] = {
         ('Mohr-Coloumb', None),
         ('visco-plastic', None),
         ('elastic-visco-plastic', 'EVP'),
+        ('Elastic-aniostropic-plastic', None,),
         ('granular', None),
         ('other', None)
     ]

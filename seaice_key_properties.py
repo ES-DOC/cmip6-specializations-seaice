@@ -38,8 +38,6 @@ DESCRIPTION = 'Key properties of sea ice'
 IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
 
 KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
-#TODO is this needed for sea ice
-TIME_STEP = ('float', '0.1', "Timestep (in seconds) of overall component.")
 
 CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
 
@@ -49,12 +47,10 @@ CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
 # Sets of details for the key properties
 # --------------------------------------------------------------------
 DETAILS = OrderedDict()
-#TODO check if model family needed for sea ice
+# TODO check if model family needed for sea ice
 DETAILS['general'] = {
     'description': 'General key properties in sea ice',
     'properties': [
-        ('model_family', 'ENUM:model_family_types', '1.1',
-            'Type of sea ice model.'),
         ('basic_approximations', 'ENUM:seaice_basic_approx_types', '1.N',
             'Basic approximations made in the ice.',),
         ('prognostic_variables', 'ENUM:prognostic_vars_types', '1.N',
@@ -62,7 +58,7 @@ DETAILS['general'] = {
         ]
 }
 
-#TODO adapt correctly to sea ice
+# TODO adapt correctly to sea ice
 
 DETAILS['seawater_properties'] = {
     'description': 'Physical properties of seawater relevant to sea ice',
@@ -84,18 +80,6 @@ DETAILS['seawater_properties'] = {
         ]
 }
 
-#TODO adapt correctly to sea ice
-
-#DETAILS['nonoceanic_waters'] = {
-#    'description': 'Non oceanic waters treatement in ocean',
-#    'properties': [
-#        ('isolated_seas','str', '0.1',
-#         'Describe if/how isolated seas is performed'),
-#        ('river_mouth','str', '0.1',
-#         'Describe if/how river mouth mixing or estuaries specific treatment is performed'),
-#       ]
-#}
-#
 
 # --------------------------------------------------------------------
 # KEY PROPERTIES: EXTENT
@@ -123,7 +107,7 @@ RESOLUTION['resolution'] = {
     'description': 'Resolution in the sea ice grid',
     'properties': [
         ('name', 'str', '1.1',
-             "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. N512L180 or T512L70 etc."),
+             "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. N512L180, T512L70, ORCA025 etc."),
         ('canonical_horizontal_resolution', 'str', '0.1',
              "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc."),
         ('number_of_horizontal_gridpoints', 'int', '0.1',
@@ -134,9 +118,7 @@ RESOLUTION['resolution'] = {
              "Set of pertinent citations."), 
         ],
     # Sets of extra properties
-    'details': [ 
-        'thickness_level_1',
-    ],
+    'details': [],
 }
 
 # --------------------------------------------------------------------
@@ -146,8 +128,6 @@ RESOLUTION['resolution'] = {
 # --------------------------------------------------------------------
 RESOLUTION_DETAILS = OrderedDict()
 
-RESOLUTION_DETAILS['thickness_level_1'] = (
-    'float', '1.1', 'Thickness of first surface ocean level (in meters)')
 
 # --------------------------------------------------------------------
 # KEY PROPERTIES: TUNING APPLIED
@@ -162,13 +142,13 @@ TUNING_APPLIED['tuning_applied'] = {
     'description': 'Tuning applied to sea ice component',
     'properties': [
         ('description', 'str', '1.1',
-             "General overview description of tuning."),
-        ('tuning target', 'str', '1.1',
+             "General overview description of tuning explain and motivate the main targets used in any tuning process.),
+        ('tuning target', 'str', '0.N',
              "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle etc."),
-        ('tuning simulations', 'str', '1.1',
+        ('tuning simulations', 'str', '0.N',
              "Which simulations had tuning applied, e.g. all, not historical, only pi-control? "),
-        ('tuning_metrics_used', 'str', '1.1',
-             "Which metrics have been used in tuning model parameters."),
+        ('tuning_metrics_used', 'str', '0.N',
+             "List observed metrics used in tuning model/parameters"),
         ('citations', 'shared.citation', '0.N',
              "Set of pertinent citations."), 
     ],
@@ -182,6 +162,39 @@ TUNING_APPLIED['tuning_applied'] = {
 # Sets of details for the tuning
 # --------------------------------------------------------------------
 TUNING_APPLIED_DETAILS = OrderedDict()
+
+# --------------------------------------------------------------------
+# KEY PROPERTIES: ASSUMPTIONS
+#
+# Any key assumptions made in this realm
+# --------------------------------------------------------------------
+ASSUMPTIONS = OrderedDict()
+
+# TODO review wrt toplevel tuning questions !!
+# TODO not sure it is right to have data.variable.collection in the following - should be free text
+ASSUMPTIONS['assumptions'] = {
+    'description': 'Assumptions made in the sea ice model',
+    'properties': [
+        ('description', 'str', '1.1',
+             "General overview description of assumptions in the calculations of diagnostic sea ice variables."),
+        ('missing_processes', 'str', '1.1',
+             "Are there any key processes missing in this model configuration that affect the diagnostic sea ice variables?"),
+        ('citations', 'shared.citation', '0.N',
+             "Set of pertinent citations."), 
+    ],
+    # Extra properties
+    'details': [],
+}
+
+# --------------------------------------------------------------------
+# KEY PROPERTIES: TUNING APPLIED DETAILS
+#
+# Sets of details for the tuning
+# --------------------------------------------------------------------
+ASSUMPTIONS_DETAILS = OrderedDict()
+
+
+
 
 # --------------------------------------------------------------------
 # KEY PROPERTIES: EXTRA CONSERVATION PROPERTIES
@@ -215,11 +228,13 @@ EXTRA_CONSERVATION_PROPERTIES['conservation'] = {
 EXTRA_CONSERVATION_PROPERTIES_DETAILS = OrderedDict()
 #TODO is this needed for sea ice
 EXTRA_CONSERVATION_PROPERTIES_DETAILS['details'] = {
-    'description': 'Extra properties of conservation in the ocean component',
+    'description': 'Extra properties of conservation in the sea ice component',
     'properties': [
         ('scheme', 'ENUM:conservation_props_types', '1.N',
-            'Properties conserved in the ocean by the numerical schemes'),
-        ('consistency_properties', 'str','0.1',
+            'Properties conserved in sea ice by the numerical schemes'),
+        ('conserved_properties', 'str','1.N',
+            'For each conserved property conserved please specify the terms which close the related budget'),
+        ('consistency_properties', 'str','0.N',
             'Any additional consistency properties (energy conversion, pressure gradient discretisation, ...)?'),
     ]
 }
@@ -229,16 +244,6 @@ EXTRA_CONSERVATION_PROPERTIES_DETAILS['details'] = {
 # --------------------------------------------------------------------
 ENUMERATIONS = OrderedDict()
 
-#TODO is this needed for sea ice
-ENUMERATIONS['model_family_types'] = {
-    'description': 'Types of sea ice models',
-    'is_open': True,
-    'members': [
-        ('OGCM', None),
-        ('slab ocean', None),
-        ('mixed layer ocean', None)
-    ]
-}
 
 #TODO check which are correct for sea ice
 ENUMERATIONS['seaice_basic_approx_types'] = {
@@ -246,9 +251,7 @@ ENUMERATIONS['seaice_basic_approx_types'] = {
     'is_open': True,
     'members': [
         ('Isotropic', None),
-        ('Primitive equations', None),
-        ('Non-hydrostatic', None),
-        ('Boussinesq', None)
+        ('EVP', 'Elastic Viscous Plastic')
     ]
 }
 
@@ -257,13 +260,7 @@ ENUMERATIONS['prognostic_vars_types'] = {
     'description': 'List of prognostic variables in sea ice',
     'is_open': True,
     'members': [
-        ('Potential temperature', None),
-        ('Conservative temperature', None),
-        ('Salinity', None),
-        ('U-velocity', None),
-        ('V-velocity', None),
-        ('W-velocity', None),
-        ('SSH', 'Sea Surface Height')
+        ('list of prognostic variables', 'Need to check on this')
     ]
 }
 
@@ -325,7 +322,5 @@ ENUMERATIONS['conservation_props_types'] = {
     'members': [
         ('Energy', None),
         ('Mass', None),
-        ('Salt', None),
-        ('Freshwater', None),
-        ]
+         ]
 }
