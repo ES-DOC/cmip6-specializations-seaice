@@ -23,7 +23,7 @@ ENUMERATIONS = OrderedDict()
 #        ('citations', 'shared.citation', '0.N',
 #            "Set of pertinent citations."),
 #    ]
-# }
+#}
 
 # --------------------------------------------------------------------
 # CONTACT
