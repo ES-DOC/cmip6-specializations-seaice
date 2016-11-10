@@ -129,7 +129,7 @@ SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
 #        ('melt_pond_formulation', 'str', '0.1',
 #         'Method by which melt ponds are included'),
 #        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
-#         'Processes included in melt pond scheme')
+#         'Processes included in melt pond scheme?')
 #    ]
 #}
 
