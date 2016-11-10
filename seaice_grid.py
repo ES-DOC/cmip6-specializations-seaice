@@ -14,13 +14,13 @@ ENUMERATIONS = OrderedDict()
 
 # Default process details pulled from CIM.
 DETAILS['CIM'] = {
-    'description': 'Key properties of the ocean grid',
+    'description': 'Key properties of the sea ice grid',
     'properties':[
-        ('implementation_overview','str', '1.1',
+        ('implementation_overview', 'str', '1.1',
             "General overview description of the implementation of this part of the process."),
-        ('keywords','str', '0.N',
+        ('keywords', 'str', '0.N',
             "Keywords to help re-use and discovery of this information."),
-        ('citations','shared.citation', '0.N',
+        ('citations', 'shared.citation', '0.N',
             "Set of pertinent citations."),
     ]
 }
