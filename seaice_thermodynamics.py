@@ -121,17 +121,17 @@ SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
     ]
 }
 
-SUB_PROCESS_DETAILS['melt_ponds:details'] = {
-    'description': 'Characteristics of melt ponds.',
-    'properties': [
-        ('melt_ponds_included', 'bool', '1.1',
-         'Are melt ponds included in sea ice model?'),
-        ('melt_pond_formulation', 'str', '0.1',
-         'Method by which melt ponds are included'),
-        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
-         'Processes included in melt pond scheme')
-    ]
-}
+#SUB_PROCESS_DETAILS['melt_ponds'] = {
+#    'description': 'Characteristics of melt ponds.',
+#    'properties': [
+#        ('melt_ponds_included', 'bool', '1.1',
+#         'Are melt ponds included in sea ice model?'),
+#        ('melt_pond_formulation', 'str', '0.1',
+#         'Method by which melt ponds are included'),
+#        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
+#         'Processes included in melt pond scheme')
+#    ]
+#}
 
 
 
