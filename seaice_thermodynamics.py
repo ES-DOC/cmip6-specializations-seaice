@@ -8,6 +8,23 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 # --------------------------------------------------------------------
 from collections import OrderedDict
 
+DETAILS = OrderedDict()
+SUB_PROCESSES = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Key properties of the ocean vertical physics',
+    'properties':[
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords','str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations','shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
+
 # --------------------------------------------------------------------
 # CONTACT
 #
@@ -30,36 +47,21 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-#
-# Scientific context of the process
-# --------------------------------------------------------------------
-DESCRIPTION = 'Characteristics of sea ice thermodynamics processes'
-
-IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
-
-KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
-
-CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
-
-# --------------------------------------------------------------------
 # PROCESS: DETAILS
 #
 # Sets of details for the process
 # --------------------------------------------------------------------
-DETAILS = OrderedDict()
+#DETAILS = OrderedDict()
 
-DETAILS['budget'] = (
-    'str', '0.1',
-    'Information required to close the thermodynamics budget')
+#DETAILS['budget'] = (
+#    'str', '0.1',
+#    'Information required to close the thermodynamics budget')
 
 # --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
-
 SUB_PROCESSES['thermo_processes'] = {
     'description': 'Information about basal heat flux and brine inclusions',
     'details': ['details'],

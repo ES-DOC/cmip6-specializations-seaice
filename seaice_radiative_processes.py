@@ -2,11 +2,27 @@
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
-
 # --------------------------------------------------------------------
 # INTERNAL (do not change)
 # --------------------------------------------------------------------
 from collections import OrderedDict
+
+DETAILS = OrderedDict()
+SUB_PROCESSES = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Key properties of the ocean vertical physics',
+    'properties':[
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords','str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations','shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
 
 # --------------------------------------------------------------------
 # CONTACT
@@ -30,19 +46,6 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-#
-# Scientific context of the process
-# --------------------------------------------------------------------
-DESCRIPTION = 'Radiative processes in sea ice'
-
-IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
-
-KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
-
-CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
-
-# --------------------------------------------------------------------
 # PROCESS: DETAILS
 #
 # Sets of details for the process
@@ -54,8 +57,6 @@ DETAILS = OrderedDict()
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
-
 SUB_PROCESSES['si_radiative_process_methods'] = {
     'description': 'Properties of radiation in sea ice thermodynamics',
     'details': ['details'],
