@@ -87,31 +87,30 @@ SUB_PROCESSES['additional_processes'] = {
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESS_DETAILS = OrderedDict()
-
-SUB_PROCESS_DETAILS['thermo_processes:details'] = {
+SUB_PROCESSES['thermo_processes:details'] = {
     'description': 'Information about basal heat flux and brine inclusions',
     'properties': [
         ('brine_inclusion_method', 'ENUM:thermo_brine_types', '0.1',
          'Method by which basal heat flux is handled'),
         ('fixed_salinity_value', 'float', '0.1',
-        'If you have selected "Thermal properties depend on S-T (with fixed salinity)" please supply the salinity value used.'),
+         'If you have selected "Thermal properties depend on S-T (with fixed salinity)" &'
+         'please supply the salinity value used.'),
         ('basal_heat_flux', 'str', '0.1',
-        'Method by which basal heat flux is handled'),
+         'Method by which basal heat flux is handled'),
     ]
 }
 
-SUB_PROCESS_DETAILS['snow_processes:process_type'] = {
+SUB_PROCESSES['snow_processes:process_type'] = {
     'description': 'Snow on ice processes',
     'properties': [
         ('process_type', 'ENUM:snow_process_types', '1.N', 
-             'Snow processes in sea ice thermodynamics'),
+         'Snow processes in sea ice thermodynamics'),
         ('heat_content_precip', 'str', '0.1',
          'Method by which the heat content of precipitation is handled')
     ]
 }
 
-SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
+SUB_PROCESSES['vertical_heat_diffusion:details'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
     'properties': [
         ('num_of_layers', 'int', '1.1',
@@ -123,22 +122,22 @@ SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
     ]
 }
 
-#SUB_PROCESS_DETAILS['melt_ponds'] = {
-#    'description': 'Characteristics of melt ponds.',
-#    'properties': [
-#        ('melt_ponds_included', 'bool', '1.1',
-#         'Are melt ponds included in sea ice model?'),
-#        ('melt_pond_formulation', 'str', '0.1',
-#         'Method by which melt ponds are included'),
-#        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
-#         'Processes included in melt pond scheme?')
-#    ]
-#}
+SUB_PROCESSES['melt_ponds'] = {
+    'description': 'Characteristics of melt ponds.',
+    'properties': [
+        ('melt_ponds_included', 'bool', '1.1',
+         'Are melt ponds included in sea ice model?'),
+        ('melt_pond_formulation', 'str', '0.1',
+         'Method by which melt ponds are included'),
+        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
+         'Processes included in melt pond scheme?')
+    ]
+}
 
 
 
 # TODO these should be incorporated within other processes
-SUB_PROCESS_DETAILS['additional_processes:details'] = {
+SUB_PROCESSES['additional_processes:details'] = {
     'description': 'Additonal processes not elsewhere described',
     'properties': [
         ('processes', 'ENUM:add_processes', '0.N',
