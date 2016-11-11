@@ -67,9 +67,7 @@ SUB_PROCESSES['si_radiative_process_methods'] = {
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESS_DETAILS = OrderedDict()
-
-SUB_PROCESS_DETAILS['si_radiative_process_methods:details'] = {
+SUB_PROCESSES['si_radiative_process_methods:details'] = {
     'description': 'Additional information about radiative processes in sea ice.',
     'properties': [
         ('surface_albedo', 'str', '0.1',
@@ -82,4 +80,3 @@ SUB_PROCESS_DETAILS['si_radiative_process_methods:details'] = {
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
-ENUMERATIONS = OrderedDict()
