@@ -79,6 +79,10 @@ SUB_PROCESSES['rheology'] = {
     'details': ['ice_deformation_method']
 }
 
+SUB_PROCESSES['ice:ice_redistribution'] = {
+    'description': 'Methods of mechanical redistribution of sea ice',
+    'details': ['ice_strength_formulation']
+}
 # --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES DETAILS
 #
@@ -99,14 +103,20 @@ SUB_PROCESSES['transport_in_thickness_space:transport_method'] = {
          'Method of ice migration in thickness')
     ]
 }
-       
+
+SUB_PROCESSES['ice_strength:ice_strength_formulation'] = {
+    'description': 'How the sea ice strength is formulated',
+    'properties': [
+        ('ice_strength_formulation', 'str', '1.1',
+         'Describe how ice-strength is formulated'),
+    ]
+}
+
 SUB_PROCESSES['redistribution:ice_redistribution'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
     'properties': [
         ('processes', 'ENUM:redistribution_types', '0.N',
          'Additional processes which can redistribute sea ice.'),
-        ('ice_strength_formulation', 'str', '0.1',
-         'Describe how ice-strength is formulated'),
     ]
 }
 
@@ -127,7 +137,7 @@ ENUMERATIONS['transport_methods'] = {
     'members': [
         ('Incremental Re-mapping', '(including Semi-Lagrangian)'),
         ('Prather', None),
-        ('Eulerian', None)
+        ('Eulerian', None),
     ]
 }
 
@@ -146,7 +156,7 @@ ENUMERATIONS['rheology_types'] = {
     'members': [
         ('free-drift', None),
         ('Mohr-Coloumb', None),
-        ('visco-plastic', None),
+        ('visco-plastic', 'VP'),
         ('elastic-visco-plastic', 'EVP'),
         ('Elastic-aniostropic-plastic', None,),
         ('granular', None),
