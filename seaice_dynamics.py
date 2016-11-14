@@ -1,4 +1,5 @@
-"""A realm process sepecialization.
+"""
+A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
@@ -7,6 +8,23 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 # INTERNAL (do not change)
 # --------------------------------------------------------------------
 from collections import OrderedDict
+
+DETAILS = OrderedDict()
+SUB_PROCESSES = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Key properties of sea ice dynamics',
+    'properties': [
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords','str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations','shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
 
 # --------------------------------------------------------------------
 # CONTACT
@@ -30,19 +48,6 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-#
-# Scientific context of the process
-# --------------------------------------------------------------------
-DESCRIPTION = 'Characteristics of the Sea Ice Dynamics'
-
-IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
-
-KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
-
-CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
-
-# --------------------------------------------------------------------
 # PROCESS: DETAILS
 #
 # Sets of details for the process
@@ -54,8 +59,6 @@ DETAILS = OrderedDict()
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
-
 SUB_PROCESSES['horizontal_advection'] = {
     'description': 'Method of horizontal advection',
     'details': ['transport_method']
@@ -76,59 +79,65 @@ SUB_PROCESSES['rheology'] = {
     'details': ['ice_deformation_method']
 }
 
+SUB_PROCESSES['ice:ice_redistribution'] = {
+    'description': 'Methods of mechanical redistribution of sea ice',
+    'details': ['ice_strength_formulation']
+}
 # --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES DETAILS
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESS_DETAILS = OrderedDict()
-
-SUB_PROCESS_DETAILS['horizontal_advection:transport_method'] = {
+SUB_PROCESSES['horizontal_advection:transport_method'] = {
     'description': 'Horizontal advection of sea ice',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
-             'Method of horizontal advection')
+         'Method of horizontal advection')
     ]
 }
 
-SUB_PROCESS_DETAILS['transport_in_thickness_space:transport_method'] = {
+SUB_PROCESSES['transport_in_thickness_space:transport_method'] = {
     'description': 'Method of migration of sea ice in thickness',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
-             'Method of ice migration in thickness')
-    ]
-}
-       
-SUB_PROCESS_DETAILS['redistribution:ice_redistribution'] = {
-    'description': 'Methods of mechanical redistribution of sea ice',
-    'properties': [
-        ('processes', 'ENUM:redistribution_types', '0.N',
-             'Additional processes which can redistribute sea ice.'),        
-        ('ice_strength_formulation', 'str', '0.1',
-             'Describe how ice-strength is formulated'),
+         'Method of ice migration in thickness')
     ]
 }
 
-SUB_PROCESS_DETAILS['rheology:ice_deformation_method'] = {
+SUB_PROCESSES['ice_strength:ice_strength_formulation'] = {
+    'description': 'How the sea ice strength is formulated',
+    'properties': [
+        ('ice_strength_formulation', 'str', '1.1',
+         'Describe how ice-strength is formulated'),
+    ]
+}
+
+SUB_PROCESSES['redistribution:ice_redistribution'] = {
+    'description': 'Methods of mechanical redistribution of sea ice',
+    'properties': [
+        ('processes', 'ENUM:redistribution_types', '0.N',
+         'Additional processes which can redistribute sea ice.'),
+    ]
+}
+
+SUB_PROCESSES['rheology:ice_deformation_method'] = {
     'description': 'Methods of sea ice deformation',
     'properties': [
         ('ice_deformation_method', 'ENUM:rheology_types', '1.1',
-             'Ice deformation method')
+         'Ice deformation method')
    ]
 }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
-ENUMERATIONS = OrderedDict()
-
 ENUMERATIONS['transport_methods'] = {
     'description': 'Transport Methods',
     'is_open': True,
     'members': [
         ('Incremental Re-mapping', '(including Semi-Lagrangian)'),
         ('Prather', None),
-        ('Eulerian', None)
+        ('Eulerian', None),
     ]
 }
 
@@ -147,7 +156,7 @@ ENUMERATIONS['rheology_types'] = {
     'members': [
         ('free-drift', None),
         ('Mohr-Coloumb', None),
-        ('visco-plastic', None),
+        ('visco-plastic', 'VP'),
         ('elastic-visco-plastic', 'EVP'),
         ('Elastic-aniostropic-plastic', None,),
         ('granular', None),

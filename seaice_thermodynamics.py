@@ -1,4 +1,6 @@
-"""A realm process sepecialization.
+"""
+
+A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
@@ -7,6 +9,23 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 # INTERNAL (do not change)
 # --------------------------------------------------------------------
 from collections import OrderedDict
+
+DETAILS = OrderedDict()
+SUB_PROCESSES = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Key properties of the sea ice thermodynamics',
+    'properties':[
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords', 'str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations', 'shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
 
 # --------------------------------------------------------------------
 # CONTACT
@@ -30,35 +49,14 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-#
-# Scientific context of the process
-# --------------------------------------------------------------------
-DESCRIPTION = 'Characteristics of sea ice thermodynamics processes'
-
-IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
-
-KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
-
-CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
-
-# --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# Sets of details for the process
-# --------------------------------------------------------------------
-DETAILS = OrderedDict()
-
-DETAILS['budget'] = (
-    'str', '0.1',
-    'Information required to close the thermodynamics budget')
-
-# --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
+SUB_PROCESSES['thermo_budget'] = {
+    'description': 'Closing the thermodynamics budget',
+    'details': ['details'],
+}
 
 SUB_PROCESSES['thermo_processes'] = {
     'description': 'Information about basal heat flux and brine inclusions',
@@ -85,35 +83,46 @@ SUB_PROCESSES['additional_processes'] = {
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESS_DETAILS = OrderedDict()
+SUB_PROCESSES['thermo_budget:details'] = {
+    'description': 'Closing the thermodynamics budget',
+    'properties': [
+        ('therm_budget', 'str', '0.1',
+         'What information required to close the thermodynamics budget?'),
+    ]
+}
 
-SUB_PROCESS_DETAILS['thermo_processes:details'] = {
+SUB_PROCESSES['thermo_processes:details'] = {
     'description': 'Information about basal heat flux and brine inclusions',
     'properties': [
         ('brine_inclusion_method', 'ENUM:thermo_brine_types', '0.1',
          'Method by which basal heat flux is handled'),
         ('fixed_salinity_value', 'float', '0.1',
-        'If you have selected "Thermal properties depend on S-T (with fixed salinity)" please supply the salinity value used.'),
-        ('basal_heat_flux', 'str', '0.1',
-        'Method by which basal heat flux is handled'),
+         'If you have selected "Thermal properties depend on S-T (with fixed salinity)" &'
+         'please supply the fixed salinity value for each sea ice layer.'),
+        ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
+         'Method by which basal heat flux is handled'),
     ]
 }
 
-SUB_PROCESS_DETAILS['snow_processes:process_type'] = {
+SUB_PROCESSES['snow_processes:process_type'] = {
     'description': 'Snow on ice processes',
     'properties': [
         ('process_type', 'ENUM:snow_process_types', '1.N', 
-             'Snow processes in sea ice thermodynamics'),
+         'Snow processes in sea ice thermodynamics'),
         ('heat_content_precip', 'str', '0.1',
-         'Method by which the heat content of precipitation is handled')
+         'Method by which the heat content of precipitation is handled?')
     ]
 }
 
-SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
+SUB_PROCESSES['vertical_heat_diffusion:details'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
     'properties': [
+        ('is_single_layer', 'bool', '0.1',
+         'Is there a single layer for vertical heat diffusion?'),
+        ('is_multi_layer', 'bool', '0.1',
+         'Are there multiple layers for vertical heat diffusion?'),
         ('num_of_layers', 'int', '1.1',
-         'Number of layers used for vertical heat diffusion'),
+         'If there are multiple layers for vertical heat diffusion specify how many?'),
         ('regular_grid', 'bool', '0.1',
          'If multiple layers, are they regularly distributed?'),
         ('based_on_semtner', 'bool', '1.1',
@@ -121,22 +130,22 @@ SUB_PROCESS_DETAILS['vertical_heat_diffusion:details'] = {
     ]
 }
 
-SUB_PROCESS_DETAILS['melt_ponds:details'] = {
+SUB_PROCESSES['melt_ponds'] = {
     'description': 'Characteristics of melt ponds.',
     'properties': [
         ('melt_ponds_included', 'bool', '1.1',
          'Are melt ponds included in sea ice model?'),
         ('melt_pond_formulation', 'str', '0.1',
          'Method by which melt ponds are included'),
-        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
-         'Processes included in melt pond scheme')
+        ('melt_pond_processes', 'ENUM:melt_pond_proc', '0.N',
+         'Processes included in melt pond scheme?')
     ]
 }
 
 
 
 # TODO these should be incorporated within other processes
-SUB_PROCESS_DETAILS['additional_processes:details'] = {
+SUB_PROCESSES['additional_processes:details'] = {
     'description': 'Additonal processes not elsewhere described',
     'properties': [
         ('processes', 'ENUM:add_processes', '0.N',
@@ -152,7 +161,7 @@ ENUMERATIONS = OrderedDict()
 # TODO If fixed salinity want to ask what is the salinity constant used
 # TODO Ask: Does the sea ice salinity impact the thermal properties of sea ice
 ENUMERATIONS['thermo_brine_types'] = {
-    'description': 'Brine Inclusion Methodology',
+    'description': 'Brine inclusion methodology',
     'is_open': True,
     'members': [
         ('None', 'No brine inclusions included in sea ice thermodynamics'),
@@ -161,6 +170,17 @@ ENUMERATIONS['thermo_brine_types'] = {
         ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
     ]
 }
+
+ENUMERATIONS['basal_heat_flux_method'] = {
+    'description': 'Basal heat flux methodology',
+    'is_open': True,
+    'members': [
+        ('Prescribed', None),
+        ('Parametrized in sea ice', None),
+        ('Parametrized in ocean', None),
+    ]
+}
+
 
 # TODO Find out if snow redistribution schemes are implemented if so maybe need a separate
 # sub process

@@ -1,12 +1,29 @@
-"""A realm process sepecialization.
+"""
+A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
-
 # --------------------------------------------------------------------
 # INTERNAL (do not change)
 # --------------------------------------------------------------------
 from collections import OrderedDict
+
+DETAILS = OrderedDict()
+SUB_PROCESSES = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Key properties of sea ice raditative processes',
+    'properties':[
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords','str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations','shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
 
 # --------------------------------------------------------------------
 # CONTACT
@@ -30,19 +47,6 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-#
-# Scientific context of the process
-# --------------------------------------------------------------------
-DESCRIPTION = 'Radiative processes in sea ice'
-
-IMPLEMENTATION_OVERVIEW = ('str', '1.1', "General overview description of the implementation of this part of the process.")
-
-KEYWORDS = ('str', '0.1', "keywords to help re-use and discovery of this information.")
-
-CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
-
-# --------------------------------------------------------------------
 # PROCESS: DETAILS
 #
 # Sets of details for the process
@@ -54,8 +58,6 @@ DETAILS = OrderedDict()
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
-
 SUB_PROCESSES['si_radiative_process_methods'] = {
     'description': 'Properties of radiation in sea ice thermodynamics',
     'details': ['details'],
@@ -66,12 +68,10 @@ SUB_PROCESSES['si_radiative_process_methods'] = {
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESS_DETAILS = OrderedDict()
-
-SUB_PROCESS_DETAILS['si_radiative_process_methods:details'] = {
+SUB_PROCESSES['si_radiative_process_methods:details'] = {
     'description': 'Additional information about radiative processes in sea ice.',
     'properties': [
-        ('surface_albedo', 'str', '0.1',
+        ('surface_albedo', 'ENUM:seaice_albedo', '0.N',
          'Method used to handle surface albedo'),
         ('ice_radiation_transmission', 'str', '0.1',
          'Method by which solar radiation through sea ice is handled'),
@@ -81,4 +81,14 @@ SUB_PROCESS_DETAILS['si_radiative_process_methods:details'] = {
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
-ENUMERATIONS = OrderedDict()
+ENUMERATIONS['seaice_albedo'] = {
+    'description': 'Surface albedo of sea ice component',
+    'is_open': True,
+    'members': [
+        ('Delta-Eddington', None),
+        ('Linear dependence on temperature', None),
+        ('Spectral dependence on temperature', None),
+        ('Specified values of albedo for e.g. cold/melting snow, melting sea ice', None),
+        ('melt ponds', None)
+    ]
+}

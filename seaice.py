@@ -1,6 +1,7 @@
 """A realm sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+
 """
 
 # --------------------------------------------------------------------
@@ -47,7 +48,7 @@ QC_STATUS = 'draft'
 #
 # Scientific context of this scientific realm
 # --------------------------------------------------------------------
-DESCRIPTION = 'Sea-ice realm specialization'
+DESCRIPTION = 'Sea ice realm specialization'
 
 # --------------------------------------------------------------------
 # REALM: REALM
@@ -55,6 +56,10 @@ DESCRIPTION = 'Sea-ice realm specialization'
 # Canonical name for the domain of this scientific realm
 # --------------------------------------------------------------------
 REALM = 'seaice'
+
+NAME = ''
+
+LONG_NAME = ''
 
 # --------------------------------------------------------------------
 # REALM: GRID
