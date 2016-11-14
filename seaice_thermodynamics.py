@@ -20,9 +20,9 @@ DETAILS['CIM'] = {
     'properties':[
         ('implementation_overview','str', '1.1',
             "General overview description of the implementation of this part of the process."),
-        ('keywords','str', '0.N',
+        ('keywords', 'str', '0.N',
             "Keywords to help re-use and discovery of this information."),
-        ('citations','shared.citation', '0.N',
+        ('citations', 'shared.citation', '0.N',
             "Set of pertinent citations."),
     ]
 }
@@ -49,21 +49,15 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# Sets of details for the process
-# --------------------------------------------------------------------
-#DETAILS = OrderedDict()
-
-#DETAILS['budget'] = (
-#    'str', '0.1',
-#    'Information required to close the thermodynamics budget')
-
-# --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
+SUB_PROCESSES['thermo_budget'] = {
+    'description': 'Closing the thermodynamics budget',
+    'details': ['details'],
+}
+
 SUB_PROCESSES['thermo_processes'] = {
     'description': 'Information about basal heat flux and brine inclusions',
     'details': ['details'],
@@ -89,6 +83,14 @@ SUB_PROCESSES['additional_processes'] = {
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
+SUB_PROCESSES['thermo_budget:details'] = {
+    'description': 'Closing the thermodynamics budget',
+    'properties': [
+        ('therm_budget', 'str', '0.1',
+         'What information required to close the thermodynamics budget?'),
+    ]
+}
+
 SUB_PROCESSES['thermo_processes:details'] = {
     'description': 'Information about basal heat flux and brine inclusions',
     'properties': [
@@ -96,8 +98,8 @@ SUB_PROCESSES['thermo_processes:details'] = {
          'Method by which basal heat flux is handled'),
         ('fixed_salinity_value', 'float', '0.1',
          'If you have selected "Thermal properties depend on S-T (with fixed salinity)" &'
-         'please supply the salinity value used.'),
-        ('basal_heat_flux', 'str', '0.1',
+         'please supply the fixed salinity value for each sea ice layer.'),
+        ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
          'Method by which basal heat flux is handled'),
     ]
 }
@@ -135,7 +137,7 @@ SUB_PROCESSES['melt_ponds'] = {
          'Are melt ponds included in sea ice model?'),
         ('melt_pond_formulation', 'str', '0.1',
          'Method by which melt ponds are included'),
-        ('melt_pond_processes', 'enum:melt_pond_proc', '0.N',
+        ('melt_pond_processes', 'ENUM:melt_pond_proc', '0.N',
          'Processes included in melt pond scheme?')
     ]
 }
@@ -159,7 +161,7 @@ ENUMERATIONS = OrderedDict()
 # TODO If fixed salinity want to ask what is the salinity constant used
 # TODO Ask: Does the sea ice salinity impact the thermal properties of sea ice
 ENUMERATIONS['thermo_brine_types'] = {
-    'description': 'Brine Inclusion Methodology',
+    'description': 'Brine inclusion methodology',
     'is_open': True,
     'members': [
         ('None', 'No brine inclusions included in sea ice thermodynamics'),
@@ -168,6 +170,17 @@ ENUMERATIONS['thermo_brine_types'] = {
         ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
     ]
 }
+
+ENUMERATIONS['basal_heat_flux_method'] = {
+    'description': 'Basal heat flux methodology',
+    'is_open': True,
+    'members': [
+        ('Prescribed', None),
+        ('Parametrized in sea ice', None),
+        ('Parametrized in ocean', None),
+    ]
+}
+
 
 # TODO Find out if snow redistribution schemes are implemented if so maybe need a separate
 # sub process
