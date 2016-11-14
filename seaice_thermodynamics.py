@@ -49,6 +49,13 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
+# DESCRIPTION
+#
+# Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Sea Ice Thermodynamics'
+
+# --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES
 #
 # Sets of discrete portions of the process

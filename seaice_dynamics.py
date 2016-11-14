@@ -48,6 +48,13 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
+# DESCRIPTION
+#
+# Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Sea Ice Dynamics'
+
+# --------------------------------------------------------------------
 # PROCESS: DETAILS
 #
 # Sets of details for the process

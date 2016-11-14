@@ -54,6 +54,13 @@ QC_STATUS = 'draft'
 DETAILS = OrderedDict()
 
 # --------------------------------------------------------------------
+# DESCRIPTION
+#
+# Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Sea Ice Radiative Processes'
+
+# --------------------------------------------------------------------
 # PROCESS: SUB PROCESS
 #
 # Sets of discrete portions of the process

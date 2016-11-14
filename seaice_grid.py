@@ -47,6 +47,13 @@ AUTHORS = 'Ruth Petrie'
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
+# DESCRIPTION
+#
+# Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Sea Ice grid'
+
+# --------------------------------------------------------------------
 # GRID: DETAILS
 #
 # Sets of details for the grid
