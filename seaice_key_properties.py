@@ -158,12 +158,12 @@ DETAILS['assumptions'] = {
 DETAILS['conservation'] = {
     'description': 'Conservation in the sea ice component',
     'properties': [
-        ('description', 'str', '1:1', 'Brief description of conservation methodology'),
+        ('description', 'str', '1.1', 'Brief description of conservation methodology'),
         ('scheme', 'ENUM:conservation_props_types', '1.N',
          'Properties conserved in sea ice by the numerical schemes'),
         ('consistency_properties', 'str', '0.N',
          'Any additional consistency properties (e.g. energy conversion)?'),
-        ('corrected_conserved_prognostic_variables', 'data.variable_collection', '0.N', # Can we constrains these variable
+        ('corrected_conserved_prognostic_variables', 'str', '0.N', # Can we constrains these variable
          'Set of variables which are conserved by *more* than the numerical scheme alone.'),
         ('conserved_properties', 'str', '1.1',
          'For each conserved property conserved please specify the terms which close the related budget'),
