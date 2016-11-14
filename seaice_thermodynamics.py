@@ -14,7 +14,7 @@ ENUMERATIONS = OrderedDict()
 
 # Default process details pulled from CIM.
 DETAILS['CIM'] = {
-    'description': 'Key properties of the ocean vertical physics',
+    'description': 'Key properties of the sea ice thermodynamics',
     'properties':[
         ('implementation_overview','str', '1.1',
             "General overview description of the implementation of this part of the process."),
@@ -106,15 +106,19 @@ SUB_PROCESSES['snow_processes:process_type'] = {
         ('process_type', 'ENUM:snow_process_types', '1.N', 
          'Snow processes in sea ice thermodynamics'),
         ('heat_content_precip', 'str', '0.1',
-         'Method by which the heat content of precipitation is handled')
+         'Method by which the heat content of precipitation is handled?')
     ]
 }
 
 SUB_PROCESSES['vertical_heat_diffusion:details'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
     'properties': [
+        ('is_single_layer', 'bool', '0.1',
+         'Is there a single layer for vertical heat diffusion?'),
+        ('is_multi_layer', 'bool', '0.1',
+         'Are there multiple layers for vertical heat diffusion?'),
         ('num_of_layers', 'int', '1.1',
-         'Number of layers used for vertical heat diffusion'),
+         'If there are multiple layers for vertical heat diffusion specify how many?'),
         ('regular_grid', 'bool', '0.1',
          'If multiple layers, are they regularly distributed?'),
         ('based_on_semtner', 'bool', '1.1',

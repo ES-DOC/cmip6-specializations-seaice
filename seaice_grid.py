@@ -65,37 +65,38 @@ DETAILS['discretisation'] = {
 }
 
 DETAILS['discretisation:horizontal'] = {
-    'description': 'How the sea ice is horizontally discretised',
+    'description': 'How the sea ice is horizontally discretised?',
     'properties': [
         ('horizontal', 'ENUM:sea_ice_grid', '1.1',
-            'Type of sea` ice horizontal discretisation'),
-        ('Additional grid details', 'str', '0.1',
-            'Specify any additional grid details')
+            'Type of sea ice horizontal discretisation?'),
+        ('Additional grid details', 'str', '1.1',
+            'Specify any additional grid details.')
     ]
 }
 
 DETAILS['discretisation:layering'] = {
-    'description': 'Method used to represent sea ice layering',
+    'description': 'What method is used to represent sea ice layering?',
     'properties': [
-        ('layering_type', 'ENUM:layering_types', '0.N',
-            'Type of sea` ice layering'),
+        ('layering_type', 'ENUM:layering_types', '1.N',
+            'Type of sea ice layering'),
     ]
 }
 
 DETAILS['seaice_categories'] = {
-    'description': 'Method used to represent sea ice categories',
+    'description': 'What method is used to represent sea ice categories?',
     'properties': [
-        ('Number of sea ice categories', 'str', '0.1', 'If using multiple sea ice category specify how many'),
-        ('Sea ice category limits', 'str', '0.1', 'If using multiple sea ice categories specify the category limits'),
-        ('Sea ice thickness distribution scheme', 'str', '0.1', 'If applicable describe the sea ice thickness distribution scheme'),
+        ('Number of sea ice categories', 'str', '0.1', 'If using multiple sea ice categories specify how many.'),
+        ('Sea ice category limits', 'str', '0.N', 'If using multiple sea ice categories specify the category limits.'),
+        ('Sea ice thickness distribution scheme', 'str', '0.1',
+         'If applicable describe the sea ice thickness distribution scheme'),
     ]
 }
 
 DETAILS['snow_on_seaice'] = {
     'description': 'Method used to represent snow on sea ice',
     'properties': [
-        ('Snow on yes', 'str', '0.1', 'Snow on ice'),
-        ('Vertical levels of snow on ice', 'str', '0.1', 'Number of snow levels')
+        ('Is snow on ice represented in this model?', 'bool', '1.1', 'Snow on ice'),
+        ('Number of vertical levels of snow on ice', 'str', '0.1', 'Number of snow levels')
     ]
 }
 

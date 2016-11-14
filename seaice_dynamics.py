@@ -15,7 +15,7 @@ ENUMERATIONS = OrderedDict()
 
 # Default process details pulled from CIM.
 DETAILS['CIM'] = {
-    'description': 'Key properties of the ocean vertical physics',
+    'description': 'Key properties of sea ice dynamics',
     'properties': [
         ('implementation_overview','str', '1.1',
             "General overview description of the implementation of this part of the process."),
@@ -88,7 +88,7 @@ SUB_PROCESSES['horizontal_advection:transport_method'] = {
     'description': 'Horizontal advection of sea ice',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
-             'Method of horizontal advection')
+         'Method of horizontal advection')
     ]
 }
 
@@ -96,7 +96,7 @@ SUB_PROCESSES['transport_in_thickness_space:transport_method'] = {
     'description': 'Method of migration of sea ice in thickness',
     'properties': [
         ('transport_method', 'ENUM:transport_methods', '0.1',
-             'Method of ice migration in thickness')
+         'Method of ice migration in thickness')
     ]
 }
        
@@ -104,9 +104,9 @@ SUB_PROCESSES['redistribution:ice_redistribution'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
     'properties': [
         ('processes', 'ENUM:redistribution_types', '0.N',
-             'Additional processes which can redistribute sea ice.'),        
+         'Additional processes which can redistribute sea ice.'),
         ('ice_strength_formulation', 'str', '0.1',
-             'Describe how ice-strength is formulated'),
+         'Describe how ice-strength is formulated'),
     ]
 }
 
@@ -114,7 +114,7 @@ SUB_PROCESSES['rheology:ice_deformation_method'] = {
     'description': 'Methods of sea ice deformation',
     'properties': [
         ('ice_deformation_method', 'ENUM:rheology_types', '1.1',
-             'Ice deformation method')
+         'Ice deformation method')
    ]
 }
 

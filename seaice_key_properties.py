@@ -1,5 +1,7 @@
-"""A realm key-properties sepecialization.
+"""
+A realm key-properties sepecialization.
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+
 """
 
 # --------------------------------------------------------------------
@@ -67,11 +69,13 @@ DETAILS['seawater_properties'] = {
     'description': 'Physical properties of seawater relevant to sea ice',
     'properties' : [
         ('ocean_freezing_point', 'ENUM:seawater_freezing_point', '1.1',
-            'Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure'),
-        ('ocean_specific_heat', 'float', '1.1',
-            'Specific heat in ocean (cpocean) in J/(kg K)'),
-        ('ocean_reference_density', 'float', '1.1',
-            'Boussinesq reference density (rhozero) in kg / m3'),
+         'Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure'),
+        ('ocean_freezing_point_value', 'float', '0.1',
+         'If using a constant seawater freezing point, specify this value.'),
+        ('ocean_specific_heat', 'float', '0.1',
+            'Value of specific heat content in ocean (cpocean) in J/(kg K)'),
+        ('ocean_reference_density', 'float', '0.1',
+            'Value of the Boussinesq reference density (rhozero) in kg / m3'),
         ]
 }
 
@@ -86,14 +90,15 @@ DETAILS['resolution'] = {
     'description': 'Resolution in the sea ice grid',
     'properties': [
         ('name', 'str', '1.1',
-             "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. N512L180, T512L70, ORCA025 etc."),
+         'This is a string usually used by the modelling group to describe the resolution of this grid, &'
+         'e.g. N512L180, T512L70, ORCA025 etc.'),
         ('canonical_horizontal_resolution', 'str', '0.N',
-             "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc."),
+         'Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.'),
         ('number_of_horizontal_gridpoints', 'int', '0.1',
-             "Total number of horizontal (XY) points (or degrees of freedom) on computational grid."),
+         'Total number of horizontal (XY) points (or degrees of freedom) on computational grid.'),
         ('is_adaptive_grid', 'bool', '0.1',
-             "Default is False. Set true if grid resolution changes during execution."),
-        ],
+         'Default is False. Set true if grid resolution changes during execution.'),
+        ]
 }
 
 # --------------------------------------------------------------------
@@ -104,16 +109,16 @@ DETAILS['resolution'] = {
 DETAILS['tuning_applied'] = {
     'description': 'Tuning applied to sea ice model component',
     'properties': [
-        ('description', 'str', '1.N',
+        ('description', 'str', '1.1',
          "General overview description of tuning: explain and motivate the main targets and metrics retained. &"
          "Document the relative weight given to climate performance metrics versus process oriented metrics, &"
          "and on the possible conflicts with parameterization level tuning. In particular describe any struggle &"
          "with a parameter value that required pushing it to its limits to solve a particular model deficiency."),
-        ('tuning_target', 'str', '0.N',
+        ('tuning_target', 'str', '0.1',
          "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle."),
-        ('tuning_simulations', 'str', '0.N',
+        ('tuning_simulations', 'str', '0.1',
          "Which_simulations had tuning applied, e.g. all, not historical, only pi-control? "),
-        ('tuning_metrics_used', 'str', '0.N',
+        ('tuning_metrics_used', 'str', '0.1',
          "List any observed metrics used in tuning model/parameters"),
     ]
 }
@@ -146,17 +151,17 @@ DETAILS['assumptions'] = {
 DETAILS['conservation'] = {
     'description': 'Conservation in the sea ice component',
     'properties': [
-        ('description', 'str', '0:N', 'Brief description of conservation methodology'),
+        ('description', 'str', '1:1', 'Brief description of conservation methodology'),
         ('scheme', 'ENUM:conservation_props_types', '1.N',
          'Properties conserved in sea ice by the numerical schemes'),
         ('consistency_properties', 'str', '0.N',
-         'Any additional consistency properties (energy conversion, pressure gradient discretisation, ...)?'),
+         'Any additional consistency properties (e.g. energy conversion)?'),
         ('corrected_conserved_prognostic_variables', 'data.variable_collection', '0.N', # Can we constrains these variable
-         "Set of variables which are conserved by *more* than the numerical scheme alone."),
-        ('conserved_properties', 'str', '1.N',
+         'Set of variables which are conserved by *more* than the numerical scheme alone.'),
+        ('conserved_properties', 'str', '1.1',
          'For each conserved property conserved please specify the terms which close the related budget'),
         ('was_flux_correction_used', 'bool', '0.1',
-         "Does conservation involved flux correction ?")
+         'Does conservation involved flux correction?')
     ]
 }
 
@@ -168,11 +173,13 @@ ENUMERATIONS = OrderedDict()
 
 #TODO check which are correct for sea ice
 ENUMERATIONS['seaice_basic_approx_types'] = {
-    'description': 'Types of basic approximation in sea ice',
+    'description': 'List key basic approximation in sea ice model',
     'is_open': True,
     'members': [
+        ('VP', 'Viscous Plastic dynamics'),
+        ('EVP', 'Elastic Viscous Plastic dynamics'),
         ('Isotropic', None),
-        ('EVP', 'Elastic Viscous Plastic')
+        ('Zero layer thermodynamics', None),
     ]
 }
 
@@ -185,15 +192,21 @@ ENUMERATIONS['prognostic_vars_types'] = {
         ('Salinity', None),
         ('U-velocity', None),
         ('V-velocity', None),
+        ('Sea ice concentration', None),
+        ('Sea ice thickness', None),
+        ('Snow temperature', 'Snow on ice temperature'),
+        ('Snow depth', 'Snow on ice thickness'),
+        ('Internal ice stress', None),
     ]
 }
 
 
 ENUMERATIONS['seawater_freezing_point'] = {
-    'description': 'Types of seawater freezing point equation in sea ice',
+    'description': 'Types of seawater freezing point equation in sea ice.',
     'is_open': True,
     'members': [
-        ('TEOS 2010', None)
+        ('TEOS 2010', None),
+        ('Constant', 'Constant value of seawater freezing point is used.'),
         ]
 }
 
@@ -204,6 +217,5 @@ ENUMERATIONS['conservation_props_types'] = {
     'members': [
         ('Energy', None),
         ('Mass', None),
-        ('Enthalpy', None),
     ]
 }

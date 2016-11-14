@@ -1,4 +1,5 @@
-"""A realm process sepecialization.
+"""
+A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
@@ -13,7 +14,7 @@ ENUMERATIONS = OrderedDict()
 
 # Default process details pulled from CIM.
 DETAILS['CIM'] = {
-    'description': 'Key properties of the ocean vertical physics',
+    'description': 'Key properties of sea ice raditative processes',
     'properties':[
         ('implementation_overview','str', '1.1',
             "General overview description of the implementation of this part of the process."),
@@ -70,7 +71,7 @@ SUB_PROCESSES['si_radiative_process_methods'] = {
 SUB_PROCESSES['si_radiative_process_methods:details'] = {
     'description': 'Additional information about radiative processes in sea ice.',
     'properties': [
-        ('surface_albedo', 'str', '0.1',
+        ('surface_albedo', 'ENUM:seaice_albedo', '0.N',
          'Method used to handle surface albedo'),
         ('ice_radiation_transmission', 'str', '0.1',
          'Method by which solar radiation through sea ice is handled'),
@@ -80,3 +81,14 @@ SUB_PROCESSES['si_radiative_process_methods:details'] = {
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
+ENUMERATIONS['seaice_albedo'] = {
+    'description': 'Surface albedo of sea ice component',
+    'is_open': True,
+    'members': [
+        ('Delta-Eddington', None),
+        ('Linear dependence on temperature', None),
+        ('Spectral dependence on temperature', None),
+        ('Specified values of albedo for e.g. cold/melting snow, melting sea ice', None),
+        ('melt ponds', None)
+    ]
+}
