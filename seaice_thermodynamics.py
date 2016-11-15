@@ -14,19 +14,6 @@ DETAILS = OrderedDict()
 SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'Key properties of the sea ice thermodynamics',
-    'properties':[
-        ('implementation_overview','str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
-
 # --------------------------------------------------------------------
 # CONTACT
 #
@@ -56,139 +43,89 @@ QC_STATUS = 'draft'
 DESCRIPTION = 'Sea Ice Thermodynamics'
 
 # --------------------------------------------------------------------
-# PROCESS: SUB PROCESSES
+# PROCESS: DETAILS
 #
-# Sets of discrete portions of the process
+# Sets of details for the process
 # --------------------------------------------------------------------
-SUB_PROCESSES['thermo_budget'] = {
-    'description': 'Closing the thermodynamics budget',
-    'details': ['details'],
-}
-
-SUB_PROCESSES['ice_thermo_processes'] = {
-    'description': 'Thermodynamic processes in sea ice',
-    'detail_sets': [
-        'brine',
-        'basal_heat_flux',
-        'vertical_heat_diffusion',
-        'melt_ponds',
-        'new_ice_formation',
-        'ice_lateral_melting',
-        'ice_surface_sublimation',
-        'ice_radiation_transmission',
-        'frazil_ice',
-    ],
-}
-
-SUB_PROCESSES['snow_thermo_processes'] = {
-    'description': 'Thermodynamic processes in snow on sea ice',
-    'details': ['process_type'],
-}
-
-SUB_PROCESSES['additional_processes'] = {
-    'description': 'Additonal processes not elsewhere described',
-    'properties': [
-        ('additional_processes', 'str', '0.1', 'List any additional processes not elsewhere described')
-    ]
-}
-
-# --------------------------------------------------------------------
-# PROCESS: SUB PROCESSES DETAILS
-#
-# Sets of details for the sub processes
-# --------------------------------------------------------------------
-SUB_PROCESSES['thermo_budget:details'] = {
-    'description': 'Closing the thermodynamics budget',
+DETAILS['general'] = {
+    'description': 'General properties of sea ice thermodynamics',
     'properties': [
         ('therm_budget', 'str', '0.1',
-         'What information required to close the thermodynamics budget?'),
-    ]
-}
+            "What information required to close the thermodynamics budget?"),
+        ('additional_processes', 'str', '0.1',
+            "List any additional processes not elsewhere described")
+        ]
+    }
 
-SUB_PROCESSES['ice_thermo_processes:brine'] = {
-    'description': 'Information about brine inclusions',
-    'properties': [
-        ('brine_inclusion_method', 'ENUM:thermo_brine_types', '0.1',
-         'Method by which basal heat flux is handled'),
-        ('fixed_salinity_value', 'float', '0.1',
-         'If you have selected "Thermal properties depend on S-T (with fixed salinity)" &'
-         'please supply the fixed salinity value for each sea ice layer.'),
-    ]
-}
-
-SUB_PROCESSES['ice_thermo_processes:basal_heat_flux'] = {
-    'description': 'Information about basal heat flux',
+# --------------------------------------------------------------------
+# SUB-PROCESS: Ice thermodynamic processes.
+# --------------------------------------------------------------------
+SUB_PROCESSES['ice_processes'] = {
+    'description': 'Thermodynamic processes in sea ice',
     'properties': [
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
-         'Method by which basal heat flux is handled'),
-     ]
-}
+            "Method by which basal heat flux is handled"),
+        ('new_ice_formation_method', 'str', '1.1',
+            "Method by which new sea ice is formed"),
+        ('ice_lateral_melting_method', 'str', '1.1',
+            "Method of sea ice lateral melting"),
+        ('ice_surface_sublimation_method', 'str', '1.1',
+            "Method sea ice surface sublimation"),
+        ('frazil_ice_method', 'str', '1.1',
+            "Method of including frazil ice"),
+        ]
+    }
 
-SUB_PROCESSES['ice_thermo_processes:vertical_heat_diffusion'] = {
+SUB_PROCESSES['ice_processes:brine'] = {
+    'description': 'Information about brine inclusions',
+    'properties': [
+        ('inclusion_method', 'ENUM:thermo_brine_types', '0.1',
+            "Method by which basal heat flux is handled"),
+        ('fixed_salinity_value', 'float', '0.1',
+            """If you have selected "Thermal properties depend on S-T (with fixed salinity)
+               please supply the fixed salinity value for each sea ice layer."""),
+        ]
+    }
+
+SUB_PROCESSES['ice_processes:vertical_heat_diffusion'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
     'properties': [
         ('is_single_layer', 'bool', '0.1',
-         'Is there a single layer for vertical heat diffusion?'),
+            "Is there a single layer for vertical heat diffusion?"),
         ('is_multi_layer', 'bool', '0.1',
-         'Are there multiple layers for vertical heat diffusion?'),
-        ('num_of_layers', 'int', '1.1',
-         'If there are multiple layers for vertical heat diffusion specify how many?'),
+            "Are there multiple layers for vertical heat diffusion?"),
+        ('number_of_layers', 'int', '1.1',
+            "If there are multiple layers for vertical heat diffusion specify how many ?"),
         ('regular_grid', 'bool', '0.1',
-         'If multiple layers, are they regularly distributed?'),
-        ('based_on_semtner', 'bool', '1.1',
-         'Is method based on Semtner 1976?')
-    ]
-}
+            "If multiple layers, are they regularly distributed ?"),
+        ('is_based_on_semtner', 'bool', '1.1',
+            "Is method based on Semtner 1976 ?")
+        ]
+    }
 
-SUB_PROCESSES['ice_thermo_processes:melt_ponds'] = {
+SUB_PROCESSES['ice_processes:melt_ponds'] = {
     'description': 'Characteristics of melt ponds.',
     'properties': [
-        ('melt_ponds_included', 'bool', '1.1',
-         'Are melt ponds included in sea ice model?'),
-        ('melt_pond_formulation', 'str', '0.1',
-         'Method by which melt ponds are included'),
-        ('melt_pond_processes', 'ENUM:melt_pond_proc', '0.N',
-         'Processes included in melt pond scheme?')
-    ]
-}
+        ('are_included', 'bool', '1.1',
+            "Are melt ponds included in sea ice model?"),
+        ('formulation_method', 'str', '0.1',
+            "Method by which melt ponds are included"),
+        ('processes', 'ENUM:melt_pond_proc', '0.N',
+            "Processes included in melt pond scheme ?")
+        ]
+    }
 
-SUB_PROCESSES['ice_thermo_processes:new_ice_formation'] = {
-    'description': 'new sea ice formation',
-    'properties': [
-        ('new_ice_formation_method', 'str', '1.1', 'Method by which new sea ice is formed'),
-    ]
-}
-
-SUB_PROCESSES['ice_thermo_processes:ice_lateral_melting'] = {
-    'description': 'sea ice lateral melting',
-    'properties': [
-        ('ice_lateral_melting_method', 'str', '1.1', 'Method of sea ice lateral melting'),
-    ]
-}
-
-SUB_PROCESSES['ice_thermo_processes:ice_surface_sublimation'] = {
-    'description': 'surface sea ice sublimation',
-    'properties': [
-        ('ice_surface_sublimation_method', 'str', '1.1', 'Method sea ice surface sublimation'),
-    ]
-}
-
-SUB_PROCESSES['ice_thermo_processes:frazil_ice'] = {
-    'description': 'frazil ice',
-    'properties': [
-        ('frazil_ice_method', 'str', '1.1', 'Method of including frazil ice'),
-    ]
-}
-
-# TODO where should the heat content of precipitiation go?
-SUB_PROCESSES['snow_thermo_processes:process_type'] = {
-    'description': 'Snow on ice processes',
+# --------------------------------------------------------------------
+# SUB-PROCESS: Snow thermodynamic processes.
+# --------------------------------------------------------------------
+SUB_PROCESSES['snow_processes'] = {
+    'description': 'Thermodynamic processes in snow on sea ice',
     'properties': [
         ('process_type', 'ENUM:snow_process_types', '1.N',
-         'Snow processes in sea ice thermodynamics'),
+            "Snow processes in sea ice thermodynamics"),
         ('heat_content_precip', 'str', '0.1',
-         'Method by which the heat content of precipitation is handled?')
-    ]
+            "Method by which the heat content of precipitation is handled ?")
+    ],
 }
 
 # --------------------------------------------------------------------
@@ -243,4 +180,3 @@ ENUMERATIONS['melt_pond_proc'] = {
         ('freshwater', None)
     ]
 }
-

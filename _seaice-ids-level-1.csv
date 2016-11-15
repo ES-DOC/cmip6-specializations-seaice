@@ -6,13 +6,10 @@ cmip6.seaice.grid, Seaice > Grid, grid
 cmip6.seaice.key_properties, Seaice > Key Properties, key-properties
 , , 
 cmip6.seaice.dynamics, Seaice > Dynamics, process
-cmip6.seaice.dynamics.seaice_dynamics, Seaice > Dynamics > Seaice Dynamics, process
 , , 
 cmip6.seaice.thermodynamics, Seaice > Thermodynamics, process
-cmip6.seaice.thermodynamics.thermo_budget, Seaice > Thermodynamics > Thermo Budget, process
-cmip6.seaice.thermodynamics.ice_thermo_processes, Seaice > Thermodynamics > Ice Thermo Processes, process
-cmip6.seaice.thermodynamics.snow_thermo_processes, Seaice > Thermodynamics > Snow Thermo Processes, process
-cmip6.seaice.thermodynamics.additional_processes, Seaice > Thermodynamics > Additional Processes, process
+cmip6.seaice.thermodynamics.ice_processes, Seaice > Thermodynamics > Ice Processes, process
+cmip6.seaice.thermodynamics.snow_processes, Seaice > Thermodynamics > Snow Processes, process
 , , 
 cmip6.seaice.radiative_processes, Seaice > Radiative Processes, process
-cmip6.seaice.radiative_processes.si_radiative_process_methods, Seaice > Radiative Processes > Si Radiative Process Methods, process
+cmip6.seaice.radiative_processes.methods, Seaice > Radiative Processes > Methods, process
