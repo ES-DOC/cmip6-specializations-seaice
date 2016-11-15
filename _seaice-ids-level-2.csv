@@ -29,7 +29,6 @@ cmip6.seaice.thermodynamics.ice_thermo_processes.ice_lateral_melting, Seaice > T
 cmip6.seaice.thermodynamics.ice_thermo_processes.ice_surface_sublimation, Seaice > Thermodynamics > Ice Thermo Processes > Ice Surface Sublimation, detail-set
 cmip6.seaice.thermodynamics.ice_thermo_processes.frazil_ice, Seaice > Thermodynamics > Ice Thermo Processes > Frazil Ice, detail-set
 cmip6.seaice.thermodynamics.snow_thermo_processes.process_type, Seaice > Thermodynamics > Snow Thermo Processes > Process Type, detail-set
-cmip6.seaice.thermodynamics.additional_processes.default, Seaice > Thermodynamics > Additional Processes > Default, detail-set
 , , 
 cmip6.seaice.radiative_processes.si_radiative_process_methods.details, Seaice > Radiative Processes > Si Radiative Process Methods > Details, detail-set
 , , 

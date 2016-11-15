@@ -56,7 +56,7 @@ cmip6.seaice.thermodynamics.ice_thermo_processes.ice_surface_sublimation.ice_sur
 cmip6.seaice.thermodynamics.ice_thermo_processes.frazil_ice.frazil_ice_method, Seaice > Thermodynamics > Ice Thermo Processes > Frazil Ice > Frazil Ice Method, detail
 cmip6.seaice.thermodynamics.snow_thermo_processes.process_type.process_type, Seaice > Thermodynamics > Snow Thermo Processes > Process Type > Process Type, detail
 cmip6.seaice.thermodynamics.snow_thermo_processes.process_type.heat_content_precip, Seaice > Thermodynamics > Snow Thermo Processes > Process Type > Heat Content Precip, detail
-cmip6.seaice.thermodynamics.additional_processes.default.additional_processes, Seaice > Thermodynamics > Additional Processes > Default > Additional Processes, detail
+cmip6.seaice.thermodynamics.additional_processes.additional_processes, Seaice > Thermodynamics > Additional Processes > Additional Processes, detail
 , , 
 cmip6.seaice.radiative_processes.si_radiative_process_methods.details.surface_albedo, Seaice > Radiative Processes > Si Radiative Process Methods > Details > Surface Albedo, detail
 cmip6.seaice.radiative_processes.si_radiative_process_methods.details.ice_radiation_transmission, Seaice > Radiative Processes > Si Radiative Process Methods > Details > Ice Radiation Transmission, detail

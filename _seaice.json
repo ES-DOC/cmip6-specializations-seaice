@@ -14,6 +14,7 @@
                     "label": "Seaice Dynamics", 
                     "description": "Methods of mechanical redistribution of sea ice", 
                     "id": "cmip6.seaice.dynamics.seaice_dynamics", 
+                    "details": [], 
                     "detailSets": [
                         {
                             "label": "Horizontal Transport", 
@@ -180,7 +181,8 @@
                         }
                     ]
                 }
-            ]
+            ], 
+            "details": []
         }, 
         {
             "label": "Thermodynamics", 
@@ -192,6 +194,7 @@
                     "label": "Thermo Budget", 
                     "description": "Closing the thermodynamics budget", 
                     "id": "cmip6.seaice.thermodynamics.thermo_budget", 
+                    "details": [], 
                     "detailSets": [
                         {
                             "label": "Details", 
@@ -214,6 +217,7 @@
                     "label": "Ice Thermo Processes", 
                     "description": "Thermodynamic processes in sea ice", 
                     "id": "cmip6.seaice.thermodynamics.ice_thermo_processes", 
+                    "details": [], 
                     "detailSets": [
                         {
                             "label": "Brine", 
@@ -458,6 +462,7 @@
                     "label": "Snow Thermo Processes", 
                     "description": "Thermodynamic processes in snow on sea ice", 
                     "id": "cmip6.seaice.thermodynamics.snow_thermo_processes", 
+                    "details": [], 
                     "detailSets": [
                         {
                             "label": "Process Type", 
@@ -515,25 +520,19 @@
                     "label": "Additional Processes", 
                     "description": "Additonal processes not elsewhere described", 
                     "id": "cmip6.seaice.thermodynamics.additional_processes", 
-                    "detailSets": [
+                    "details": [
                         {
-                            "label": "Default", 
-                            "description": "Additonal processes not elsewhere described", 
-                            "id": "cmip6.seaice.thermodynamics.additional_processes.default", 
-                            "details": [
-                                {
-                                    "label": "Additional Processes", 
-                                    "description": "List any additional processes not elsewhere described", 
-                                    "id": "cmip6.seaice.thermodynamics.additional_processes.default.additional_processes", 
-                                    "uiOrdinal": 1, 
-                                    "cardinality": "0.1", 
-                                    "type": "str"
-                                }
-                            ]
+                            "label": "Additional Processes", 
+                            "description": "List any additional processes not elsewhere described", 
+                            "id": "cmip6.seaice.thermodynamics.additional_processes.additional_processes", 
+                            "uiOrdinal": 1, 
+                            "cardinality": "0.1", 
+                            "type": "str"
                         }
                     ]
                 }
-            ]
+            ], 
+            "details": []
         }, 
         {
             "label": "Radiative Processes", 
@@ -545,6 +544,7 @@
                     "label": "Si Radiative Process Methods", 
                     "description": "Properties of radiation in sea ice", 
                     "id": "cmip6.seaice.radiative_processes.si_radiative_process_methods", 
+                    "details": [], 
                     "detailSets": [
                         {
                             "label": "Details", 
@@ -598,7 +598,8 @@
                         }
                     ]
                 }
-            ]
+            ], 
+            "details": []
         }
     ], 
     "grid": {
@@ -611,85 +612,87 @@
                 "label": "Discretisation", 
                 "description": "Sea ice discretisation", 
                 "id": "cmip6.seaice.grid.discretisation", 
-                "details": []
-            }, 
-            {
-                "label": "Horizontal", 
-                "description": "How the sea ice is horizontally discretised?", 
-                "id": "cmip6.seaice.grid.horizontal", 
-                "details": [
+                "details": [], 
+                "detailSets": [
                     {
-                        "label": "Horizontal Discretisation", 
-                        "description": "Type of sea ice horizontal discretisation?", 
-                        "id": "cmip6.seaice.grid.horizontal.horizontal_discretisation", 
-                        "uiOrdinal": 1, 
-                        "cardinality": "1.1", 
-                        "type": "enum", 
-                        "enum": {
-                            "choices": [
-                                {
-                                    "label": "Atmosphere Grid", 
-                                    "description": "Sea ice is horizontally discretised on the atmospheric grid"
-                                }, 
-                                {
-                                    "label": "Ocean grid", 
-                                    "description": "Sea ice is horizontally discretised on the ocean grid"
-                                }, 
-                                {
-                                    "label": "Own Grid", 
-                                    "description": "Sea ice is horizontally discretised on it`s own independent grid"
+                        "label": "Horizontal", 
+                        "description": "How the sea ice is horizontally discretised?", 
+                        "id": "cmip6.seaice.grid.horizontal", 
+                        "details": [
+                            {
+                                "label": "Horizontal Discretisation", 
+                                "description": "Type of sea ice horizontal discretisation?", 
+                                "id": "cmip6.seaice.grid.horizontal.horizontal_discretisation", 
+                                "uiOrdinal": 1, 
+                                "cardinality": "1.1", 
+                                "type": "enum", 
+                                "enum": {
+                                    "choices": [
+                                        {
+                                            "label": "Atmosphere Grid", 
+                                            "description": "Sea ice is horizontally discretised on the atmospheric grid"
+                                        }, 
+                                        {
+                                            "label": "Ocean grid", 
+                                            "description": "Sea ice is horizontally discretised on the ocean grid"
+                                        }, 
+                                        {
+                                            "label": "Own Grid", 
+                                            "description": "Sea ice is horizontally discretised on it`s own independent grid"
+                                        }
+                                    ], 
+                                    "description": "Grid which is the sea ice horizontally discretised on?", 
+                                    "isOpen": true, 
+                                    "label": "sea_ice_grid"
                                 }
-                            ], 
-                            "description": "Grid which is the sea ice horizontally discretised on?", 
-                            "isOpen": true, 
-                            "label": "sea_ice_grid"
-                        }
+                            }, 
+                            {
+                                "label": "Additional Grid Details", 
+                                "description": "Specify any additional grid details.", 
+                                "id": "cmip6.seaice.grid.horizontal.Additional_grid_details", 
+                                "uiOrdinal": 2, 
+                                "cardinality": "0.1", 
+                                "type": "str"
+                            }
+                        ]
                     }, 
                     {
-                        "label": "Additional Grid Details", 
-                        "description": "Specify any additional grid details.", 
-                        "id": "cmip6.seaice.grid.horizontal.Additional_grid_details", 
-                        "uiOrdinal": 2, 
-                        "cardinality": "0.1", 
-                        "type": "str"
-                    }
-                ]
-            }, 
-            {
-                "label": "Layering", 
-                "description": "What method is used to represent sea ice layering?", 
-                "id": "cmip6.seaice.grid.layering", 
-                "details": [
-                    {
-                        "label": "Layering Type", 
-                        "description": "Type of sea ice layering", 
-                        "id": "cmip6.seaice.grid.layering.layering_type", 
-                        "uiOrdinal": 1, 
-                        "cardinality": "1.N", 
-                        "type": "enum", 
-                        "enum": {
-                            "choices": [
-                                {
-                                    "label": "2-levels", 
-                                    "description": "Simulation uses two layers."
-                                }, 
-                                {
-                                    "label": "Multi-level", 
-                                    "description": "Simulation uses more than two layers"
-                                }, 
-                                {
-                                    "label": "ice types", 
-                                    "description": "Simulation does not use layers, but has multiple ice types per grid cell"
-                                }, 
-                                {
-                                    "label": "zero-layer", 
-                                    "description": "Simulation has no internal ice thermodynamics."
+                        "label": "Layering", 
+                        "description": "What method is used to represent sea ice layering?", 
+                        "id": "cmip6.seaice.grid.layering", 
+                        "details": [
+                            {
+                                "label": "Layering Type", 
+                                "description": "Type of sea ice layering", 
+                                "id": "cmip6.seaice.grid.layering.layering_type", 
+                                "uiOrdinal": 1, 
+                                "cardinality": "1.N", 
+                                "type": "enum", 
+                                "enum": {
+                                    "choices": [
+                                        {
+                                            "label": "2-levels", 
+                                            "description": "Simulation uses two layers."
+                                        }, 
+                                        {
+                                            "label": "Multi-level", 
+                                            "description": "Simulation uses more than two layers"
+                                        }, 
+                                        {
+                                            "label": "ice types", 
+                                            "description": "Simulation does not use layers, but has multiple ice types per grid cell"
+                                        }, 
+                                        {
+                                            "label": "zero-layer", 
+                                            "description": "Simulation has no internal ice thermodynamics."
+                                        }
+                                    ], 
+                                    "description": "Sea ice layering types", 
+                                    "isOpen": true, 
+                                    "label": "layering_types"
                                 }
-                            ], 
-                            "description": "Sea ice layering types", 
-                            "isOpen": true, 
-                            "label": "layering_types"
-                        }
+                            }
+                        ]
                     }
                 ]
             }, 
