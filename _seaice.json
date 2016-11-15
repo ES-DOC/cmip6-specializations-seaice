@@ -394,51 +394,16 @@
                         }, 
                         {
                             "label": "New Ice Formation", 
-                            "description": "Characteristics of melt ponds.", 
+                            "description": "new sea ice formation", 
                             "id": "cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation", 
                             "details": [
                                 {
-                                    "label": "Melt Ponds Included", 
-                                    "description": "Are melt ponds included in sea ice model?", 
-                                    "id": "cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_ponds_included", 
+                                    "label": "New Ice Formation Method", 
+                                    "description": "Method by which new sea ice is formed", 
+                                    "id": "cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.new_ice_formation_method", 
                                     "uiOrdinal": 1, 
                                     "cardinality": "1.1", 
-                                    "type": "bool"
-                                }, 
-                                {
-                                    "label": "Melt Pond Formulation", 
-                                    "description": "Method by which melt ponds are included", 
-                                    "id": "cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_formulation", 
-                                    "uiOrdinal": 2, 
-                                    "cardinality": "0.1", 
                                     "type": "str"
-                                }, 
-                                {
-                                    "label": "Melt Pond Processes", 
-                                    "description": "Processes included in melt pond scheme?", 
-                                    "id": "cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_processes", 
-                                    "uiOrdinal": 3, 
-                                    "cardinality": "0.N", 
-                                    "type": "enum", 
-                                    "enum": {
-                                        "choices": [
-                                            {
-                                                "label": "freshwater", 
-                                                "description": null
-                                            }, 
-                                            {
-                                                "label": "impact on albedo", 
-                                                "description": null
-                                            }, 
-                                            {
-                                                "label": "latent heat flux", 
-                                                "description": null
-                                            }
-                                        ], 
-                                        "description": "Melt pond processes", 
-                                        "isOpen": true, 
-                                        "label": "melt_pond_proc"
-                                    }
                                 }
                             ]
                         }, 

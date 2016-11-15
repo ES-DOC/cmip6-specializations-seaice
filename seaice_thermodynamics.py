@@ -178,19 +178,6 @@ SUB_PROCESSES['ice_thermo_processes:frazil_ice'] = {
     ]
 }
 
-SUB_PROCESSES['ice_thermo_processes:new_ice_formation'] = {
-    'description': 'Characteristics of melt ponds.',
-    'properties': [
-        ('melt_ponds_included', 'bool', '1.1',
-         'Are melt ponds included in sea ice model?'),
-        ('melt_pond_formulation', 'str', '0.1',
-         'Method by which melt ponds are included'),
-        ('melt_pond_processes', 'ENUM:melt_pond_proc', '0.N',
-         'Processes included in melt pond scheme?')
-    ]
-}
-
-
 # TODO where should the heat content of precipitiation go?
 SUB_PROCESSES['snow_thermo_processes:process_type'] = {
     'description': 'Snow on ice processes',
@@ -242,18 +229,6 @@ ENUMERATIONS['snow_process_types'] = {
         ('snow aging scheme', None),
         ('snow ice scheme', None),
         ('snow redistribution scheme', 'Is there a scheme to redistribute snow on sea ice by wind or melting processes?'),
-    ]
-}
-
-ENUMERATIONS['add_processes'] = {
-    'description': 'Additional processes',
-    'is_open': True,
-    'members': [
-        ('New ice formation', None),
-        ('Ice lateral melting', None),
-        ('Ice surface sublimation', None),
-        ('Ice radiation transmission', None),
-        ('Frazil ice', None),
     ]
 }
 

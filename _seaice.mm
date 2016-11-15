@@ -1367,80 +1367,24 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of melt ponds.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation</dd>
+        <dt><b>Description</b></dt><dd>new sea ice formation</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="melt_ponds_included"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="new_ice_formation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Are melt ponds included in sea ice model?</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_ponds_included</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Method by which new sea ice is formed</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.new_ice_formation_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Are melt ponds included in sea ice model?</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_ponds_included</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Method by which new sea ice is formed</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.new_ice_formation_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="melt_pond_formulation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Method by which melt ponds are included</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_formulation</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Method by which melt ponds are included</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_formulation</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="melt_pond_processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Processes included in melt pond scheme?</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_processes</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Processes included in melt pond scheme?</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_processes</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="freshwater"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>None</dd><dt><b>Specialization ID</b></dt><dd>melt_pond_proc.freshwater</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="impact on albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>None</dd><dt><b>Specialization ID</b></dt><dd>melt_pond_proc.impact on albedo</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="latent heat flux"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>None</dd><dt><b>Specialization ID</b></dt><dd>melt_pond_proc.latent heat flux</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Other"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>None</dd><dt><b>Specialization ID</b></dt><dd>melt_pond_proc.Other</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_lateral_melting"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_lateral_melting"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>

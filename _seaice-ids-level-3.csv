@@ -49,9 +49,7 @@ cmip6.seaice.thermodynamics.ice_thermo_processes.vertical_heat_diffusion.based_o
 cmip6.seaice.thermodynamics.ice_thermo_processes.melt_ponds.melt_ponds_included, Seaice > Thermodynamics > Ice Thermo Processes > Melt Ponds > Melt Ponds Included, detail
 cmip6.seaice.thermodynamics.ice_thermo_processes.melt_ponds.melt_pond_formulation, Seaice > Thermodynamics > Ice Thermo Processes > Melt Ponds > Melt Pond Formulation, detail
 cmip6.seaice.thermodynamics.ice_thermo_processes.melt_ponds.melt_pond_processes, Seaice > Thermodynamics > Ice Thermo Processes > Melt Ponds > Melt Pond Processes, detail
-cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_ponds_included, Seaice > Thermodynamics > Ice Thermo Processes > New Ice Formation > Melt Ponds Included, detail
-cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_formulation, Seaice > Thermodynamics > Ice Thermo Processes > New Ice Formation > Melt Pond Formulation, detail
-cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.melt_pond_processes, Seaice > Thermodynamics > Ice Thermo Processes > New Ice Formation > Melt Pond Processes, detail
+cmip6.seaice.thermodynamics.ice_thermo_processes.new_ice_formation.new_ice_formation_method, Seaice > Thermodynamics > Ice Thermo Processes > New Ice Formation > New Ice Formation Method, detail
 cmip6.seaice.thermodynamics.ice_thermo_processes.ice_lateral_melting.ice_lateral_melting_method, Seaice > Thermodynamics > Ice Thermo Processes > Ice Lateral Melting > Ice Lateral Melting Method, detail
 cmip6.seaice.thermodynamics.ice_thermo_processes.ice_surface_sublimation.ice_surface_sublimation_method, Seaice > Thermodynamics > Ice Thermo Processes > Ice Surface Sublimation > Ice Surface Sublimation Method, detail
 cmip6.seaice.thermodynamics.ice_thermo_processes.frazil_ice.frazil_ice_method, Seaice > Thermodynamics > Ice Thermo Processes > Frazil Ice > Frazil Ice Method, detail
