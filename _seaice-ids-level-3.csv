@@ -1,12 +1,12 @@
 cmip6-id, cmip6-label, cmip6-type
-cmip6.seaice.grid.horizontal.horizontal, Seaice > Grid > Horizontal > Horizontal, detail
-cmip6.seaice.grid.horizontal.Additional grid details, Seaice > Grid > Horizontal > Additional Grid Details, detail
+cmip6.seaice.grid.horizontal.horizontal_discretisation, Seaice > Grid > Horizontal > Horizontal Discretisation, detail
+cmip6.seaice.grid.horizontal.Additional_grid_details, Seaice > Grid > Horizontal > Additional Grid Details, detail
 cmip6.seaice.grid.layering.layering_type, Seaice > Grid > Layering > Layering Type, detail
-cmip6.seaice.grid.seaice_categories.Number of sea ice categories, Seaice > Grid > Seaice Categories > Number Of Sea Ice Categories, detail
-cmip6.seaice.grid.seaice_categories.Sea ice category limits, Seaice > Grid > Seaice Categories > Sea Ice Category Limits, detail
-cmip6.seaice.grid.seaice_categories.Sea ice thickness distribution scheme, Seaice > Grid > Seaice Categories > Sea Ice Thickness Distribution Scheme, detail
-cmip6.seaice.grid.snow_on_seaice.Is snow on ice represented in this model?, Seaice > Grid > Snow On Seaice > Is Snow On Ice Represented In This Model?, detail
-cmip6.seaice.grid.snow_on_seaice.Number of vertical levels of snow on ice, Seaice > Grid > Snow On Seaice > Number Of Vertical Levels Of Snow On Ice, detail
+cmip6.seaice.grid.seaice_categories.Number_of_sea_ice_categories, Seaice > Grid > Seaice Categories > Number Of Sea Ice Categories, detail
+cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits, Seaice > Grid > Seaice Categories > Sea Ice Category Limits, detail
+cmip6.seaice.grid.seaice_categories.Sea_ice_thickness_distribution_scheme, Seaice > Grid > Seaice Categories > Sea Ice Thickness Distribution Scheme, detail
+cmip6.seaice.grid.snow_on_seaice.Snow_on_ice, Seaice > Grid > Snow On Seaice > Snow On Ice, detail
+cmip6.seaice.grid.snow_on_seaice.Number_of_snow_levels, Seaice > Grid > Snow On Seaice > Number Of Snow Levels, detail
 , , 
 cmip6.seaice.key_properties.general.basic_approximations, Seaice > Key Properties > General > Basic Approximations, detail
 cmip6.seaice.key_properties.general.prognostic_variables, Seaice > Key Properties > General > Prognostic Variables, detail
@@ -18,11 +18,11 @@ cmip6.seaice.key_properties.resolution.name, Seaice > Key Properties > Resolutio
 cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution, Seaice > Key Properties > Resolution > Canonical Horizontal Resolution, detail
 cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints, Seaice > Key Properties > Resolution > Number Of Horizontal Gridpoints, detail
 cmip6.seaice.key_properties.resolution.is_adaptive_grid, Seaice > Key Properties > Resolution > Is Adaptive Grid, detail
-cmip6.seaice.key_properties.tuning_applied.description, Seaice > Key Properties > Tuning Applied > Description, detail
+cmip6.seaice.key_properties.tuning_applied.tuning_description, Seaice > Key Properties > Tuning Applied > Tuning Description, detail
 cmip6.seaice.key_properties.tuning_applied.tuning_target, Seaice > Key Properties > Tuning Applied > Tuning Target, detail
 cmip6.seaice.key_properties.tuning_applied.tuning_simulations, Seaice > Key Properties > Tuning Applied > Tuning Simulations, detail
 cmip6.seaice.key_properties.tuning_applied.tuning_metrics_used, Seaice > Key Properties > Tuning Applied > Tuning Metrics Used, detail
-cmip6.seaice.key_properties.assumptions.description, Seaice > Key Properties > Assumptions > Description, detail
+cmip6.seaice.key_properties.assumptions.assumption_description, Seaice > Key Properties > Assumptions > Assumption Description, detail
 cmip6.seaice.key_properties.assumptions.missing_processes, Seaice > Key Properties > Assumptions > Missing Processes, detail
 cmip6.seaice.key_properties.conservation.description, Seaice > Key Properties > Conservation > Description, detail
 cmip6.seaice.key_properties.conservation.scheme, Seaice > Key Properties > Conservation > Scheme, detail

@@ -64,19 +64,20 @@ DETAILS = OrderedDict()
 # DISCRETISATION: Description of the numerics of the discretisation.
 # --------------------------------------------------------------------
 DETAILS['discretisation'] = {
-    'description': 'Types of sea ice discretisation',
-    'details': [
+    'description': 'Sea ice discretisation',
+    'properties': [],
+    'detail_sets': [
         'horizontal',
-        'layering'
+        'layering',
         ]
 }
 
 DETAILS['discretisation:horizontal'] = {
     'description': 'How the sea ice is horizontally discretised?',
     'properties': [
-        ('horizontal', 'ENUM:sea_ice_grid', '1.1',
+        ('horizontal_discretisation', 'ENUM:sea_ice_grid', '1.1',
             'Type of sea ice horizontal discretisation?'),
-        ('Additional grid details', 'str', '1.1',
+        ('Additional_grid_details', 'str', '0.1',
             'Specify any additional grid details.')
     ]
 }
@@ -92,9 +93,9 @@ DETAILS['discretisation:layering'] = {
 DETAILS['seaice_categories'] = {
     'description': 'What method is used to represent sea ice categories?',
     'properties': [
-        ('Number of sea ice categories', 'str', '0.1', 'If using multiple sea ice categories specify how many.'),
-        ('Sea ice category limits', 'str', '0.N', 'If using multiple sea ice categories specify the category limits.'),
-        ('Sea ice thickness distribution scheme', 'str', '0.1',
+        ('Number_of_sea_ice_categories', 'str', '0.1', 'If using multiple sea ice categories specify how many.'),
+        ('Sea_ice_category_limits', 'str', '0.1', 'If using multiple sea ice categories specify the category limits.'),
+        ('Sea_ice_thickness_distribution_scheme', 'str', '0.1',
          'If applicable describe the sea ice thickness distribution scheme'),
     ]
 }
@@ -102,8 +103,8 @@ DETAILS['seaice_categories'] = {
 DETAILS['snow_on_seaice'] = {
     'description': 'Method used to represent snow on sea ice',
     'properties': [
-        ('Is snow on ice represented in this model?', 'bool', '1.1', 'Snow on ice'),
-        ('Number of vertical levels of snow on ice', 'str', '0.1', 'Number of snow levels')
+        ('Snow_on_ice', 'bool', '1.1', 'Is snow on ice represented in this model?'),
+        ('Number_of_snow_levels', 'str', '0.1', 'Number of vertical levels of snow on ice?')
     ]
 }
 
@@ -116,7 +117,7 @@ DETAILS['snow_on_seaice'] = {
 ENUMERATIONS = OrderedDict()
 
 ENUMERATIONS['sea_ice_grid'] = {
-    'description': 'Grid which is the sea ice horizontally discretised on',
+    'description': 'Grid which is the sea ice horizontally discretised on?',
     'is_open': True,
     'members': [
         ('Ocean grid', 'Sea ice is horizontally discretised on the ocean grid'),

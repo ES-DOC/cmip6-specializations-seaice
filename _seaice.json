@@ -602,9 +602,9 @@
                 "id": "cmip6.seaice.grid.horizontal", 
                 "details": [
                     {
-                        "label": "Horizontal", 
+                        "label": "Horizontal Discretisation", 
                         "description": "Type of sea ice horizontal discretisation?", 
-                        "id": "cmip6.seaice.grid.horizontal.horizontal", 
+                        "id": "cmip6.seaice.grid.horizontal.horizontal_discretisation", 
                         "uiOrdinal": 1, 
                         "cardinality": "1.1", 
                         "type": "enum", 
@@ -623,7 +623,7 @@
                                     "description": "Sea ice is horizontally discretised on it`s own independent grid"
                                 }
                             ], 
-                            "description": "Grid which is the sea ice horizontally discretised on", 
+                            "description": "Grid which is the sea ice horizontally discretised on?", 
                             "isOpen": true, 
                             "label": "sea_ice_grid"
                         }
@@ -631,9 +631,9 @@
                     {
                         "label": "Additional Grid Details", 
                         "description": "Specify any additional grid details.", 
-                        "id": "cmip6.seaice.grid.horizontal.Additional grid details", 
+                        "id": "cmip6.seaice.grid.horizontal.Additional_grid_details", 
                         "uiOrdinal": 2, 
-                        "cardinality": "1.1", 
+                        "cardinality": "0.1", 
                         "type": "str"
                     }
                 ]
@@ -684,7 +684,7 @@
                     {
                         "label": "Number Of Sea Ice Categories", 
                         "description": "If using multiple sea ice categories specify how many.", 
-                        "id": "cmip6.seaice.grid.seaice_categories.Number of sea ice categories", 
+                        "id": "cmip6.seaice.grid.seaice_categories.Number_of_sea_ice_categories", 
                         "uiOrdinal": 1, 
                         "cardinality": "0.1", 
                         "type": "str"
@@ -692,7 +692,7 @@
                     {
                         "label": "Sea Ice Category Limits", 
                         "description": "If using multiple sea ice categories specify the category limits.", 
-                        "id": "cmip6.seaice.grid.seaice_categories.Sea ice category limits", 
+                        "id": "cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits", 
                         "uiOrdinal": 2, 
                         "cardinality": "0.N", 
                         "type": "str"
@@ -700,7 +700,7 @@
                     {
                         "label": "Sea Ice Thickness Distribution Scheme", 
                         "description": "If applicable describe the sea ice thickness distribution scheme", 
-                        "id": "cmip6.seaice.grid.seaice_categories.Sea ice thickness distribution scheme", 
+                        "id": "cmip6.seaice.grid.seaice_categories.Sea_ice_thickness_distribution_scheme", 
                         "uiOrdinal": 3, 
                         "cardinality": "0.1", 
                         "type": "str"
@@ -713,17 +713,17 @@
                 "id": "cmip6.seaice.grid.snow_on_seaice", 
                 "details": [
                     {
-                        "label": "Is Snow On Ice Represented In This Model?", 
-                        "description": "Snow on ice", 
-                        "id": "cmip6.seaice.grid.snow_on_seaice.Is snow on ice represented in this model?", 
+                        "label": "Snow On Ice", 
+                        "description": "Is snow on ice represented in this model?", 
+                        "id": "cmip6.seaice.grid.snow_on_seaice.Snow_on_ice", 
                         "uiOrdinal": 1, 
                         "cardinality": "1.1", 
                         "type": "bool"
                     }, 
                     {
-                        "label": "Number Of Vertical Levels Of Snow On Ice", 
-                        "description": "Number of snow levels", 
-                        "id": "cmip6.seaice.grid.snow_on_seaice.Number of vertical levels of snow on ice", 
+                        "label": "Number Of Snow Levels", 
+                        "description": "Number of vertical levels of snow on ice?", 
+                        "id": "cmip6.seaice.grid.snow_on_seaice.Number_of_snow_levels", 
                         "uiOrdinal": 2, 
                         "cardinality": "0.1", 
                         "type": "str"
@@ -926,9 +926,9 @@
                 "id": "cmip6.seaice.key_properties.tuning_applied", 
                 "details": [
                     {
-                        "label": "Description", 
+                        "label": "Tuning Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
-                        "id": "cmip6.seaice.key_properties.tuning_applied.description", 
+                        "id": "cmip6.seaice.key_properties.tuning_applied.tuning_description", 
                         "uiOrdinal": 1, 
                         "cardinality": "1.1", 
                         "type": "str"
@@ -965,9 +965,9 @@
                 "id": "cmip6.seaice.key_properties.assumptions", 
                 "details": [
                     {
-                        "label": "Description", 
+                        "label": "Assumption Description", 
                         "description": "General overview description of any key assumptions made in this model, &particularly where this may affect the diagnostic sea ice variables.", 
-                        "id": "cmip6.seaice.key_properties.assumptions.description", 
+                        "id": "cmip6.seaice.key_properties.assumptions.assumption_description", 
                         "uiOrdinal": 1, 
                         "cardinality": "0.N", 
                         "type": "str"

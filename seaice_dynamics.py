@@ -66,41 +66,14 @@ DETAILS = OrderedDict()
 #
 # Sets of discrete portions of the process
 # --------------------------------------------------------------------
-"""
-SUB_PROCESSES['horizontal_advection'] = {
-    'description': 'Method of horizontal advection',
-    'details': ['transport_method']
-}
-
-SUB_PROCESSES['transport_in_thickness_space'] = {
-    'description': 'Method of ice migration in thickness',
-    'details': ['transport_method']
-}
-
-SUB_PROCESSES['redistribution'] = {
-    'description': 'Sea Ice Mechanical Redistribution',
-    'details': ['ice_redistribution']
-}
-
-SUB_PROCESSES['rheology'] = {
-    'description': 'Sea ice deformation',
-    'details': ['ice_deformation_method']
-}
-
-SUB_PROCESSES['ice:ice_redistribution'] = {
-    'description': 'Methods of mechanical redistribution of sea ice',
-    'details': ['ice_strength_formulation']
-}
-"""
 
 SUB_PROCESSES['seaice_dynamics'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
-    'detail_sets': ['horizontal_transport_method',
+    'detail_sets': ['horizontal_transport',
                     'transport_in_thickness',
                     'ice_strength_formulation',
                     'ice_redistribution',
                     'ice_deformation',
-                    'ice_deformation_method',
                    ]
 }
 
@@ -109,10 +82,10 @@ SUB_PROCESSES['seaice_dynamics'] = {
 #
 # Sets of details for the sub processes
 # --------------------------------------------------------------------
-SUB_PROCESSES['seaice_dynamics:horizontal_transport_method'] = {
+SUB_PROCESSES['seaice_dynamics:horizontal_transport'] = {
     'description': 'Horizontal advection of sea ice',
     'properties': [
-        ('transport_method', 'ENUM:transport_methods', '0.1',
+        ('horizontal_transport_method', 'ENUM:transport_methods', '0.1',
          'Method of horizontal advection')
     ]
 }
@@ -120,15 +93,15 @@ SUB_PROCESSES['seaice_dynamics:horizontal_transport_method'] = {
 SUB_PROCESSES['seaice_dynamics:transport_in_thickness'] = {
     'description': 'Method of migration of sea ice in thickness',
     'properties': [
-        ('transport_method', 'ENUM:transport_methods', '0.1',
-         'Method of ice migration in thickness')
+        ('transport_in_thickness_method', 'ENUM:transport_methods', '0.1',
+         'Method of ice migration in thickness space')
     ]
 }
 
 SUB_PROCESSES['seaice_dynamics:ice_strength_formulation'] = {
     'description': 'How the sea ice strength is formulated',
     'properties': [
-        ('ice_strength_formulation', 'str', '1.1',
+        ('ice_strength_formulation_method', 'str', '1.1',
          'Describe how ice-strength is formulated'),
     ]
 }
@@ -136,12 +109,12 @@ SUB_PROCESSES['seaice_dynamics:ice_strength_formulation'] = {
 SUB_PROCESSES['seaice_dynamics:ice_redistribution'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
     'properties': [
-        ('processes', 'ENUM:redistribution_types', '0.N',
+        ('ice_redistribution_processes', 'ENUM:redistribution_types', '0.N',
          'Additional processes which can redistribute sea ice.'),
     ]
 }
 
-SUB_PROCESSES['seaice_dynamics:ice_deformation_method'] = {
+SUB_PROCESSES['seaice_dynamics:ice_deformation'] = {
     'description': 'Methods of sea ice deformation',
     'properties': [
         ('ice_deformation_method', 'ENUM:rheology_types', '1.1',

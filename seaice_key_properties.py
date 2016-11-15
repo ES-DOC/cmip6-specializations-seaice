@@ -64,7 +64,7 @@ DETAILS['general'] = {
     'description': 'General key properties in sea ice',
     'properties': [
         ('basic_approximations', 'ENUM:seaice_basic_approx_types', '0.N',
-            'Basic approximations made in the ice.',),
+            'Basic approximations made in the ice.'),
         ('prognostic_variables', 'ENUM:prognostic_vars_types', '1.N',
             'List of prognostic variables in the sea ice component.'),
         ]
@@ -74,7 +74,7 @@ DETAILS['general'] = {
 
 DETAILS['seawater_properties'] = {
     'description': 'Physical properties of seawater relevant to sea ice',
-    'properties' : [
+    'properties': [
         ('ocean_freezing_point', 'ENUM:seawater_freezing_point', '1.1',
          'Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure'),
         ('ocean_freezing_point_value', 'float', '0.1',
@@ -108,6 +108,13 @@ DETAILS['resolution'] = {
         ]
 }
 
+DETAILS['timeStep'] = {
+    'description': 'Time step in the sea ice component',
+    'properties': [
+        ('seaice_timestep', 'int', '1.1',
+         'What is the time step in the sea ice model in seconds.'),
+        ]
+}
 # --------------------------------------------------------------------
 # KEY PROPERTIES: TUNING APPLIED
 #
@@ -116,7 +123,7 @@ DETAILS['resolution'] = {
 DETAILS['tuning_applied'] = {
     'description': 'Tuning applied to sea ice model component',
     'properties': [
-        ('description', 'str', '1.1',
+        ('tuning_description', 'str', '1.1',
          "General overview description of tuning: explain and motivate the main targets and metrics retained. &"
          "Document the relative weight given to climate performance metrics versus process oriented metrics, &"
          "and on the possible conflicts with parameterization level tuning. In particular describe any struggle &"
@@ -138,7 +145,7 @@ DETAILS['tuning_applied'] = {
 DETAILS['assumptions'] = {
     'description': 'Assumptions made in the sea ice model',
     'properties': [
-        ('description', 'str', '0.N',
+        ('assumption_description', 'str', '0.N',
          'General overview description of any key assumptions made in this model, &'
          'particularly where this may affect the diagnostic sea ice variables.'),
         ('missing_processes', 'str', '0.N',
@@ -158,12 +165,12 @@ DETAILS['assumptions'] = {
 DETAILS['conservation'] = {
     'description': 'Conservation in the sea ice component',
     'properties': [
-        ('description', 'str', '1.1', 'Brief description of conservation methodology'),
-        ('scheme', 'ENUM:conservation_props_types', '1.N',
+        ('conservation_description', 'str', '1.1', 'Description of conservation methodology'),
+        ('conservation_scheme', 'ENUM:conservation_props_types', '1.N',
          'Properties conserved in sea ice by the numerical schemes'),
         ('consistency_properties', 'str', '0.N',
          'Any additional consistency properties (e.g. energy conversion)?'),
-        ('corrected_conserved_prognostic_variables', 'str', '0.N', # Can we constrains these variable
+        ('corrected_conserved_prognostic_variables', 'str', '0.N',
          'Set of variables which are conserved by *more* than the numerical scheme alone.'),
         ('conserved_properties', 'str', '1.1',
          'For each conserved property conserved please specify the terms which close the related budget'),
