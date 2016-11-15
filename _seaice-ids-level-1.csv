@@ -2,21 +2,17 @@ cmip6-id, cmip6-label, cmip6-type
 cmip6.seaice, Seaice, realm
 , , 
 cmip6.seaice.grid, Seaice > Grid, grid
-cmip6.seaice.grid.discretisation, Seaice > Grid > Discretisation, grid-discretisation
 , , 
 cmip6.seaice.key_properties, Seaice > Key Properties, key-properties
-cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation, key-properties-conservation
 , , 
 cmip6.seaice.dynamics, Seaice > Dynamics, process
-cmip6.seaice.dynamics.horizontal_advection, Seaice > Dynamics > Horizontal Advection, sub-process
-cmip6.seaice.dynamics.transport_in_thickness_space, Seaice > Dynamics > Transport In Thickness Space, sub-process
-cmip6.seaice.dynamics.redistribution, Seaice > Dynamics > Redistribution, sub-process
-cmip6.seaice.dynamics.rheology, Seaice > Dynamics > Rheology, sub-process
+cmip6.seaice.dynamics.seaice_dynamics, Seaice > Dynamics > Seaice Dynamics, process
 , , 
 cmip6.seaice.thermodynamics, Seaice > Thermodynamics, process
-cmip6.seaice.thermodynamics.thermo_processes, Seaice > Thermodynamics > Thermo Processes, sub-process
-cmip6.seaice.thermodynamics.snow_processes, Seaice > Thermodynamics > Snow Processes, sub-process
-cmip6.seaice.thermodynamics.vertical_heat_diffusion, Seaice > Thermodynamics > Vertical Heat Diffusion, sub-process
+cmip6.seaice.thermodynamics.thermo_budget, Seaice > Thermodynamics > Thermo Budget, process
+cmip6.seaice.thermodynamics.ice_thermo_processes, Seaice > Thermodynamics > Ice Thermo Processes, process
+cmip6.seaice.thermodynamics.snow_thermo_processes, Seaice > Thermodynamics > Snow Thermo Processes, process
+cmip6.seaice.thermodynamics.additional_processes, Seaice > Thermodynamics > Additional Processes, process
 , , 
 cmip6.seaice.radiative_processes, Seaice > Radiative Processes, process
-cmip6.seaice.radiative_processes.si_radiative_process_methods, Seaice > Radiative Processes > Si Radiative Process Methods, sub-process
+cmip6.seaice.radiative_processes.si_radiative_process_methods, Seaice > Radiative Processes > Si Radiative Process Methods, process
