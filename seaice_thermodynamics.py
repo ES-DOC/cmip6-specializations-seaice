@@ -62,27 +62,27 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
 # --------------------------------------------------------------------
 SUB_PROCESSES['thermo_budget'] = {
     'description': 'Closing the thermodynamics budget',
-    'details': ['details'],
+    'detail_sets': ['details'],
 }
 
 SUB_PROCESSES['thermo_processes'] = {
     'description': 'Information about basal heat flux and brine inclusions',
-    'details': ['details'],
+    'detail_sets': ['details'],
 }
 
 SUB_PROCESSES['snow_processes'] = {
     'description': 'Snow processes in sea ice thermodynamics',
-    'details': ['process_type'],
+    'detail_sets': ['process_type'],
 }
 
 SUB_PROCESSES['vertical_heat_diffusion'] = {
     'description': 'Characteristics of vertical heat diffusion in sea ice.',
-    'details': ['details'],
+    'detail_sets': ['details'],
 }
 
 SUB_PROCESSES['additional_processes'] = {
     'description': 'Additonal processes not elsewhere described',
-    'details': ['details'],
+    'detail_sets': ['details'],
 }
 
 # --------------------------------------------------------------------
