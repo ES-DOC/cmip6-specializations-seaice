@@ -67,7 +67,7 @@ DESCRIPTION = 'Sea Ice Radiative Processes'
 # --------------------------------------------------------------------
 SUB_PROCESSES['si_radiative_process_methods'] = {
     'description': 'Properties of radiation in sea ice thermodynamics',
-    'detail_sets': ['details'],
+    'details': ['details'],
 }
 
 # --------------------------------------------------------------------

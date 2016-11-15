@@ -68,27 +68,27 @@ DETAILS = OrderedDict()
 # --------------------------------------------------------------------
 SUB_PROCESSES['horizontal_advection'] = {
     'description': 'Method of horizontal advection',
-    'detail_sets': ['transport_method']
+    'details': ['transport_method']
 }
 
 SUB_PROCESSES['transport_in_thickness_space'] = {
     'description': 'Method of ice migration in thickness',
-    'detail_sets': ['transport_method']
+    'details': ['transport_method']
 }
 
 SUB_PROCESSES['redistribution'] = {
     'description': 'Sea Ice Mechanical Redistribution',
-    'detail_sets': ['ice_redistribution']
+    'details': ['ice_redistribution']
 }
 
 SUB_PROCESSES['rheology'] = {
     'description': 'Sea ice deformation',
-    'detail_sets': ['ice_deformation_method']
+    'details': ['ice_deformation_method']
 }
 
 SUB_PROCESSES['ice:ice_redistribution'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
-    'detail_sets': ['ice_strength_formulation']
+    'details': ['ice_strength_formulation']
 }
 # --------------------------------------------------------------------
 # PROCESS: SUB PROCESSES DETAILS

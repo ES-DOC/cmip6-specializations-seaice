@@ -65,7 +65,7 @@ DETAILS = OrderedDict()
 # --------------------------------------------------------------------
 DETAILS['discretisation'] = {
     'description': 'Types of sea ice discretisation',
-    'detail_sets': [
+    'details': [
         'horizontal',
         'layering'
         ]
