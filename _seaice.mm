@@ -72,7 +72,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Types of sea ice discretisation</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation</dd>
+        <dt><b>Description</b></dt><dd>Sea ice discretisation</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -219,14 +219,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If using multiple sea ice categories specify the category limits.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
+        <dt><b>Description</b></dt><dd>If using multiple sea ice categories specify the category limits.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If using multiple sea ice categories specify the category limits.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
+        <dt><b>Description</b></dt><dd>If using multiple sea ice categories specify the category limits.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea_ice_thickness_distribution_scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -572,6 +572,27 @@
         <dt><b>Description</b></dt><dd>Default is False. Set true if grid resolution changes during execution.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timeStep"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Time step in the sea ice component</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.timeStep</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="seaice_timestep"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What is the time step in the sea ice model in seconds.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.timeStep.seaice_timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What is the time step in the sea ice model in seconds.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.timeStep.seaice_timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -677,32 +698,32 @@
         <dt><b>Description</b></dt><dd>Conservation in the sea ice component</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="conservation_description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Brief description of conservation methodology</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.description</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Description of conservation methodology</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.conservation_description</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Brief description of conservation methodology</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.description</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Description of conservation methodology</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.conservation_description</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="conservation_scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.scheme</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.N</dd>
+        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.conservation_scheme</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.N</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.scheme</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.N</dd>
+        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.conservation_scheme</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.N</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Energy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -803,25 +824,25 @@
         <dt><b>Description</b></dt><dd>Methods of mechanical redistribution of sea ice</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_transport_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal advection of sea ice</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport_method</dd>
+        <dt><b>Description</b></dt><dd>Horizontal advection of sea ice</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transport_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_transport_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method of horizontal advection</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport_method.transport_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
+        <dt><b>Description</b></dt><dd>Method of horizontal advection</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport.horizontal_transport_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method of horizontal advection</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport_method.transport_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
+        <dt><b>Description</b></dt><dd>Method of horizontal advection</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport.horizontal_transport_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Eulerian"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -859,18 +880,18 @@
         <dt><b>Description</b></dt><dd>Method of migration of sea ice in thickness</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transport_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transport_in_thickness_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method of ice migration in thickness</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness.transport_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
+        <dt><b>Description</b></dt><dd>Method of ice migration in thickness space</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness.transport_in_thickness_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method of ice migration in thickness</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness.transport_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
+        <dt><b>Description</b></dt><dd>Method of ice migration in thickness space</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness.transport_in_thickness_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Eulerian"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -908,18 +929,18 @@
         <dt><b>Description</b></dt><dd>How the sea ice strength is formulated</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_strength_formulation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_strength_formulation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how ice-strength is formulated</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation.ice_strength_formulation</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Describe how ice-strength is formulated</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation.ice_strength_formulation_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how ice-strength is formulated</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation.ice_strength_formulation</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Describe how ice-strength is formulated</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation.ice_strength_formulation_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_redistribution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -929,18 +950,18 @@
         <dt><b>Description</b></dt><dd>Methods of mechanical redistribution of sea ice</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_redistribution_processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Additional processes which can redistribute sea ice.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution.processes</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
+        <dt><b>Description</b></dt><dd>Additional processes which can redistribute sea ice.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution.ice_redistribution_processes</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Additional processes which can redistribute sea ice.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution.processes</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
+        <dt><b>Description</b></dt><dd>Additional processes which can redistribute sea ice.</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution.ice_redistribution_processes</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>0.N</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Rafting"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -964,25 +985,25 @@
         <dt><b>Description</b></dt><dd>None</dd><dt><b>Specialization ID</b></dt><dd>redistribution_types.Other</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_deformation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_deformation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Methods of sea ice deformation</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_deformation_method</dd>
+        <dt><b>Description</b></dt><dd>Methods of sea ice deformation</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_deformation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_deformation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice deformation method</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_deformation_method.ice_deformation_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Ice deformation method</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_deformation.ice_deformation_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice deformation method</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_deformation_method.ice_deformation_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
+        <dt><b>Description</b></dt><dd>Ice deformation method</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.seaice_dynamics.ice_deformation.ice_deformation_method</dd><dt><b>Type</b></dt><dd>enum</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Elastic-aniostropic-plastic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1538,7 +1559,28 @@
         <dt><b>Description</b></dt><dd>Additonal processes not elsewhere described</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.additional_processes</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="radiative_processes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="default"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additonal processes not elsewhere described</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.additional_processes.default</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any additional processes not elsewhere described</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.additional_processes.default.additional_processes</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any additional processes not elsewhere described</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.additional_processes.default.additional_processes</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="radiative_processes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -1556,7 +1598,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of radiation in sea ice thermodynamics</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.si_radiative_process_methods</dd>
+        <dt><b>Description</b></dt><dd>Properties of radiation in sea ice</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.si_radiative_process_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

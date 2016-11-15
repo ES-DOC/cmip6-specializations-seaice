@@ -8,15 +8,16 @@ cmip6.seaice.grid.snow_on_seaice, Seaice > Grid > Snow On Seaice, detail-set
 cmip6.seaice.key_properties.general, Seaice > Key Properties > General, detail-set
 cmip6.seaice.key_properties.seawater_properties, Seaice > Key Properties > Seawater Properties, detail-set
 cmip6.seaice.key_properties.resolution, Seaice > Key Properties > Resolution, detail-set
+cmip6.seaice.key_properties.timeStep, Seaice > Key Properties > TimeStep, detail-set
 cmip6.seaice.key_properties.tuning_applied, Seaice > Key Properties > Tuning Applied, detail-set
 cmip6.seaice.key_properties.assumptions, Seaice > Key Properties > Assumptions, detail-set
 cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation, detail-set
 , , 
-cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport_method, Seaice > Dynamics > Seaice Dynamics > Horizontal Transport Method, detail-set
+cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport, Seaice > Dynamics > Seaice Dynamics > Horizontal Transport, detail-set
 cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness, Seaice > Dynamics > Seaice Dynamics > Transport In Thickness, detail-set
 cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation, Seaice > Dynamics > Seaice Dynamics > Ice Strength Formulation, detail-set
 cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution, Seaice > Dynamics > Seaice Dynamics > Ice Redistribution, detail-set
-cmip6.seaice.dynamics.seaice_dynamics.ice_deformation_method, Seaice > Dynamics > Seaice Dynamics > Ice Deformation Method, detail-set
+cmip6.seaice.dynamics.seaice_dynamics.ice_deformation, Seaice > Dynamics > Seaice Dynamics > Ice Deformation, detail-set
 , , 
 cmip6.seaice.thermodynamics.thermo_budget.details, Seaice > Thermodynamics > Thermo Budget > Details, detail-set
 cmip6.seaice.thermodynamics.ice_thermo_processes.brine, Seaice > Thermodynamics > Ice Thermo Processes > Brine, detail-set
@@ -28,6 +29,7 @@ cmip6.seaice.thermodynamics.ice_thermo_processes.ice_lateral_melting, Seaice > T
 cmip6.seaice.thermodynamics.ice_thermo_processes.ice_surface_sublimation, Seaice > Thermodynamics > Ice Thermo Processes > Ice Surface Sublimation, detail-set
 cmip6.seaice.thermodynamics.ice_thermo_processes.frazil_ice, Seaice > Thermodynamics > Ice Thermo Processes > Frazil Ice, detail-set
 cmip6.seaice.thermodynamics.snow_thermo_processes.process_type, Seaice > Thermodynamics > Snow Thermo Processes > Process Type, detail-set
+cmip6.seaice.thermodynamics.additional_processes.default, Seaice > Thermodynamics > Additional Processes > Default, detail-set
 , , 
 cmip6.seaice.radiative_processes.si_radiative_process_methods.details, Seaice > Radiative Processes > Si Radiative Process Methods > Details, detail-set
 , , 

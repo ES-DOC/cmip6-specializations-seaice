@@ -87,7 +87,9 @@ SUB_PROCESSES['snow_thermo_processes'] = {
 
 SUB_PROCESSES['additional_processes'] = {
     'description': 'Additonal processes not elsewhere described',
-    'details': ['details'],
+    'properties': [
+        ('additional_processes', 'str', '0.1', 'List any additional processes not elsewhere described')
+    ]
 }
 
 # --------------------------------------------------------------------

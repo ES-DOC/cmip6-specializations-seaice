@@ -16,14 +16,14 @@
                     "id": "cmip6.seaice.dynamics.seaice_dynamics", 
                     "detailSets": [
                         {
-                            "label": "Horizontal Transport Method", 
+                            "label": "Horizontal Transport", 
                             "description": "Horizontal advection of sea ice", 
-                            "id": "cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport_method", 
+                            "id": "cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport", 
                             "details": [
                                 {
-                                    "label": "Transport Method", 
+                                    "label": "Horizontal Transport Method", 
                                     "description": "Method of horizontal advection", 
-                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport_method.transport_method", 
+                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.horizontal_transport.horizontal_transport_method", 
                                     "uiOrdinal": 1, 
                                     "cardinality": "0.1", 
                                     "type": "enum", 
@@ -55,9 +55,9 @@
                             "id": "cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness", 
                             "details": [
                                 {
-                                    "label": "Transport Method", 
-                                    "description": "Method of ice migration in thickness", 
-                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness.transport_method", 
+                                    "label": "Transport In Thickness Method", 
+                                    "description": "Method of ice migration in thickness space", 
+                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.transport_in_thickness.transport_in_thickness_method", 
                                     "uiOrdinal": 1, 
                                     "cardinality": "0.1", 
                                     "type": "enum", 
@@ -89,9 +89,9 @@
                             "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation", 
                             "details": [
                                 {
-                                    "label": "Ice Strength Formulation", 
+                                    "label": "Ice Strength Formulation Method", 
                                     "description": "Describe how ice-strength is formulated", 
-                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation.ice_strength_formulation", 
+                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_strength_formulation.ice_strength_formulation_method", 
                                     "uiOrdinal": 1, 
                                     "cardinality": "1.1", 
                                     "type": "str"
@@ -104,9 +104,9 @@
                             "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution", 
                             "details": [
                                 {
-                                    "label": "Processes", 
+                                    "label": "Ice Redistribution Processes", 
                                     "description": "Additional processes which can redistribute sea ice.", 
-                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution.processes", 
+                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_redistribution.ice_redistribution_processes", 
                                     "uiOrdinal": 1, 
                                     "cardinality": "0.N", 
                                     "type": "enum", 
@@ -129,14 +129,14 @@
                             ]
                         }, 
                         {
-                            "label": "Ice Deformation Method", 
+                            "label": "Ice Deformation", 
                             "description": "Methods of sea ice deformation", 
-                            "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_deformation_method", 
+                            "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_deformation", 
                             "details": [
                                 {
                                     "label": "Ice Deformation Method", 
                                     "description": "Ice deformation method", 
-                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_deformation_method.ice_deformation_method", 
+                                    "id": "cmip6.seaice.dynamics.seaice_dynamics.ice_deformation.ice_deformation_method", 
                                     "uiOrdinal": 1, 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
@@ -514,7 +514,24 @@
                 {
                     "label": "Additional Processes", 
                     "description": "Additonal processes not elsewhere described", 
-                    "id": "cmip6.seaice.thermodynamics.additional_processes"
+                    "id": "cmip6.seaice.thermodynamics.additional_processes", 
+                    "detailSets": [
+                        {
+                            "label": "Default", 
+                            "description": "Additonal processes not elsewhere described", 
+                            "id": "cmip6.seaice.thermodynamics.additional_processes.default", 
+                            "details": [
+                                {
+                                    "label": "Additional Processes", 
+                                    "description": "List any additional processes not elsewhere described", 
+                                    "id": "cmip6.seaice.thermodynamics.additional_processes.default.additional_processes", 
+                                    "uiOrdinal": 1, 
+                                    "cardinality": "0.1", 
+                                    "type": "str"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }, 
@@ -526,7 +543,7 @@
             "subProcesses": [
                 {
                     "label": "Si Radiative Process Methods", 
-                    "description": "Properties of radiation in sea ice thermodynamics", 
+                    "description": "Properties of radiation in sea ice", 
                     "id": "cmip6.seaice.radiative_processes.si_radiative_process_methods", 
                     "detailSets": [
                         {
@@ -592,7 +609,7 @@
         "detailSets": [
             {
                 "label": "Discretisation", 
-                "description": "Types of sea ice discretisation", 
+                "description": "Sea ice discretisation", 
                 "id": "cmip6.seaice.grid.discretisation", 
                 "details": []
             }, 
@@ -694,7 +711,7 @@
                         "description": "If using multiple sea ice categories specify the category limits.", 
                         "id": "cmip6.seaice.grid.seaice_categories.Sea_ice_category_limits", 
                         "uiOrdinal": 2, 
-                        "cardinality": "0.N", 
+                        "cardinality": "0.1", 
                         "type": "str"
                     }, 
                     {
@@ -921,6 +938,21 @@
                 ]
             }, 
             {
+                "label": "TimeStep", 
+                "description": "Time step in the sea ice component", 
+                "id": "cmip6.seaice.key_properties.timeStep", 
+                "details": [
+                    {
+                        "label": "Seaice Timestep", 
+                        "description": "What is the time step in the sea ice model in seconds.", 
+                        "id": "cmip6.seaice.key_properties.timeStep.seaice_timestep", 
+                        "uiOrdinal": 1, 
+                        "cardinality": "1.1", 
+                        "type": "int"
+                    }
+                ]
+            }, 
+            {
                 "label": "Tuning Applied", 
                 "description": "Tuning applied to sea ice model component", 
                 "id": "cmip6.seaice.key_properties.tuning_applied", 
@@ -988,17 +1020,17 @@
                 "id": "cmip6.seaice.key_properties.conservation", 
                 "details": [
                     {
-                        "label": "Description", 
-                        "description": "Brief description of conservation methodology", 
-                        "id": "cmip6.seaice.key_properties.conservation.description", 
+                        "label": "Conservation Description", 
+                        "description": "Description of conservation methodology", 
+                        "id": "cmip6.seaice.key_properties.conservation.conservation_description", 
                         "uiOrdinal": 1, 
                         "cardinality": "1.1", 
                         "type": "str"
                     }, 
                     {
-                        "label": "Scheme", 
+                        "label": "Conservation Scheme", 
                         "description": "Properties conserved in sea ice by the numerical schemes", 
-                        "id": "cmip6.seaice.key_properties.conservation.scheme", 
+                        "id": "cmip6.seaice.key_properties.conservation.conservation_scheme", 
                         "uiOrdinal": 2, 
                         "cardinality": "1.N", 
                         "type": "enum", 
