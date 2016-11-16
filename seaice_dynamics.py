@@ -3,7 +3,6 @@ A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
-
 # --------------------------------------------------------------------
 # INTERNAL (do not change)
 # --------------------------------------------------------------------
@@ -14,37 +13,27 @@ SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Ruth Petrie'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
 AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# DESCRIPTION
-#
-# Short description of the specialization.
+# DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Sea Ice Dynamics'
 
 # --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# Sets of details for the process
+# DETAILS : General process details.
 # --------------------------------------------------------------------
 DETAILS['general'] = {
     'description': 'Methods of mechanical redistribution of sea ice',

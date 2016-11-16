@@ -7,7 +7,6 @@ cmip6.seaice.grid.snow_on_seaice, Seaice > Grid > Snow On Seaice, detail-set
 cmip6.seaice.key_properties.general, Seaice > Key Properties > General, detail-set
 cmip6.seaice.key_properties.seawater_properties, Seaice > Key Properties > Seawater Properties, detail-set
 cmip6.seaice.key_properties.resolution, Seaice > Key Properties > Resolution, detail-set
-cmip6.seaice.key_properties.timeStep, Seaice > Key Properties > TimeStep, detail-set
 cmip6.seaice.key_properties.tuning_applied, Seaice > Key Properties > Tuning Applied, detail-set
 cmip6.seaice.key_properties.assumptions, Seaice > Key Properties > Assumptions, detail-set
 cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation, detail-set

@@ -3,7 +3,6 @@
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 
 """
-
 # --------------------------------------------------------------------
 # INTERNAL (do not change)
 # --------------------------------------------------------------------
@@ -54,10 +53,10 @@ DETAILS['discretisation:horizontal'] = {
     }
 
 # --------------------------------------------------------------------
-# ??? .
+# SEAICE-CATEGROIES: Description of method used to represent sea ice categories.
 # --------------------------------------------------------------------
 DETAILS['seaice_categories'] = {
-    'description': 'What method is used to represent sea ice categories?',
+    'description': 'What method is used to represent sea ice categories ?',
     'properties': [
         ('number_of_categories', 'str', '0.1',
             "If using multiple sea ice categories specify how many."),

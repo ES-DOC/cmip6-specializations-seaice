@@ -13,47 +13,30 @@ SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Ruth Petrie'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
 AUTHORS = 'Ruth Petrie, Bryan Lawrence'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# Sets of details for the process
-# --------------------------------------------------------------------
-DETAILS = OrderedDict()
-
-# --------------------------------------------------------------------
-# DESCRIPTION
-#
-# Short description of the specialization.
+# DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Sea Ice Radiative Processes'
 
 # --------------------------------------------------------------------
-# PROCESS: SUB PROCESS
-#
-# Sets of discrete portions of the process
+# SUB PROCESS: Properties of radiation in sea ice
 # --------------------------------------------------------------------
 SUB_PROCESSES['methods'] = {
-    'description': 'Properties of radiation in sea ice',
+    'description': "Properties of radiation in sea ice",
     'properties': [
         ('surface_albedo', 'ENUM:seaice_albedo', '0.N',
             "Method used to handle surface albedo"),
@@ -66,7 +49,7 @@ SUB_PROCESSES['methods'] = {
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
 ENUMERATIONS['seaice_albedo'] = {
-    'description': 'Surface albedo of sea ice component',
+    'description': "Surface albedo of sea ice component",
     'is_open': True,
     'members': [
         ('Delta-Eddington', None),
