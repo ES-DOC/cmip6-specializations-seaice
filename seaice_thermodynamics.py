@@ -39,10 +39,8 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
 DETAILS['general'] = {
     'description': 'General properties of sea ice thermodynamics',
     'properties': [
-        ('therm_budget', 'str', '0.1',
+        ('budget', 'str', '0.1',
             "What information required to close the thermodynamics budget?"),
-        ('additional_processes', 'str', '0.1',
-            "List any additional processes not elsewhere described")
         ]
     }
 
@@ -54,7 +52,7 @@ SUB_PROCESSES['ice_processes'] = {
     'properties': [
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
             "Method by which basal heat flux is handled"),
-        ('new_ice_formation_method', 'str', '1.1',
+        ('new_ice_formation', 'str', '1.1',
             "Method by which new sea ice is formed"),
         ('ice_lateral_melting', 'str', '1.1',
             "Method of sea ice lateral melting"),
