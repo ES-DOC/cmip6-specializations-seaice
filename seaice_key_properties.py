@@ -95,7 +95,7 @@ DETAILS['tuning_applied'] = {
         ('target', 'str', '0.1',
             "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle."),
         ('simulations', 'str', '0.1',
-            "Which_simulations had tuning applied, e.g. all, not historical, only pi-control? "),
+            "Which simulations had tuning applied, e.g. all, not historical, only pi-control? "),
         ('metrics_used', 'str', '0.1',
             "List any observed metrics used in tuning model/parameters"),
         ]
@@ -124,7 +124,7 @@ DETAILS['conservation'] = {
     'properties': [
         ('description', 'str', '1.1',
             "Description of conservation methodology"),
-        ('scheme', 'ENUM:conservation_props_types', '1.N',
+        ('properties', 'ENUM:conservation_props_types', '1.N',
             "Properties conserved in sea ice by the numerical schemes"),
         ('budget', 'str', '1.1',
             "For each conserved property conserved please specify the terms which close the related budget"),
