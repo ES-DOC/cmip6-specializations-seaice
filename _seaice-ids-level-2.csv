@@ -1,6 +1,5 @@
 cmip6-id, cmip6-label, cmip6-type
 cmip6.seaice.grid.discretisation, Seaice > Grid > Discretisation, detail-set
-cmip6.seaice.grid.horizontal, Seaice > Grid > Horizontal, detail-set
 cmip6.seaice.grid.seaice_categories, Seaice > Grid > Seaice Categories, detail-set
 cmip6.seaice.grid.snow_on_seaice, Seaice > Grid > Snow On Seaice, detail-set
 , , 

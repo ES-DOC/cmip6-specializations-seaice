@@ -37,18 +37,12 @@ DESCRIPTION = 'Sea Ice grid'
 DETAILS['discretisation'] = {
     'description': 'Sea ice discretisation',
     'properties': [
+        ('horizontal', 'ENUM:sea_ice_grid', '1.1',
+         "Type of sea ice horizontal discretisation ?"),
         ('layering_type', 'ENUM:layering_types', '1.N',
             "What method is used to represent sea ice layering ?"),
-        ]
-    }
-
-DETAILS['discretisation:horizontal'] = {
-    'description': 'How the sea ice is horizontally discretised?',
-    'properties': [
-        ('horizontal', 'ENUM:sea_ice_grid', '1.1',
-            "Type of sea ice horizontal discretisation ?"),
         ('additional_details', 'str', '0.1',
-            "Specify any additional grid discretisation details.")
+         "Specify any additional grid discretisation details.")
         ]
     }
 
