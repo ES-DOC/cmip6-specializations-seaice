@@ -72,17 +72,17 @@
                             }
                         }, 
                         {
-                            "label": "Ice Strength Formulation", 
-                            "description": "Describe how ice-strength is formulated", 
-                            "id": "cmip6.seaice.dynamics.general.ice_strength_formulation", 
+                            "label": "Sea Ice Strength Formulation", 
+                            "description": "Describe how sea ice strength is formulated", 
+                            "id": "cmip6.seaice.dynamics.general.sea_ice_strength_formulation", 
                             "uiOrdinal": 3, 
                             "cardinality": "1.1", 
                             "type": "str"
                         }, 
                         {
-                            "label": "Ice Redistribution", 
+                            "label": "Redistribution", 
                             "description": "Which processes can redistribute sea ice?", 
-                            "id": "cmip6.seaice.dynamics.general.ice_redistribution", 
+                            "id": "cmip6.seaice.dynamics.general.redistribution", 
                             "uiOrdinal": 4, 
                             "cardinality": "0.N", 
                             "type": "enum", 
@@ -103,9 +103,9 @@
                             }
                         }, 
                         {
-                            "label": "Ice Rheology", 
+                            "label": "Rheology", 
                             "description": "Rheology, what is the ice deformation method?", 
-                            "id": "cmip6.seaice.dynamics.general.ice_rheology", 
+                            "id": "cmip6.seaice.dynamics.general.rheology", 
                             "uiOrdinal": 5, 
                             "cardinality": "1.1", 
                             "type": "enum", 
@@ -218,6 +218,14 @@
                             "uiOrdinal": 5, 
                             "cardinality": "1.1", 
                             "type": "str"
+                        }, 
+                        {
+                            "label": "Heat Content Precip", 
+                            "description": "Method by which the heat content of precipitation is handled ?", 
+                            "id": "cmip6.seaice.thermodynamics.ice_processes.heat_content_precip", 
+                            "uiOrdinal": 6, 
+                            "cardinality": "0.1", 
+                            "type": "str"
                         }
                     ], 
                     "detailSets": [
@@ -238,10 +246,6 @@
                                             {
                                                 "label": "Heat Reservoir", 
                                                 "description": "Brine inclusions treated as a heat reservoir"
-                                            }, 
-                                            {
-                                                "label": "None", 
-                                                "description": "No brine inclusions included in sea ice thermodynamics"
                                             }, 
                                             {
                                                 "label": "Thermal Fixed Salinity", 
@@ -357,7 +361,7 @@
                                                 "description": null
                                             }
                                         ], 
-                                        "description": "Melt pond processes", 
+                                        "description": "Melt ponds processes", 
                                         "isOpen": true, 
                                         "label": "melt_pond_proc"
                                     }
@@ -405,14 +409,6 @@
                                 "isOpen": true, 
                                 "label": "snow_process_types"
                             }
-                        }, 
-                        {
-                            "label": "Heat Content Precip", 
-                            "description": "Method by which the heat content of precipitation is handled ?", 
-                            "id": "cmip6.seaice.thermodynamics.snow_processes.heat_content_precip", 
-                            "uiOrdinal": 2, 
-                            "cardinality": "0.1", 
-                            "type": "str"
                         }
                     ]
                 }

@@ -60,6 +60,8 @@ SUB_PROCESSES['ice_processes'] = {
             "Method sea ice surface sublimation"),
         ('frazil_ice', 'str', '1.1',
             "Method of including frazil ice"),
+        ('heat_content_precip', 'str', '0.1',
+            "Method by which the heat content of precipitation is handled ?")
         ]
     }
 
@@ -110,8 +112,6 @@ SUB_PROCESSES['snow_processes'] = {
     'properties': [
         ('process_type', 'ENUM:snow_process_types', '1.N',
             "Snow processes in sea ice thermodynamics"),
-        ('heat_content_precip', 'str', '0.1',
-            "Method by which the heat content of precipitation is handled ?")
     ],
 }
 
@@ -124,7 +124,6 @@ ENUMERATIONS['thermo_brine_types'] = {
     'description': 'Brine inclusion methodology',
     'is_open': True,
     'members': [
-        ('None', 'No brine inclusions included in sea ice thermodynamics'),
         ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
         ('Thermal Fixed Salinity', 'Thermal properties depend on S-T (with fixed salinity)'),
         ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
@@ -157,7 +156,7 @@ ENUMERATIONS['snow_process_types'] = {
 }
 
 ENUMERATIONS['melt_pond_proc'] = {
-    'description': 'Melt pond processes',
+    'description': 'Melt ponds processes',
     'is_open': True,
     'members': [
         ('impact on albedo', None),

@@ -34,9 +34,9 @@ cmip6.seaice.key_properties.conservation.was_flux_correction_used, Seaice > Key 
 , , 
 cmip6.seaice.dynamics.general.horizontal_transport, Seaice > Dynamics > General > Horizontal Transport, detail
 cmip6.seaice.dynamics.general.transport_in_thickness_space, Seaice > Dynamics > General > Transport In Thickness Space, detail
-cmip6.seaice.dynamics.general.ice_strength_formulation, Seaice > Dynamics > General > Ice Strength Formulation, detail
-cmip6.seaice.dynamics.general.ice_redistribution, Seaice > Dynamics > General > Ice Redistribution, detail
-cmip6.seaice.dynamics.general.ice_rheology, Seaice > Dynamics > General > Ice Rheology, detail
+cmip6.seaice.dynamics.general.sea_ice_strength_formulation, Seaice > Dynamics > General > Sea Ice Strength Formulation, detail
+cmip6.seaice.dynamics.general.redistribution, Seaice > Dynamics > General > Redistribution, detail
+cmip6.seaice.dynamics.general.rheology, Seaice > Dynamics > General > Rheology, detail
 , , 
 cmip6.seaice.thermodynamics.general.budget, Seaice > Thermodynamics > General > Budget, detail
 cmip6.seaice.thermodynamics.ice_processes.basal_heat_flux, Seaice > Thermodynamics > Ice Processes > Basal Heat Flux, detail
@@ -44,6 +44,7 @@ cmip6.seaice.thermodynamics.ice_processes.new_ice_formation, Seaice > Thermodyna
 cmip6.seaice.thermodynamics.ice_processes.ice_lateral_melting, Seaice > Thermodynamics > Ice Processes > Ice Lateral Melting, detail
 cmip6.seaice.thermodynamics.ice_processes.ice_surface_sublimation, Seaice > Thermodynamics > Ice Processes > Ice Surface Sublimation, detail
 cmip6.seaice.thermodynamics.ice_processes.frazil_ice, Seaice > Thermodynamics > Ice Processes > Frazil Ice, detail
+cmip6.seaice.thermodynamics.ice_processes.heat_content_precip, Seaice > Thermodynamics > Ice Processes > Heat Content Precip, detail
 cmip6.seaice.thermodynamics.ice_processes.brine.inclusion, Seaice > Thermodynamics > Ice Processes > Brine > Inclusion, detail
 cmip6.seaice.thermodynamics.ice_processes.brine.fixed_salinity_value, Seaice > Thermodynamics > Ice Processes > Brine > Fixed Salinity Value, detail
 cmip6.seaice.thermodynamics.ice_processes.vertical_heat_diffusion.is_single_layer, Seaice > Thermodynamics > Ice Processes > Vertical Heat Diffusion > Is Single Layer, detail
@@ -55,7 +56,6 @@ cmip6.seaice.thermodynamics.ice_processes.melt_ponds.are_included, Seaice > Ther
 cmip6.seaice.thermodynamics.ice_processes.melt_ponds.formulation, Seaice > Thermodynamics > Ice Processes > Melt Ponds > Formulation, detail
 cmip6.seaice.thermodynamics.ice_processes.melt_ponds.processes, Seaice > Thermodynamics > Ice Processes > Melt Ponds > Processes, detail
 cmip6.seaice.thermodynamics.snow_processes.process_type, Seaice > Thermodynamics > Snow Processes > Process Type, detail
-cmip6.seaice.thermodynamics.snow_processes.heat_content_precip, Seaice > Thermodynamics > Snow Processes > Heat Content Precip, detail
 , , 
 cmip6.seaice.radiative_processes.methods.surface_albedo, Seaice > Radiative Processes > Methods > Surface Albedo, detail
 cmip6.seaice.radiative_processes.methods.ice_radiation_transmission, Seaice > Radiative Processes > Methods > Ice Radiation Transmission, detail
