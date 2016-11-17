@@ -850,7 +850,7 @@
                     }, 
                     {
                         "label": "Simulations", 
-                        "description": "Which_simulations had tuning applied, e.g. all, not historical, only pi-control? ", 
+                        "description": "Which simulations had tuning applied, e.g. all, not historical, only pi-control? ", 
                         "id": "cmip6.seaice.key_properties.tuning_applied.simulations", 
                         "uiOrdinal": 3, 
                         "cardinality": "0.1", 
@@ -903,9 +903,9 @@
                         "type": "str"
                     }, 
                     {
-                        "label": "Scheme", 
+                        "label": "Properties", 
                         "description": "Properties conserved in sea ice by the numerical schemes", 
-                        "id": "cmip6.seaice.key_properties.conservation.scheme", 
+                        "id": "cmip6.seaice.key_properties.conservation.properties", 
                         "uiOrdinal": 2, 
                         "cardinality": "1.N", 
                         "type": "enum", 

@@ -26,7 +26,7 @@ cmip6.seaice.key_properties.tuning_applied.metrics_used, Seaice > Key Properties
 cmip6.seaice.key_properties.assumptions.description, Seaice > Key Properties > Assumptions > Description, detail
 cmip6.seaice.key_properties.assumptions.missing_processes, Seaice > Key Properties > Assumptions > Missing Processes, detail
 cmip6.seaice.key_properties.conservation.description, Seaice > Key Properties > Conservation > Description, detail
-cmip6.seaice.key_properties.conservation.scheme, Seaice > Key Properties > Conservation > Scheme, detail
+cmip6.seaice.key_properties.conservation.properties, Seaice > Key Properties > Conservation > Properties, detail
 cmip6.seaice.key_properties.conservation.budget, Seaice > Key Properties > Conservation > Budget, detail
 cmip6.seaice.key_properties.conservation.consistency_properties, Seaice > Key Properties > Conservation > Consistency Properties, detail
 cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables, Seaice > Key Properties > Conservation > Corrected Conserved Prognostic Variables, detail
