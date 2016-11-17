@@ -54,7 +54,7 @@ ENUMERATIONS['seaice_albedo'] = {
     'members': [
         ('Delta-Eddington', None),
         ('Linear dependence on temperature', None),
-        ('Spectral dependence on temperature', None),
+        ('Multi-band albedo', 'Albedo value has a spectral dependence'),
         ('Specified values of albedo for e.g. cold or melting snow, melting sea ice', None),
         ('melt ponds', None)
     ]

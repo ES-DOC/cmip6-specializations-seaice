@@ -56,11 +56,11 @@ SUB_PROCESSES['ice_processes'] = {
             "Method by which basal heat flux is handled"),
         ('new_ice_formation_method', 'str', '1.1',
             "Method by which new sea ice is formed"),
-        ('ice_lateral_melting_method', 'str', '1.1',
+        ('ice_lateral_melting', 'str', '1.1',
             "Method of sea ice lateral melting"),
-        ('ice_surface_sublimation_method', 'str', '1.1',
+        ('ice_surface_sublimation', 'str', '1.1',
             "Method sea ice surface sublimation"),
-        ('frazil_ice_method', 'str', '1.1',
+        ('frazil_ice', 'str', '1.1',
             "Method of including frazil ice"),
         ]
     }
@@ -68,7 +68,7 @@ SUB_PROCESSES['ice_processes'] = {
 SUB_PROCESSES['ice_processes:brine'] = {
     'description': 'Information about brine inclusions',
     'properties': [
-        ('inclusion_method', 'ENUM:thermo_brine_types', '0.1',
+        ('inclusion', 'ENUM:thermo_brine_types', '0.1',
             "Method by which basal heat flux is handled"),
         ('fixed_salinity_value', 'float', '0.1',
             """If you have selected "Thermal properties depend on S-T (with fixed salinity)
@@ -97,7 +97,7 @@ SUB_PROCESSES['ice_processes:melt_ponds'] = {
     'properties': [
         ('are_included', 'bool', '1.1',
             "Are melt ponds included in sea ice model?"),
-        ('formulation_method', 'str', '0.1',
+        ('formulation', 'str', '0.1',
             "Method by which melt ponds are included"),
         ('processes', 'ENUM:melt_pond_proc', '0.N',
             "Processes included in melt pond scheme ?")

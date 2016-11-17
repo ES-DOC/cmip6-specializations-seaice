@@ -126,12 +126,12 @@ DETAILS['conservation'] = {
             "Description of conservation methodology"),
         ('scheme', 'ENUM:conservation_props_types', '1.N',
             "Properties conserved in sea ice by the numerical schemes"),
+        ('budget', 'str', '1.1',
+            "For each conserved property conserved please specify the terms which close the related budget"),
         ('consistency_properties', 'str', '0.N',
             "Any additional consistency properties (e.g. energy conversion) ?"),
         ('corrected_conserved_prognostic_variables', 'str', '0.N',
-            "Set of variables which are conserved by *more* than the numerical scheme alone."),
-        ('conserved_properties', 'str', '1.1',
-            "For each conserved property conserved please specify the terms which close the related budget"),
+            "List any variables which are conserved by *more* than the numerical scheme alone."),
         ('was_flux_correction_used', 'bool', '0.1',
             "Does conservation involved flux correction ?")
         ]

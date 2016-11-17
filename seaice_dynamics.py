@@ -38,16 +38,16 @@ DESCRIPTION = 'Sea Ice Dynamics'
 DETAILS['general'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
     'properties': [
-        ('horizontal_transport_method', 'ENUM:transport_methods', '0.1',
-            "Method of horizontal advection"),
-        ('transport_in_thickness_method', 'ENUM:transport_methods', '0.1',
-            "Method of ice migration in thickness space"),
-        ('ice_strength_formulation_method', 'str', '1.1',
+        ('horizontal_transport', 'ENUM:transport_methods', '0.1',
+            "What is the method of horizontal advection of sea ice?"),
+        ('transport_in_thickness_space', 'ENUM:transport_methods', '0.1',
+            "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
+        ('ice_strength_formulation', 'str', '1.1',
              "Describe how ice-strength is formulated"),
-        ('ice_redistribution_processes', 'ENUM:redistribution_types', '0.N',
-             "Additional processes which can redistribute sea ice."),
-        ('ice_deformation_method', 'ENUM:rheology_types', '1.1',
-             "Ice deformation method")
+        ('ice_redistribution', 'ENUM:redistribution_types', '0.N',
+             "Which processes can redistribute sea ice?"),
+        ('ice_rheology', 'ENUM:rheology_types', '1.1',
+             "Rheology, what is the ice deformation method?")
         ]
     }
 
