@@ -1,18 +1,23 @@
 cmip6-id, cmip6-label, cmip6-type
-cmip6.seaice.grid.discretisation.horizontal, Seaice > Grid > Discretisation > Horizontal, detail
-cmip6.seaice.grid.discretisation.vertical, Seaice > Grid > Discretisation > Vertical, detail
-cmip6.seaice.grid.discretisation.additional_details, Seaice > Grid > Discretisation > Additional Details, detail
+cmip6.seaice.grid.horizontal.grid, Seaice > Grid > Horizontal > Grid, detail
+cmip6.seaice.grid.horizontal.grid_type, Seaice > Grid > Horizontal > Grid Type, detail
+cmip6.seaice.grid.horizontal.scheme, Seaice > Grid > Horizontal > Scheme, detail
+cmip6.seaice.grid.horizontal.time_step, Seaice > Grid > Horizontal > Time Step, detail
+cmip6.seaice.grid.horizontal.additional_details, Seaice > Grid > Horizontal > Additional Details, detail
+cmip6.seaice.grid.vertical.layering, Seaice > Grid > Vertical > Layering, detail
+cmip6.seaice.grid.vertical.multi-layers, Seaice > Grid > Vertical > Multi-layers, detail
+cmip6.seaice.grid.vertical.additional_details, Seaice > Grid > Vertical > Additional Details, detail
 cmip6.seaice.grid.seaice_categories.number_of_categories, Seaice > Grid > Seaice Categories > Number Of Categories, detail
 cmip6.seaice.grid.seaice_categories.category_limits, Seaice > Grid > Seaice Categories > Category Limits, detail
 cmip6.seaice.grid.seaice_categories.thickness_distribution_scheme, Seaice > Grid > Seaice Categories > Thickness Distribution Scheme, detail
-cmip6.seaice.grid.seaice_categories.ice_types, Seaice > Grid > Seaice Categories > Ice Types, detail
+cmip6.seaice.grid.seaice_categories.has_ice_types, Seaice > Grid > Seaice Categories > Has Ice Types, detail
+cmip6.seaice.grid.seaice_categories.ice_types_details, Seaice > Grid > Seaice Categories > Ice Types Details, detail
 cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice, Seaice > Grid > Snow On Seaice > Has Snow On Ice, detail
 cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels, Seaice > Grid > Snow On Seaice > Number Of Snow Levels, detail
 cmip6.seaice.grid.snow_on_seaice.assumed_snow_fraction, Seaice > Grid > Snow On Seaice > Assumed Snow Fraction, detail
 cmip6.seaice.grid.snow_on_seaice.additional_details, Seaice > Grid > Snow On Seaice > Additional Details, detail
 , , 
 cmip6.seaice.key_properties.general.prognostic_variables, Seaice > Key Properties > General > Prognostic Variables, detail
-cmip6.seaice.key_properties.general.timestep, Seaice > Key Properties > General > Timestep, detail
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, detail
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point Value, detail
 cmip6.seaice.key_properties.resolution.name, Seaice > Key Properties > Resolution > Name, detail
@@ -37,24 +42,25 @@ cmip6.seaice.dynamics.general.redistribution, Seaice > Dynamics > General > Redi
 cmip6.seaice.dynamics.general.rheology, Seaice > Dynamics > General > Rheology, detail
 cmip6.seaice.dynamics.general.rheology_details, Seaice > Dynamics > General > Rheology Details, detail
 , , 
-cmip6.seaice.thermodynamics.general.budget, Seaice > Thermodynamics > General > Budget, detail
-cmip6.seaice.thermodynamics.general.transport_in_thickness_space, Seaice > Thermodynamics > General > Transport In Thickness Space, detail
-cmip6.seaice.thermodynamics.ice_processes.basal_heat_flux, Seaice > Thermodynamics > Ice Processes > Basal Heat Flux, detail
-cmip6.seaice.thermodynamics.ice_processes.new_ice_formation, Seaice > Thermodynamics > Ice Processes > New Ice Formation, detail
-cmip6.seaice.thermodynamics.ice_processes.ice_lateral_melting, Seaice > Thermodynamics > Ice Processes > Ice Lateral Melting, detail
-cmip6.seaice.thermodynamics.ice_processes.ice_surface_sublimation, Seaice > Thermodynamics > Ice Processes > Ice Surface Sublimation, detail
-cmip6.seaice.thermodynamics.ice_processes.frazil_ice, Seaice > Thermodynamics > Ice Processes > Frazil Ice, detail
-cmip6.seaice.thermodynamics.ice_processes.heat_content_precip, Seaice > Thermodynamics > Ice Processes > Heat Content Precip, detail
-cmip6.seaice.thermodynamics.ice_processes.brine.inclusion, Seaice > Thermodynamics > Ice Processes > Brine > Inclusion, detail
-cmip6.seaice.thermodynamics.ice_processes.brine.fixed_salinity_value, Seaice > Thermodynamics > Ice Processes > Brine > Fixed Salinity Value, detail
-cmip6.seaice.thermodynamics.ice_processes.vertical_heat_diffusion.is_single_layer, Seaice > Thermodynamics > Ice Processes > Vertical Heat Diffusion > Is Single Layer, detail
-cmip6.seaice.thermodynamics.ice_processes.vertical_heat_diffusion.is_multi_layer, Seaice > Thermodynamics > Ice Processes > Vertical Heat Diffusion > Is Multi Layer, detail
-cmip6.seaice.thermodynamics.ice_processes.vertical_heat_diffusion.number_of_layers, Seaice > Thermodynamics > Ice Processes > Vertical Heat Diffusion > Number Of Layers, detail
-cmip6.seaice.thermodynamics.ice_processes.vertical_heat_diffusion.regular_grid, Seaice > Thermodynamics > Ice Processes > Vertical Heat Diffusion > Regular Grid, detail
-cmip6.seaice.thermodynamics.ice_processes.vertical_heat_diffusion.is_based_on_semtner, Seaice > Thermodynamics > Ice Processes > Vertical Heat Diffusion > Is Based On Semtner, detail
-cmip6.seaice.thermodynamics.ice_processes.melt_ponds.are_included, Seaice > Thermodynamics > Ice Processes > Melt Ponds > Are Included, detail
-cmip6.seaice.thermodynamics.ice_processes.melt_ponds.formulation, Seaice > Thermodynamics > Ice Processes > Melt Ponds > Formulation, detail
-cmip6.seaice.thermodynamics.ice_processes.melt_ponds.processes, Seaice > Thermodynamics > Ice Processes > Melt Ponds > Processes, detail
+cmip6.seaice.thermodynamics.energy_conservation.formulation, Seaice > Thermodynamics > Energy Conservation > Formulation, detail
+cmip6.seaice.thermodynamics.energy_conservation.thermal_conductivity, Seaice > Thermodynamics > Energy Conservation > Thermal Conductivity, detail
+cmip6.seaice.thermodynamics.energy_conservation.heat_diffusion, Seaice > Thermodynamics > Energy Conservation > Heat Diffusion, detail
+cmip6.seaice.thermodynamics.energy_conservation.basal_heat_flux, Seaice > Thermodynamics > Energy Conservation > Basal Heat Flux, detail
+cmip6.seaice.thermodynamics.mass_conservation.new_ice_formation, Seaice > Thermodynamics > Mass Conservation > New Ice Formation, detail
+cmip6.seaice.thermodynamics.mass_conservation.ice_vertical_growth_and_melt, Seaice > Thermodynamics > Mass Conservation > Ice Vertical Growth And Melt, detail
+cmip6.seaice.thermodynamics.mass_conservation.ice_surface_sublimation, Seaice > Thermodynamics > Mass Conservation > Ice Surface Sublimation, detail
+cmip6.seaice.thermodynamics.mass_conservation.frazil_ice, Seaice > Thermodynamics > Mass Conservation > Frazil Ice, detail
+cmip6.seaice.thermodynamics.mass_conservation.ice_lateral_melting, Seaice > Thermodynamics > Mass Conservation > Ice Lateral Melting, detail
+cmip6.seaice.thermodynamics.salt_conservation.Constant salinity for both ice thermodynamics and ice-ocean exchanges, Seaice > Thermodynamics > Salt Conservation > Constant Salinity For Both Ice Thermodynamics And Ice-ocean Exchanges, detail
+cmip6.seaice.thermodynamics.salt_conservation.Prescribed salinity profile for ice thermodynamics, constant salinity for ice-ocean exchanges, Seaice > Thermodynamics > Salt Conservation > Prescribed Salinity Profile For Ice Thermodynamics, Constant Salinity For Ice-ocean Exchanges, detail
+cmip6.seaice.thermodynamics.salt_conservation.Constant salinity value if any, Seaice > Thermodynamics > Salt Conservation > Constant Salinity Value If Any, detail
+cmip6.seaice.thermodynamics.salt_conservation.Prognostic bulk salinity, parameterized profile shape, Seaice > Thermodynamics > Salt Conservation > Prognostic Bulk Salinity, Parameterized Profile Shape, detail
+cmip6.seaice.thermodynamics.salt_conservation.Prognostic salinity profile, Seaice > Thermodynamics > Salt Conservation > Prognostic Salinity Profile, detail
+cmip6.seaice.thermodynamics.ice_thickness_distribution.representation, Seaice > Thermodynamics > Ice Thickness Distribution > Representation, detail
+cmip6.seaice.thermodynamics.ice_thickness_distribution.transport_in_thickness_space, Seaice > Thermodynamics > Ice Thickness Distribution > Transport In Thickness Space, detail
+cmip6.seaice.thermodynamics.melt_ponds.are_included, Seaice > Thermodynamics > Melt Ponds > Are Included, detail
+cmip6.seaice.thermodynamics.melt_ponds.formulation, Seaice > Thermodynamics > Melt Ponds > Formulation, detail
+cmip6.seaice.thermodynamics.melt_ponds.impacts, Seaice > Thermodynamics > Melt Ponds > Impacts, detail
 cmip6.seaice.thermodynamics.snow_processes.process_type, Seaice > Thermodynamics > Snow Processes > Process Type, detail
 , , 
 cmip6.seaice.radiative_processes.methods.surface_albedo, Seaice > Radiative Processes > Methods > Surface Albedo, detail

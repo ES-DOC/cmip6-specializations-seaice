@@ -42,8 +42,6 @@ DETAILS['general'] = {
         #    "Basic approximations made in the ice."),
         ('prognostic_variables', 'ENUM:prognostic_vars_types', '1.N',
             "List of prognostic variables in the sea ice component."),
-        ('timestep', 'int', '1.1',
-            "What is the time step in the sea ice model in seconds."),
         ]
     }
 

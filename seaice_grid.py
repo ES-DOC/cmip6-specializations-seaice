@@ -36,15 +36,41 @@ DESCRIPTION = 'Sea Ice grid'
 # --------------------------------------------------------------------
 DETAILS['discretisation'] = {
     'description': 'Sea ice discretisation',
-    'properties': [
-        ('horizontal', 'ENUM:horizontal_grid', '1.1',
-            "Type of sea ice horizontal discretisation ?"),
-        ('vertical', 'ENUM:vertical_layering', '1.N',
-            "What method is used to represent sea ice vertical layering?"),
-        ('additional_details', 'str', '0.1',
-            "Specify any additional grid discretisation details.")
+    'properties': [],
+    'detail_sets': [
+        'horizontal',
+        'vertical',
         ]
     }
+
+DETAILS['discretisation:horizontal'] = {
+    'description': 'Sea ice discretisation',
+    'properties': [
+        ('grid', 'ENUM:horizontal_grid', '1.1',
+            "Grid on which sea ice is horizontal discretised?"),
+        ('grid_type', 'ENUM:grid_structure', '1.1',
+            "What is the type of sea ice grid?"),
+        ('scheme', 'ENUM:numerical_scheme', '1.1',
+            "What is the advection scheme?"),
+        ('time_step', 'int', '1.1',
+            "What is the time step in the sea ice model in seconds."),
+        ('additional_details', 'str', '0.1',
+            "Specify any additional horizontal discretisation details.")
+        ]
+    }
+
+DETAILS['discretisation:vertical'] = {
+    'description': 'Sea ice discretisation',
+    'properties': [
+        ('layering', 'ENUM:vertical_layering', '1.N',
+            "What type of sea ice vertical layers are implemented?"),
+        ('multi-layers', 'str', '1.1',
+            "If using multi-layers specify how many."),
+        ('additional_details', 'str', '0.1',
+            "Specify any additional vertical discretisation details.")
+        ]
+    }
+
 
 
 # --------------------------------------------------------------------
@@ -59,9 +85,11 @@ DETAILS['seaice_categories'] = {
             "If using multiple sea ice categories specify the category limits."),
         ('thickness_distribution_scheme', 'str', '0.1',
             "If applicable describe the sea ice thickness distribution scheme"),
-        ('ice_types', 'str', '0.1',
-         "Using ice types"),
-    ]
+        ('has_ice_types', 'bool', '1.1',
+            "Set to True if using ice types rather than ice thickness categories."),
+        ('ice_types_details', 'str', '1.1',
+            "If using ice types specify any additional details."),
+        ]
     }
 
 # --------------------------------------------------------------------
@@ -75,9 +103,9 @@ DETAILS['snow_on_seaice'] = {
         ('number_of_snow_levels', 'str', '0.1',
             "Number of vertical levels of snow on ice ?"),
         ('assumed_snow_fraction', 'str', '0.1',
-            "Number of vertical levels of snow on ice ?"),
+            "Describe the assumed snow fraction on ice."),
         ('additional_details', 'str', '0.1',
-            "Add")
+            "Specify any additional details related to snow on ice.")
         ]
     }
 
@@ -107,5 +135,24 @@ ENUMERATIONS['vertical_layering'] = {
             'Simulation uses two layers.'),
         ('Multi-level',
             'Simulation uses more than two layers'),
+       ]
+    }
+
+ENUMERATIONS['numerical_scheme'] = {
+    'description': 'Numerical scheme',
+    'is_open': True,
+    'members': [
+        ('Finite differences', None),
+        ('Finite elements', None),
+        ('Finite volumes',  None),
+       ]
+    }
+
+ENUMERATIONS['grid_structure'] = {
+    'description': 'Numerical scheme',
+    'is_open': True,
+    'members': [
+        ('Structured grid', None),
+        ('Unstructured grid', None),
        ]
     }
