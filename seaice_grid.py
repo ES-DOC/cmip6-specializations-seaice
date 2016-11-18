@@ -37,14 +37,15 @@ DESCRIPTION = 'Sea Ice grid'
 DETAILS['discretisation'] = {
     'description': 'Sea ice discretisation',
     'properties': [
-        ('horizontal', 'ENUM:sea_ice_grid', '1.1',
-         "Type of sea ice horizontal discretisation ?"),
-        ('layering_type', 'ENUM:layering_types', '1.N',
-            "What method is used to represent sea ice layering ?"),
+        ('horizontal', 'ENUM:horizontal_grid', '1.1',
+            "Type of sea ice horizontal discretisation ?"),
+        ('vertical', 'ENUM:vertical_layering', '1.N',
+            "What method is used to represent sea ice vertical layering?"),
         ('additional_details', 'str', '0.1',
-         "Specify any additional grid discretisation details.")
+            "Specify any additional grid discretisation details.")
         ]
     }
+
 
 # --------------------------------------------------------------------
 # SEAICE-CATEGROIES: Description of method used to represent sea ice categories.
@@ -58,7 +59,9 @@ DETAILS['seaice_categories'] = {
             "If using multiple sea ice categories specify the category limits."),
         ('thickness_distribution_scheme', 'str', '0.1',
             "If applicable describe the sea ice thickness distribution scheme"),
-        ]
+        ('ice_types', 'str', '0.1',
+         "Using ice types"),
+    ]
     }
 
 # --------------------------------------------------------------------
@@ -70,14 +73,18 @@ DETAILS['snow_on_seaice'] = {
         ('has_snow_on_ice', 'bool', '1.1',
             "Is snow on ice represented in this model ?"),
         ('number_of_snow_levels', 'str', '0.1',
-            "Number of vertical levels of snow on ice ?")
+            "Number of vertical levels of snow on ice ?"),
+        ('assumed_snow_fraction', 'str', '0.1',
+            "Number of vertical levels of snow on ice ?"),
+        ('additional_details', 'str', '0.1',
+            "Add")
         ]
     }
 
 # --------------------------------------------------------------------
 # ENUMERATIONS
 # --------------------------------------------------------------------
-ENUMERATIONS['sea_ice_grid'] = {
+ENUMERATIONS['horizontal_grid'] = {
     'description': 'Grid which is the sea ice horizontally discretised on?',
     'is_open': True,
     'members': [
@@ -90,7 +97,7 @@ ENUMERATIONS['sea_ice_grid'] = {
         ]
     }
 
-ENUMERATIONS['layering_types'] = {
+ENUMERATIONS['vertical_layering'] = {
     'description': 'Sea ice layering types',
     'is_open': True,
     'members': [
@@ -100,7 +107,5 @@ ENUMERATIONS['layering_types'] = {
             'Simulation uses two layers.'),
         ('Multi-level',
             'Simulation uses more than two layers'),
-        ('ice types',
-            'Simulation does not use layers, but has multiple ice types per grid cell'),
-        ]
+       ]
     }

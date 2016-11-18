@@ -1,20 +1,20 @@
 cmip6-id, cmip6-label, cmip6-type
 cmip6.seaice.grid.discretisation.horizontal, Seaice > Grid > Discretisation > Horizontal, detail
-cmip6.seaice.grid.discretisation.layering_type, Seaice > Grid > Discretisation > Layering Type, detail
+cmip6.seaice.grid.discretisation.vertical, Seaice > Grid > Discretisation > Vertical, detail
 cmip6.seaice.grid.discretisation.additional_details, Seaice > Grid > Discretisation > Additional Details, detail
 cmip6.seaice.grid.seaice_categories.number_of_categories, Seaice > Grid > Seaice Categories > Number Of Categories, detail
 cmip6.seaice.grid.seaice_categories.category_limits, Seaice > Grid > Seaice Categories > Category Limits, detail
 cmip6.seaice.grid.seaice_categories.thickness_distribution_scheme, Seaice > Grid > Seaice Categories > Thickness Distribution Scheme, detail
+cmip6.seaice.grid.seaice_categories.ice_types, Seaice > Grid > Seaice Categories > Ice Types, detail
 cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice, Seaice > Grid > Snow On Seaice > Has Snow On Ice, detail
 cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels, Seaice > Grid > Snow On Seaice > Number Of Snow Levels, detail
+cmip6.seaice.grid.snow_on_seaice.assumed_snow_fraction, Seaice > Grid > Snow On Seaice > Assumed Snow Fraction, detail
+cmip6.seaice.grid.snow_on_seaice.additional_details, Seaice > Grid > Snow On Seaice > Additional Details, detail
 , , 
-cmip6.seaice.key_properties.general.basic_approximations, Seaice > Key Properties > General > Basic Approximations, detail
 cmip6.seaice.key_properties.general.prognostic_variables, Seaice > Key Properties > General > Prognostic Variables, detail
 cmip6.seaice.key_properties.general.timestep, Seaice > Key Properties > General > Timestep, detail
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, detail
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point Value, detail
-cmip6.seaice.key_properties.seawater_properties.ocean_specific_heat, Seaice > Key Properties > Seawater Properties > Ocean Specific Heat, detail
-cmip6.seaice.key_properties.seawater_properties.ocean_reference_density, Seaice > Key Properties > Seawater Properties > Ocean Reference Density, detail
 cmip6.seaice.key_properties.resolution.name, Seaice > Key Properties > Resolution > Name, detail
 cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution, Seaice > Key Properties > Resolution > Canonical Horizontal Resolution, detail
 cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints, Seaice > Key Properties > Resolution > Number Of Horizontal Gridpoints, detail
@@ -28,17 +28,17 @@ cmip6.seaice.key_properties.assumptions.missing_processes, Seaice > Key Properti
 cmip6.seaice.key_properties.conservation.description, Seaice > Key Properties > Conservation > Description, detail
 cmip6.seaice.key_properties.conservation.properties, Seaice > Key Properties > Conservation > Properties, detail
 cmip6.seaice.key_properties.conservation.budget, Seaice > Key Properties > Conservation > Budget, detail
-cmip6.seaice.key_properties.conservation.consistency_properties, Seaice > Key Properties > Conservation > Consistency Properties, detail
-cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables, Seaice > Key Properties > Conservation > Corrected Conserved Prognostic Variables, detail
 cmip6.seaice.key_properties.conservation.was_flux_correction_used, Seaice > Key Properties > Conservation > Was Flux Correction Used, detail
+cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables, Seaice > Key Properties > Conservation > Corrected Conserved Prognostic Variables, detail
 , , 
 cmip6.seaice.dynamics.general.horizontal_transport, Seaice > Dynamics > General > Horizontal Transport, detail
-cmip6.seaice.dynamics.general.transport_in_thickness_space, Seaice > Dynamics > General > Transport In Thickness Space, detail
 cmip6.seaice.dynamics.general.sea_ice_strength_formulation, Seaice > Dynamics > General > Sea Ice Strength Formulation, detail
 cmip6.seaice.dynamics.general.redistribution, Seaice > Dynamics > General > Redistribution, detail
 cmip6.seaice.dynamics.general.rheology, Seaice > Dynamics > General > Rheology, detail
+cmip6.seaice.dynamics.general.rheology_details, Seaice > Dynamics > General > Rheology Details, detail
 , , 
 cmip6.seaice.thermodynamics.general.budget, Seaice > Thermodynamics > General > Budget, detail
+cmip6.seaice.thermodynamics.general.transport_in_thickness_space, Seaice > Thermodynamics > General > Transport In Thickness Space, detail
 cmip6.seaice.thermodynamics.ice_processes.basal_heat_flux, Seaice > Thermodynamics > Ice Processes > Basal Heat Flux, detail
 cmip6.seaice.thermodynamics.ice_processes.new_ice_formation, Seaice > Thermodynamics > Ice Processes > New Ice Formation, detail
 cmip6.seaice.thermodynamics.ice_processes.ice_lateral_melting, Seaice > Thermodynamics > Ice Processes > Ice Lateral Melting, detail

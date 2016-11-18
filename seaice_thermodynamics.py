@@ -41,6 +41,8 @@ DETAILS['general'] = {
     'properties': [
         ('budget', 'str', '0.1',
             "What information required to close the thermodynamics budget?"),
+        ('transport_in_thickness_space', 'ENUM:transport_methods', '0.1',
+            "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
         ]
     }
 
@@ -135,8 +137,10 @@ ENUMERATIONS['basal_heat_flux_method'] = {
     'is_open': True,
     'members': [
         ('Prescribed', None),
-        ('Parametrized in sea ice', None),
-        ('Parametrized in ocean', None),
+#        ('Parametrized in sea ice', None),
+#        ('Parametrized in ocean', None),
+        ('linear in velocity', None),
+        ('square in velocity', None),
     ]
 }
 
@@ -162,5 +166,15 @@ ENUMERATIONS['melt_pond_proc'] = {
         ('impact on albedo', None),
         ('latent heat flux', None),
         ('freshwater', None)
+    ]
+}
+
+ENUMERATIONS['transport_methods'] = {
+    'description': 'Transport Methods',
+    'is_open': True,
+    'members': [
+        ('Incremental Re-mapping', '(including Semi-Lagrangian)'),
+        ('Prather', None),
+        ('Eulerian', None),
     ]
 }
