@@ -88,16 +88,17 @@ SUB_PROCESSES['mass_conservation'] = {
 SUB_PROCESSES['salt_conservation'] = {
     'description': 'Salt conservation in sea ice thermodynamics.',
     'properties': [
-        ('Constant salinity for both ice thermodynamics and ice-ocean exchanges', 'str', '1.1',
-             "?"),
-        ('Prescribed salinity profile for ice thermodynamics, constant salinity for ice-ocean exchanges', 'str', '0.1',
-            "?"),
-        ('Constant salinity value if any', 'float', '0.1',
-            "?"),
-        ('Prognostic bulk salinity, parameterized profile shape', 'str', '1.1',
-            "?"),
-        ('Prognostic salinity profile', 'str', '0.1',
-            "?"),
+        ('has_constant_salinity', 'bool', '1.1',
+             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
+        ('has_prescribed_salinity_profile', 'str', '1.1',
+            """Set to true if sea ice has prescribed salinity profile for ice thermodynamics
+               but has constant salinity for ice-ocean exchanges"""),
+        ('constant_salinity_value', 'float', '0.1',
+            "If using a constant salinity value specify this value in PSU?"),
+        ('prognostic_bulk_salinity', 'str', '1.1',
+            "Describe the prognostic bulk salinity, parameterized profile shape."),
+        ('prognostic_salinity_profile', 'str', '1.1',
+            "Describe the prognostic salinity profile method used."),
         ]
     }
 
