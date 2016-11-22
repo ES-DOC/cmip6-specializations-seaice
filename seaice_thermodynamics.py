@@ -86,29 +86,43 @@ SUB_PROCESSES['salt'] = {
     'description': 'Salt conservation in sea ice thermodynamics.',
     'properties': [
         ('has_multiple_sea_ice_salinities', 'bool', '1.1',
-            "Does your model use two different salinities for thermodynamic calculations and for the salt budget?"),
-        ('has_constant_mass_transport_salinity', 'bool', '1.1',
-             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
-        ('constant_salinity_value_mass_transport', 'float', '0.1',
-            "If using a constant salinity value specify this value in PSU?"),
-        ('has_prescribed_mass_transport_salinity_profile', 'str', '1.1',
-            """Set to true if sea ice has prescribed salinity profile for ice thermodynamics
-               but has constant salinity for ice-ocean exchanges"""),
-        ('has_constant_thermodynamic_salinity', 'bool', '1.1',
-             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
-        ('constant_salinity_value_thermodynamic', 'float', '0.1',
-            "If using a constant salinity value specify this value in PSU?"),
-        ('has_prescribed_thermodynamic_salinity_profile', 'str', '1.1',
-            """Set to true if sea ice has prescribed salinity profile for ice thermodynamics
-               but has constant salinity for ice-ocean exchanges"""),
-        ('prognostic_thermodynamic_salinity_profile', 'str', '1.1',
-            "Describe the prognostic salinity profile method used."),
-        ('prognostic_mass_transport_salinity_profile', 'str', '1.1',
-            "Describe the prognostic salinity profile method used."),
+         """Does your model use two different salinities for thermodynamic
+         calculations and for the salt budget?"""),
         ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
-            "Does sea ice salinity impact the thermal properties of sea ice?"),
+         "Does sea ice salinity impact the thermal properties of sea ice?"),
+    ],
+    'detail_sets': [
+        'mass_transport',
+        'thermodynamics',
+    ]
+}
+
+SUB_PROCESSES['salt:mass_transport']={
+    'description':'Mass transport of salt',
+    'properties': [
+        ('salinity_type', 'ENUM:salinity_method', '1.1',
+            "Some text"),
+        ('constant_salinity_value_mass_transport', 'float', '0.1',
+             "If using a constant salinity value specify this value in PSU?"),
+        ('additional_details', 'str', '1.1',
+            "Describe the prognostic salinity profile method used."),
         ]
     }
+
+SUB_PROCESSES['salt:thermodynamics']={
+    'description':'Salt thermodynamics',
+    'properties': [
+        ('salinity_type', 'ENUM:salinity_method', '1.1',
+            "Some text"),
+        ('constant_salinity_value_thermodynamics', 'float', '0.1',
+             "If using a constant salinity value specify this value in PSU?"),
+        ('additional_details', 'str', '1.1',
+            "Describe the prognostic salinity profile method used."),
+ #       ('has_constant_thermodynamic_salinity', 'bool', '1.1',
+#             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
+        ]
+    }
+
 
 SUB_PROCESSES['ice_thickness_distribution'] = {
     'description': 'Characteristics of melt ponds.',
@@ -253,14 +267,22 @@ ENUMERATIONS['melt_pond_impacts'] = {
     ]
 }
 
-# TODO Find out if snow redistribution schemes are implemented if so maybe need a separate
-# sub process
 ENUMERATIONS['snow_process_types'] = {
     'description': 'Types of snow processes',
     'is_open': True,
     'members': [
         ('single-layered heat diffusion', None),
         ('multi-layered heat diffusion', None),
+    ]
+}
+
+ENUMERATIONS['salinity_method'] = {
+    'description': 'Salinity',
+    'is_open': True,
+    'members': [
+        ('constant', None),
+        ('prescribed salinity profile', None),
+        ('prognostic salinity profile', None),
     ]
 }
 

@@ -45,10 +45,37 @@
                             }
                         }, 
                         {
+                            "label": "Transport In Thickness Space", 
+                            "description": "What is the method of sea ice transport in thickness space (i.e. thickness categories)?", 
+                            "id": "cmip6.seaice.dynamics.general.transport_in_thickness_space", 
+                            "uiOrdinal": 2, 
+                            "cardinality": "0.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "choices": [
+                                    {
+                                        "label": "Eulerian", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Incremental Re-mapping", 
+                                        "description": "(including Semi-Lagrangian)"
+                                    }, 
+                                    {
+                                        "label": "Prather", 
+                                        "description": null
+                                    }
+                                ], 
+                                "description": "Transport Methods", 
+                                "isOpen": true, 
+                                "label": "transport_methods"
+                            }
+                        }, 
+                        {
                             "label": "Sea Ice Strength Formulation", 
                             "description": "Describe how sea ice strength is formulated", 
                             "id": "cmip6.seaice.dynamics.general.sea_ice_strength_formulation", 
-                            "uiOrdinal": 2, 
+                            "uiOrdinal": 3, 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -71,7 +98,7 @@
                             "label": "Redistribution", 
                             "description": "Which processes can redistribute sea ice?", 
                             "id": "cmip6.seaice.dynamics.general.redistribution", 
-                            "uiOrdinal": 3, 
+                            "uiOrdinal": 4, 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -94,7 +121,7 @@
                             "label": "Rheology", 
                             "description": "Rheology, what is the ice deformation method?", 
                             "id": "cmip6.seaice.dynamics.general.rheology", 
-                            "uiOrdinal": 4, 
+                            "uiOrdinal": 5, 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -128,14 +155,6 @@
                                 "isOpen": true, 
                                 "label": "rheology_types"
                             }
-                        }, 
-                        {
-                            "label": "Rheology Details", 
-                            "description": "Specify any additional rheology details?", 
-                            "id": "cmip6.seaice.dynamics.general.rheology_details", 
-                            "uiOrdinal": 5, 
-                            "cardinality": "1.1", 
-                            "type": "str"
                         }
                     ]
                 }
@@ -148,16 +167,16 @@
             "contact": "Ruth Petrie", 
             "subProcesses": [
                 {
-                    "label": "Energy Conservation", 
+                    "label": "Energy", 
                     "description": "Energy conservation in sea ice thermodynamics", 
-                    "id": "cmip6.seaice.thermodynamics.energy_conservation", 
+                    "id": "cmip6.seaice.thermodynamics.energy", 
                     "details": [
                         {
                             "label": "Enthalpy Formulation", 
                             "description": "Formulation of energy conservation", 
-                            "id": "cmip6.seaice.thermodynamics.energy_conservation.enthalpy_formulation", 
+                            "id": "cmip6.seaice.thermodynamics.energy.enthalpy_formulation", 
                             "uiOrdinal": 1, 
-                            "cardinality": "1.N", 
+                            "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
                                 "choices": [
@@ -186,9 +205,9 @@
                         {
                             "label": "Thermal Conductivity", 
                             "description": "Method of thermal conductivity", 
-                            "id": "cmip6.seaice.thermodynamics.energy_conservation.thermal_conductivity", 
+                            "id": "cmip6.seaice.thermodynamics.energy.thermal_conductivity", 
                             "uiOrdinal": 2, 
-                            "cardinality": "1.N", 
+                            "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
                                 "choices": [
@@ -209,7 +228,7 @@
                         {
                             "label": "Heat Diffusion", 
                             "description": "Method of heat diffusion", 
-                            "id": "cmip6.seaice.thermodynamics.energy_conservation.heat_diffusion", 
+                            "id": "cmip6.seaice.thermodynamics.energy.heat_diffusion", 
                             "uiOrdinal": 3, 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -236,41 +255,49 @@
                         {
                             "label": "Basal Heat Flux", 
                             "description": "Method by which basal ocean heat flux is handled", 
-                            "id": "cmip6.seaice.thermodynamics.energy_conservation.basal_heat_flux", 
+                            "id": "cmip6.seaice.thermodynamics.energy.basal_heat_flux", 
                             "uiOrdinal": 4, 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "choices": [
                                     {
-                                        "label": "linear", 
-                                        "description": null
+                                        "label": "Heat Reservoir", 
+                                        "description": "Brine inclusions treated as a heat reservoir"
                                     }, 
                                     {
-                                        "label": "prescribed", 
-                                        "description": null
+                                        "label": "Thermal Fixed Salinity", 
+                                        "description": "Thermal properties depend on S-T (with fixed salinity)"
                                     }, 
                                     {
-                                        "label": "quadratic", 
-                                        "description": null
+                                        "label": "Thermal Varying Salinity", 
+                                        "description": "Thermal properties depend on S-T (with varying salinity"
                                     }
                                 ], 
                                 "description": "Basal ocean heat flux methodology", 
                                 "isOpen": true, 
                                 "label": "basal_heat_flux_method"
                             }
+                        }, 
+                        {
+                            "label": "Heat Content Precip", 
+                            "description": "Method by which the heat content of precipitation is handled ?", 
+                            "id": "cmip6.seaice.thermodynamics.energy.heat_content_precip", 
+                            "uiOrdinal": 5, 
+                            "cardinality": "1.1", 
+                            "type": "str"
                         }
                     ]
                 }, 
                 {
-                    "label": "Mass Conservation", 
+                    "label": "Mass", 
                     "description": "Mass conservation in sea ice thermodynamics", 
-                    "id": "cmip6.seaice.thermodynamics.mass_conservation", 
+                    "id": "cmip6.seaice.thermodynamics.mass", 
                     "details": [
                         {
                             "label": "New Ice Formation", 
                             "description": "Method by which new sea ice is formed in open water", 
-                            "id": "cmip6.seaice.thermodynamics.mass_conservation.new_ice_formation", 
+                            "id": "cmip6.seaice.thermodynamics.mass.new_ice_formation", 
                             "uiOrdinal": 1, 
                             "cardinality": "1.1", 
                             "type": "str"
@@ -278,7 +305,7 @@
                         {
                             "label": "Ice Vertical Growth And Melt", 
                             "description": "Method describing the vertical growth and melt of sea ice.", 
-                            "id": "cmip6.seaice.thermodynamics.mass_conservation.ice_vertical_growth_and_melt", 
+                            "id": "cmip6.seaice.thermodynamics.mass.ice_vertical_growth_and_melt", 
                             "uiOrdinal": 2, 
                             "cardinality": "1.1", 
                             "type": "str"
@@ -286,7 +313,7 @@
                         {
                             "label": "Ice Surface Sublimation", 
                             "description": "Method sea ice surface sublimation", 
-                            "id": "cmip6.seaice.thermodynamics.mass_conservation.ice_surface_sublimation", 
+                            "id": "cmip6.seaice.thermodynamics.mass.ice_surface_sublimation", 
                             "uiOrdinal": 3, 
                             "cardinality": "1.1", 
                             "type": "str"
@@ -294,7 +321,7 @@
                         {
                             "label": "Frazil Ice", 
                             "description": "Method of frazil ice formation", 
-                            "id": "cmip6.seaice.thermodynamics.mass_conservation.frazil_ice", 
+                            "id": "cmip6.seaice.thermodynamics.mass.frazil_ice", 
                             "uiOrdinal": 4, 
                             "cardinality": "1.1", 
                             "type": "str"
@@ -302,7 +329,7 @@
                         {
                             "label": "Ice Lateral Melting", 
                             "description": "Method of sea ice lateral melting", 
-                            "id": "cmip6.seaice.thermodynamics.mass_conservation.ice_lateral_melting", 
+                            "id": "cmip6.seaice.thermodynamics.mass.ice_lateral_melting", 
                             "uiOrdinal": 5, 
                             "cardinality": "1.1", 
                             "type": "enum", 
@@ -325,49 +352,127 @@
                     ]
                 }, 
                 {
-                    "label": "Salt Conservation", 
+                    "label": "Salt", 
                     "description": "Salt conservation in sea ice thermodynamics.", 
-                    "id": "cmip6.seaice.thermodynamics.salt_conservation", 
+                    "id": "cmip6.seaice.thermodynamics.salt", 
                     "details": [
                         {
-                            "label": "Has Constant Salinity", 
-                            "description": "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges.", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.has_constant_salinity", 
+                            "label": "Has Multiple Sea Ice Salinities", 
+                            "description": "Does your model use two different salinities for thermodynamic\n         calculations and for the salt budget?", 
+                            "id": "cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities", 
                             "uiOrdinal": 1, 
                             "cardinality": "1.1", 
                             "type": "bool"
                         }, 
                         {
-                            "label": "Has Prescribed Salinity Profile", 
-                            "description": "Set to true if sea ice has prescribed salinity profile for ice thermodynamics\n               but has constant salinity for ice-ocean exchanges", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.has_prescribed_salinity_profile", 
+                            "label": "Sea Ice Salinity Thermal Impacts", 
+                            "description": "Does sea ice salinity impact the thermal properties of sea ice?", 
+                            "id": "cmip6.seaice.thermodynamics.salt.sea_ice_salinity_thermal_impacts", 
                             "uiOrdinal": 2, 
                             "cardinality": "1.1", 
-                            "type": "str"
+                            "type": "bool"
+                        }
+                    ], 
+                    "detailSets": [
+                        {
+                            "label": "Mass Transport", 
+                            "description": "Mass transport of salt", 
+                            "id": "cmip6.seaice.thermodynamics.salt.mass_transport", 
+                            "details": [
+                                {
+                                    "label": "Salinity Type", 
+                                    "description": "Some text", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.mass_transport.salinity_type", 
+                                    "uiOrdinal": 1, 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "choices": [
+                                            {
+                                                "label": "constant", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "prescribed salinity profile", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "prognostic salinity profile", 
+                                                "description": null
+                                            }
+                                        ], 
+                                        "description": "Salinity", 
+                                        "isOpen": true, 
+                                        "label": "salinity_method"
+                                    }
+                                }, 
+                                {
+                                    "label": "Constant Salinity Value Mass Transport", 
+                                    "description": "If using a constant salinity value specify this value in PSU?", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.mass_transport.constant_salinity_value_mass_transport", 
+                                    "uiOrdinal": 2, 
+                                    "cardinality": "0.1", 
+                                    "type": "float"
+                                }, 
+                                {
+                                    "label": "Additional Details", 
+                                    "description": "Describe the prognostic salinity profile method used.", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.mass_transport.additional_details", 
+                                    "uiOrdinal": 3, 
+                                    "cardinality": "1.1", 
+                                    "type": "str"
+                                }
+                            ]
                         }, 
                         {
-                            "label": "Constant Salinity Value", 
-                            "description": "If using a constant salinity value specify this value in PSU?", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.constant_salinity_value", 
-                            "uiOrdinal": 3, 
-                            "cardinality": "0.1", 
-                            "type": "float"
-                        }, 
-                        {
-                            "label": "Prognostic Bulk Salinity", 
-                            "description": "Describe the prognostic bulk salinity, parameterized profile shape.", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.prognostic_bulk_salinity", 
-                            "uiOrdinal": 4, 
-                            "cardinality": "1.1", 
-                            "type": "str"
-                        }, 
-                        {
-                            "label": "Prognostic Salinity Profile", 
-                            "description": "Describe the prognostic salinity profile method used.", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.prognostic_salinity_profile", 
-                            "uiOrdinal": 5, 
-                            "cardinality": "1.1", 
-                            "type": "str"
+                            "label": "Thermodynamics", 
+                            "description": "Salt thermodynamics", 
+                            "id": "cmip6.seaice.thermodynamics.salt.thermodynamics", 
+                            "details": [
+                                {
+                                    "label": "Salinity Type", 
+                                    "description": "Some text", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 
+                                    "uiOrdinal": 1, 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "choices": [
+                                            {
+                                                "label": "constant", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "prescribed salinity profile", 
+                                                "description": null
+                                            }, 
+                                            {
+                                                "label": "prognostic salinity profile", 
+                                                "description": null
+                                            }
+                                        ], 
+                                        "description": "Salinity", 
+                                        "isOpen": true, 
+                                        "label": "salinity_method"
+                                    }
+                                }, 
+                                {
+                                    "label": "Constant Salinity Value Thermodynamics", 
+                                    "description": "If using a constant salinity value specify this value in PSU?", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.constant_salinity_value_thermodynamics", 
+                                    "uiOrdinal": 2, 
+                                    "cardinality": "0.1", 
+                                    "type": "float"
+                                }, 
+                                {
+                                    "label": "Additional Details", 
+                                    "description": "Describe the prognostic salinity profile method used.", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.additional_details", 
+                                    "uiOrdinal": 3, 
+                                    "cardinality": "1.1", 
+                                    "type": "str"
+                                }
+                            ]
                         }
                     ]
                 }, 
@@ -397,33 +502,6 @@
                                 "description": "Type of sea ice thickness representation", 
                                 "isOpen": true, 
                                 "label": "ice_thickness_representation"
-                            }
-                        }, 
-                        {
-                            "label": "Transport In Thickness Space", 
-                            "description": "What is the method of sea ice transport in thickness space (i.e. thickness categories)?", 
-                            "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution.transport_in_thickness_space", 
-                            "uiOrdinal": 2, 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "choices": [
-                                    {
-                                        "label": "Eulerian", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Incremental Re-mapping", 
-                                        "description": "(including Semi-Lagrangian)"
-                                    }, 
-                                    {
-                                        "label": "Prather", 
-                                        "description": null
-                                    }
-                                ], 
-                                "description": "Transport Methods", 
-                                "isOpen": true, 
-                                "label": "transport_methods"
                             }
                         }
                     ]
@@ -499,11 +577,51 @@
                     "id": "cmip6.seaice.thermodynamics.snow_processes", 
                     "details": [
                         {
-                            "label": "Process Type", 
-                            "description": "Snow processes in sea ice thermodynamics", 
-                            "id": "cmip6.seaice.thermodynamics.snow_processes.process_type", 
+                            "label": "Has Snow Aging", 
+                            "description": "Snow redistribution", 
+                            "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_aging", 
                             "uiOrdinal": 1, 
                             "cardinality": "1.N", 
+                            "type": "bool"
+                        }, 
+                        {
+                            "label": "Snow Aging Schem", 
+                            "description": "Snow redistribution", 
+                            "id": "cmip6.seaice.thermodynamics.snow_processes.snow_aging_schem", 
+                            "uiOrdinal": 2, 
+                            "cardinality": "1.N", 
+                            "type": "str"
+                        }, 
+                        {
+                            "label": "Has Snow Ice Formation", 
+                            "description": "Snow ice formation", 
+                            "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_ice_formation", 
+                            "uiOrdinal": 3, 
+                            "cardinality": "1.N", 
+                            "type": "bool"
+                        }, 
+                        {
+                            "label": "Snow Ice Formation Scheme", 
+                            "description": "Snow ice formation", 
+                            "id": "cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme", 
+                            "uiOrdinal": 4, 
+                            "cardinality": "1.N", 
+                            "type": "str"
+                        }, 
+                        {
+                            "label": "Redistribution", 
+                            "description": "What is the impact of ridging on snow cover?", 
+                            "id": "cmip6.seaice.thermodynamics.snow_processes.redistribution", 
+                            "uiOrdinal": 5, 
+                            "cardinality": "1.N", 
+                            "type": "str"
+                        }, 
+                        {
+                            "label": "Heat Diffusion", 
+                            "description": "Snow processes in sea ice thermodynamics", 
+                            "id": "cmip6.seaice.thermodynamics.snow_processes.heat_diffusion", 
+                            "uiOrdinal": 6, 
+                            "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
                                 "choices": [
@@ -514,18 +632,6 @@
                                     {
                                         "label": "single-layered heat diffusion", 
                                         "description": null
-                                    }, 
-                                    {
-                                        "label": "snow aging scheme", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "snow ice scheme", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "snow redistribution scheme", 
-                                        "description": "Is there a scheme to redistribute snow on sea ice by wind or melting processes?"
                                     }
                                 ], 
                                 "description": "Types of snow processes", 
@@ -563,10 +669,6 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "Melt ponds", 
-                                        "description": "Melt ponds affect the albedo"
-                                    }, 
-                                    {
                                         "label": "Multi-band albedo", 
                                         "description": "Albedo value has a spectral dependence"
                                     }, 
@@ -595,6 +697,10 @@
                                     }, 
                                     {
                                         "label": "Exponential attenuation", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "ice_radiation_transmission_per_category", 
                                         "description": null
                                     }
                                 ], 
@@ -850,9 +956,9 @@
                         "type": "str"
                     }, 
                     {
-                        "label": "Assumed Snow Fraction", 
-                        "description": "Describe the assumed snow fraction on ice.", 
-                        "id": "cmip6.seaice.grid.snow_on_seaice.assumed_snow_fraction", 
+                        "label": "Snow Fraction", 
+                        "description": "Describe how the snow fraction on sea ice is determined", 
+                        "id": "cmip6.seaice.grid.snow_on_seaice.snow_fraction", 
                         "uiOrdinal": 3, 
                         "cardinality": "0.1", 
                         "type": "str"
@@ -952,15 +1058,15 @@
                                     "description": "Constant value of seawater freezing point is used."
                                 }, 
                                 {
+                                    "label": "TEOS ", 
+                                    "description": null
+                                }, 
+                                {
                                     "label": "TEOS 2010", 
                                     "description": null
                                 }, 
                                 {
                                     "label": "TEOS XXX", 
-                                    "description": null
-                                }, 
-                                {
-                                    "label": "TEOS YYY", 
                                     "description": null
                                 }
                             ], 
@@ -1054,6 +1160,14 @@
                         "uiOrdinal": 4, 
                         "cardinality": "0.1", 
                         "type": "str"
+                    }, 
+                    {
+                        "label": "Variables", 
+                        "description": "Which variables were changed during the tuning process.", 
+                        "id": "cmip6.seaice.key_properties.tuning_applied.variables", 
+                        "uiOrdinal": 5, 
+                        "cardinality": "0.1", 
+                        "type": "str"
                     }
                 ]
             }, 
@@ -1071,10 +1185,18 @@
                         "type": "str"
                     }, 
                     {
+                        "label": "On Diagnostic Variables", 
+                        "description": "General overview description of any key assumptions made in this model,\n               particularly where this may affect the diagnostic sea ice variables.", 
+                        "id": "cmip6.seaice.key_properties.assumptions.on_diagnostic_variables", 
+                        "uiOrdinal": 2, 
+                        "cardinality": "0.N", 
+                        "type": "str"
+                    }, 
+                    {
                         "label": "Missing Processes", 
                         "description": "Are there any *key* processes missing in this model configuration that affect the diagnostic sea ice variables?", 
                         "id": "cmip6.seaice.key_properties.assumptions.missing_processes", 
-                        "uiOrdinal": 2, 
+                        "uiOrdinal": 3, 
                         "cardinality": "0.N", 
                         "type": "str"
                     }
@@ -1122,7 +1244,7 @@
                     }, 
                     {
                         "label": "Budget", 
-                        "description": "For each conserved property conserved please specify the terms which close the related budget", 
+                        "description": "For each conserved property, specify the output variables which close the related budget", 
                         "id": "cmip6.seaice.key_properties.conservation.budget", 
                         "uiOrdinal": 3, 
                         "cardinality": "1.1", 
