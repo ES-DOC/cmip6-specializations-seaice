@@ -330,43 +330,43 @@
                     "id": "cmip6.seaice.thermodynamics.salt_conservation", 
                     "details": [
                         {
-                            "label": "Constant Salinity For Both Ice Thermodynamics And Ice-ocean Exchanges", 
-                            "description": "?", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.Constant salinity for both ice thermodynamics and ice-ocean exchanges", 
+                            "label": "Has Constant Salinity", 
+                            "description": "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges.", 
+                            "id": "cmip6.seaice.thermodynamics.salt_conservation.has_constant_salinity", 
                             "uiOrdinal": 1, 
+                            "cardinality": "1.1", 
+                            "type": "bool"
+                        }, 
+                        {
+                            "label": "Has Prescribed Salinity Profile", 
+                            "description": "Set to true if sea ice has prescribed salinity profile for ice thermodynamics\n               but has constant salinity for ice-ocean exchanges", 
+                            "id": "cmip6.seaice.thermodynamics.salt_conservation.has_prescribed_salinity_profile", 
+                            "uiOrdinal": 2, 
                             "cardinality": "1.1", 
                             "type": "str"
                         }, 
                         {
-                            "label": "Prescribed Salinity Profile For Ice Thermodynamics, Constant Salinity For Ice-ocean Exchanges", 
-                            "description": "?", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.Prescribed salinity profile for ice thermodynamics, constant salinity for ice-ocean exchanges", 
-                            "uiOrdinal": 2, 
-                            "cardinality": "0.1", 
-                            "type": "str"
-                        }, 
-                        {
-                            "label": "Constant Salinity Value If Any", 
-                            "description": "?", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.Constant salinity value if any", 
+                            "label": "Constant Salinity Value", 
+                            "description": "If using a constant salinity value specify this value in PSU?", 
+                            "id": "cmip6.seaice.thermodynamics.salt_conservation.constant_salinity_value", 
                             "uiOrdinal": 3, 
                             "cardinality": "0.1", 
                             "type": "float"
                         }, 
                         {
-                            "label": "Prognostic Bulk Salinity, Parameterized Profile Shape", 
-                            "description": "?", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.Prognostic bulk salinity, parameterized profile shape", 
+                            "label": "Prognostic Bulk Salinity", 
+                            "description": "Describe the prognostic bulk salinity, parameterized profile shape.", 
+                            "id": "cmip6.seaice.thermodynamics.salt_conservation.prognostic_bulk_salinity", 
                             "uiOrdinal": 4, 
                             "cardinality": "1.1", 
                             "type": "str"
                         }, 
                         {
                             "label": "Prognostic Salinity Profile", 
-                            "description": "?", 
-                            "id": "cmip6.seaice.thermodynamics.salt_conservation.Prognostic salinity profile", 
+                            "description": "Describe the prognostic salinity profile method used.", 
+                            "id": "cmip6.seaice.thermodynamics.salt_conservation.prognostic_salinity_profile", 
                             "uiOrdinal": 5, 
-                            "cardinality": "0.1", 
+                            "cardinality": "1.1", 
                             "type": "str"
                         }
                     ]

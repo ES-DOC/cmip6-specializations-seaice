@@ -52,7 +52,7 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
 SUB_PROCESSES['energy_conservation'] = {
     'description': 'Energy conservation in sea ice thermodynamics',
     'properties': [
-        ('formulation', 'ENUM:energy_formulation', '1.N',
+        ('enthalpy_formulation', 'ENUM:energy_formulation', '1.N',
             "Formulation of energy conservation"),
         ('thermal_conductivity', 'ENUM:thermal_conductivity_type', '1.N',
             "Method of thermal conductivity"),

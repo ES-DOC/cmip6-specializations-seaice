@@ -51,11 +51,11 @@ cmip6.seaice.thermodynamics.mass_conservation.ice_vertical_growth_and_melt, Seai
 cmip6.seaice.thermodynamics.mass_conservation.ice_surface_sublimation, Seaice > Thermodynamics > Mass Conservation > Ice Surface Sublimation, detail
 cmip6.seaice.thermodynamics.mass_conservation.frazil_ice, Seaice > Thermodynamics > Mass Conservation > Frazil Ice, detail
 cmip6.seaice.thermodynamics.mass_conservation.ice_lateral_melting, Seaice > Thermodynamics > Mass Conservation > Ice Lateral Melting, detail
-cmip6.seaice.thermodynamics.salt_conservation.Constant salinity for both ice thermodynamics and ice-ocean exchanges, Seaice > Thermodynamics > Salt Conservation > Constant Salinity For Both Ice Thermodynamics And Ice-ocean Exchanges, detail
-cmip6.seaice.thermodynamics.salt_conservation.Prescribed salinity profile for ice thermodynamics, constant salinity for ice-ocean exchanges, Seaice > Thermodynamics > Salt Conservation > Prescribed Salinity Profile For Ice Thermodynamics, Constant Salinity For Ice-ocean Exchanges, detail
-cmip6.seaice.thermodynamics.salt_conservation.Constant salinity value if any, Seaice > Thermodynamics > Salt Conservation > Constant Salinity Value If Any, detail
-cmip6.seaice.thermodynamics.salt_conservation.Prognostic bulk salinity, parameterized profile shape, Seaice > Thermodynamics > Salt Conservation > Prognostic Bulk Salinity, Parameterized Profile Shape, detail
-cmip6.seaice.thermodynamics.salt_conservation.Prognostic salinity profile, Seaice > Thermodynamics > Salt Conservation > Prognostic Salinity Profile, detail
+cmip6.seaice.thermodynamics.salt_conservation.has_constant_salinity, Seaice > Thermodynamics > Salt Conservation > Has Constant Salinity, detail
+cmip6.seaice.thermodynamics.salt_conservation.has_prescribed_salinity_profile, Seaice > Thermodynamics > Salt Conservation > Has Prescribed Salinity Profile, detail
+cmip6.seaice.thermodynamics.salt_conservation.constant_salinity_value, Seaice > Thermodynamics > Salt Conservation > Constant Salinity Value, detail
+cmip6.seaice.thermodynamics.salt_conservation.prognostic_bulk_salinity, Seaice > Thermodynamics > Salt Conservation > Prognostic Bulk Salinity, detail
+cmip6.seaice.thermodynamics.salt_conservation.prognostic_salinity_profile, Seaice > Thermodynamics > Salt Conservation > Prognostic Salinity Profile, detail
 cmip6.seaice.thermodynamics.ice_thickness_distribution.representation, Seaice > Thermodynamics > Ice Thickness Distribution > Representation, detail
 cmip6.seaice.thermodynamics.ice_thickness_distribution.transport_in_thickness_space, Seaice > Thermodynamics > Ice Thickness Distribution > Transport In Thickness Space, detail
 cmip6.seaice.thermodynamics.melt_ponds.are_included, Seaice > Thermodynamics > Melt Ponds > Are Included, detail

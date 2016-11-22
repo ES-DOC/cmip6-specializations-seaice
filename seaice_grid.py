@@ -52,8 +52,10 @@ DETAILS['discretisation:horizontal'] = {
             "What is the type of sea ice grid?"),
         ('scheme', 'ENUM:numerical_scheme', '1.1',
             "What is the advection scheme?"),
-        ('time_step', 'int', '1.1',
-            "What is the time step in the sea ice model in seconds."),
+        ('thermodynamics_time_step', 'int', '1.1',
+            "What is the time step in the sea ice model thermodynamic component in seconds."),
+        ('dynamics_time_step', 'int', '1.1',
+            "What is the time step in the sea ice model dynamic component in seconds."),
         ('additional_details', 'str', '0.1',
             "Specify any additional horizontal discretisation details.")
         ]
