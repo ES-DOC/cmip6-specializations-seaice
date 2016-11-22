@@ -38,8 +38,10 @@ DESCRIPTION = 'Sea Ice Radiative Processes'
 SUB_PROCESSES['methods'] = {
     'description': "Properties of radiation in sea ice",
     'properties': [
-        ('surface_albedo', 'ENUM:seaice_albedo', '1.N',
+        ('surface_albedo', 'ENUM:seaice_albedo', '0.N',
             "Method used to handle surface albedo"),
+#        ('ice_radiation_transmission_per_category', 'str', '1.1',
+#            "Is solar radiation through ice done per ice category?"),
         ('ice_radiation_transmission', 'ENUM:ice_trans', '1.N',
             "Method by which solar radiation through sea ice is handled"),
         ]
@@ -55,7 +57,6 @@ ENUMERATIONS['seaice_albedo'] = {
         ('Delta-Eddington', None),
         ('Parameterized', 'Sea ice albedo is parameterized'),
         ('Multi-band albedo', 'Albedo value has a spectral dependence'),
-        ('Melt ponds', 'Melt ponds affect the albedo')
     ]
 }
 
@@ -65,5 +66,6 @@ ENUMERATIONS['ice_trans'] = {
     'members': [
         ('Exponential attenuation', None),
         ('Delta-Eddington', None),
+        ('ice_radiation_transmission_per_category', None)
     ]
 }

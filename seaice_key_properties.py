@@ -38,9 +38,9 @@ DESCRIPTION = 'Sea Ice key properties'
 DETAILS['general'] = {
     'description': "General key properties in sea ice",
     'properties': [
-#        ('basic_approximations', 'ENUM:seaice_basic_approx_types', '0.N',
-#            "Basic approximations made in the ice."),
-        ('prognostic_variables', 'ENUM:prognostic_vars_types', '0.N',
+        #        ('basic_approximations', 'ENUM:seaice_basic_approx_types', '0.N',
+        #    "Basic approximations made in the ice."),
+        ('prognostic_variables', 'ENUM:prognostic_vars_types', '1.N',
             "List of prognostic variables in the sea ice component."),
         ]
     }
@@ -90,6 +90,8 @@ DETAILS['tuning_applied'] = {
             "Which simulations had tuning applied, e.g. all, not historical, only pi-control? "),
         ('metrics_used', 'str', '0.1',
             "List any observed metrics used in tuning model/parameters"),
+        ('variables', 'str', '0.1',
+             "Which variables were changed during the tuning process."),
         ]
     }
 
@@ -104,9 +106,10 @@ DETAILS['assumptions'] = {
         ('description', 'str', '0.N',
             """General overview description of any key assumptions made in this model,
                particularly where this may affect the diagnostic sea ice variables."""),
+        ('on_diagnostic_variables', 'str', '0.N',
+            """General overview description of any key assumptions made in this model,
+               particularly where this may affect the diagnostic sea ice variables."""),
         ('missing_processes', 'str', '0.N',
-             "Are there any *key* processes missing in this model configuration that affect the diagnostic sea ice variables?"),
-        ('missing_processeses', 'str', '0.N',
              "Are there any *key* processes missing in this model configuration that affect the diagnostic sea ice variables?"),
         ]
     }
@@ -124,7 +127,7 @@ DETAILS['conservation'] = {
         ('properties', 'ENUM:conservation_props_types', '1.N',
             "Properties conserved in sea ice by the numerical schemes"),
         ('budget', 'str', '1.1',
-            "For each conserved property conserved please specify the terms which close the related budget"),
+            "For each conserved property, specify the output variables which close the related budget"),
         ('was_flux_correction_used', 'bool', '0.1',
             "Does conservation involved flux correction ?"),
         ('corrected_conserved_prognostic_variables', 'str', '0.N',
@@ -156,7 +159,8 @@ ENUMERATIONS['seawater_freezing_point'] = {
     'is_open': True,
     'members': [
         ('TEOS XXX', None),
-        ('TEOS YYY', None),
+# todo check
+        ('TEOS ', None),
         ('TEOS 2010', None),
         ('Constant', 'Constant value of seawater freezing point is used.'),
         ]

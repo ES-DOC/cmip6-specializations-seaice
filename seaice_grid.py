@@ -66,7 +66,7 @@ DETAILS['discretisation:vertical'] = {
     'properties': [
         ('layering', 'ENUM:vertical_layering', '1.N',
             "What type of sea ice vertical layers are implemented?"),
-        ('multi-layers', 'str', '0.1',
+        ('multi-layers', 'str', '1.1',
             "If using multi-layers specify how many."),
         ('additional_details', 'str', '0.1',
             "Specify any additional vertical discretisation details.")
@@ -87,6 +87,7 @@ DETAILS['seaice_categories'] = {
             "If using multiple sea ice categories specify the category limits."),
         ('thickness_distribution_scheme', 'str', '0.1',
             "If applicable describe the sea ice thickness distribution scheme"),
+# TODO      Other rather than using ice_types
         ('has_ice_types', 'bool', '1.1',
             "Set to True if using ice types rather than ice thickness categories."),
         ('ice_types_details', 'str', '1.1',
@@ -104,8 +105,9 @@ DETAILS['snow_on_seaice'] = {
             "Is snow on ice represented in this model ?"),
         ('number_of_snow_levels', 'str', '0.1',
             "Number of vertical levels of snow on ice ?"),
-        ('assumed_snow_fraction', 'str', '0.1',
-            "Describe the assumed snow fraction on ice."),
+# TODO
+        ('snow_fraction', 'str', '0.1',
+            "Describe how the snow fraction on sea ice is determined"),
         ('additional_details', 'str', '0.1',
             "Specify any additional details related to snow on ice.")
         ]

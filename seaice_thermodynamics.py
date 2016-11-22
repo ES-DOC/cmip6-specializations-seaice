@@ -36,42 +36,37 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
 # --------------------------------------------------------------------
 # DETAILS : General process details.
 # --------------------------------------------------------------------
+"""
 DETAILS['general'] = {
     'description': 'General properties of sea ice thermodynamics',
     'properties': [
-        ('budget', 'str', '0.1',
-            "What information required to close the thermodynamics budget?"),
-        ('transport_in_thickness_space', 'ENUM:transport_methods', '1.1',
-            "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
-        ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
-            "Does sea ice salinity impact the thermal properties of sea ice?"),
         ]
     }
-
+"""
 # --------------------------------------------------------------------
 # SUB-PROCESS: Ice thermodynamic processes.
 # --------------------------------------------------------------------
-SUB_PROCESSES['energy_conservation'] = {
+SUB_PROCESSES['energy'] = {
     'description': 'Energy conservation in sea ice thermodynamics',
     'properties': [
-        ('enthalpy_formulation', 'ENUM:energy_formulation', '1.N',
+        ('enthalpy_formulation', 'ENUM:energy_formulation', '1.1',
             "Formulation of energy conservation"),
-        ('thermal_conductivity', 'ENUM:thermal_conductivity_type', '1.N',
+        ('thermal_conductivity', 'ENUM:thermal_conductivity_type', '1.1',
             "Method of thermal conductivity"),
         ('heat_diffusion', 'ENUM:heat_diffusion_type', '1.N',
             "Method of heat diffusion"),
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
             "Method by which basal ocean heat flux is handled"),
-        ('fixed_salinity_value', 'float', '0.1',
-         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
-            please supply the fixed salinity value for each sea ice layer."""),
+        ('heat_content_precip', 'str', '1.1',
+            "Method by which the heat content of precipitation is handled ?")
+#        ('fixed_salinity_value', 'float', '0.1',
+#         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
+#            please supply the fixed salinity value for each sea ice layer."""),
     ]
     }
 
-#('heat_content_precip', 'str', '0.1',
-# "Method by which the heat content of precipitation is handled ?")
 
-SUB_PROCESSES['mass_conservation'] = {
+SUB_PROCESSES['mass'] = {
     'description': 'Mass conservation in sea ice thermodynamics',
     'properties': [
         ('new_ice_formation', 'str', '1.1',
@@ -87,24 +82,31 @@ SUB_PROCESSES['mass_conservation'] = {
         ]
     }
 
-SUB_PROCESSES['salt_conservation'] = {
+SUB_PROCESSES['salt'] = {
     'description': 'Salt conservation in sea ice thermodynamics.',
     'properties': [
-        ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
-            "Does sea ice salinity impact the thermal properties of sea ice?"),
-        ('has_constant_salinity', 'bool', '1.1',
-             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
-        ('constant_salinity_value', 'float', '0.1',
-            "If using a constant salinity value specify this value in PSU?"),
-        ('sea_ice_salinity_', 'bool', '1.1',
+        ('has_multiple_sea_ice_salinities', 'bool', '1.1',
             "Does your model use two different salinities for thermodynamic calculations and for the salt budget?"),
-        ('has_prescribed_salinity_profile', 'str', '1.1',
+        ('has_constant_mass_transport_salinity', 'bool', '1.1',
+             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
+        ('constant_salinity_value_mass_transport', 'float', '0.1',
+            "If using a constant salinity value specify this value in PSU?"),
+        ('has_prescribed_mass_transport_salinity_profile', 'str', '1.1',
             """Set to true if sea ice has prescribed salinity profile for ice thermodynamics
                but has constant salinity for ice-ocean exchanges"""),
-        ('prognostic_bulk_salinity', 'str', '1.1',
-            "Describe the prognostic bulk salinity, parameterized profile shape."),
-        ('prognostic_salinity_profile', 'str', '1.1',
+        ('has_constant_thermodynamic_salinity', 'bool', '1.1',
+             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
+        ('constant_salinity_value_thermodynamic', 'float', '0.1',
+            "If using a constant salinity value specify this value in PSU?"),
+        ('has_prescribed_thermodynamic_salinity_profile', 'str', '1.1',
+            """Set to true if sea ice has prescribed salinity profile for ice thermodynamics
+               but has constant salinity for ice-ocean exchanges"""),
+        ('prognostic_thermodynamic_salinity_profile', 'str', '1.1',
             "Describe the prognostic salinity profile method used."),
+        ('prognostic_mass_transport_salinity_profile', 'str', '1.1',
+            "Describe the prognostic salinity profile method used."),
+        ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
+            "Does sea ice salinity impact the thermal properties of sea ice?"),
         ]
     }
 
@@ -113,8 +115,6 @@ SUB_PROCESSES['ice_thickness_distribution'] = {
     'properties': [
         ('representation', 'ENUM:ice_thickness_representation', '1.1',
             "Representation of the sea ice thickness distribution"),
-        ('transport_in_thickness_space', 'ENUM:transport_methods', '0.1',
-            "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
         ]
     }
 
@@ -137,9 +137,14 @@ SUB_PROCESSES['melt_ponds'] = {
 SUB_PROCESSES['snow_processes'] = {
     'description': 'Thermodynamic processes in snow on sea ice',
     'properties': [
-        ('process_type', 'ENUM:snow_process_types', '1.N',
+        ('has_snow_aging', 'bool', '1.N', "Snow redistribution"),
+        ('snow_aging_schem', 'str', '1.N', "Snow redistribution"),
+        ('has_snow_ice_formation', 'bool', '1.N', "Snow ice formation"),
+        ('snow_ice_formation_scheme', 'str', '1.N', "Snow ice formation"),
+        ('redistribution', 'str', '1.N', "What is the impact of ridging on snow cover?"),
+        ('heat_diffusion', 'ENUM:snow_process_types', '1.1',
             "Snow processes in sea ice thermodynamics"),
-    ],
+    ]
 }
 
 # --------------------------------------------------------------------
@@ -171,9 +176,10 @@ ENUMERATIONS['basal_heat_flux_method'] = {
     'description': 'Basal ocean heat flux methodology',
     'is_open': True,
     'members': [
-        ('linear', None),
-        ('quadratic', None),
-        ('prescribed', None),
+# TODO Check with Martin
+#        ('linear', None),
+#        ('quadratic', None),
+#        ('prescribed', None),
         ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
         ('Thermal Fixed Salinity', 'Thermal properties depend on S-T (with fixed salinity)'),
         ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
@@ -255,9 +261,6 @@ ENUMERATIONS['snow_process_types'] = {
     'members': [
         ('single-layered heat diffusion', None),
         ('multi-layered heat diffusion', None),
-        ('snow aging scheme', None),
-        ('snow ice scheme', None),
-        ('snow redistribution scheme', 'Is there a scheme to redistribute snow on sea ice by wind or melting processes?'),
     ]
 }
 
