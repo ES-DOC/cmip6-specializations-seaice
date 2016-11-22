@@ -153,9 +153,9 @@
                     "id": "cmip6.seaice.thermodynamics.energy_conservation", 
                     "details": [
                         {
-                            "label": "Formulation", 
+                            "label": "Enthalpy Formulation", 
                             "description": "Formulation of energy conservation", 
-                            "id": "cmip6.seaice.thermodynamics.energy_conservation.formulation", 
+                            "id": "cmip6.seaice.thermodynamics.energy_conservation.enthalpy_formulation", 
                             "uiOrdinal": 1, 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -704,10 +704,18 @@
                                 }
                             }, 
                             {
-                                "label": "Time Step", 
-                                "description": "What is the time step in the sea ice model in seconds.", 
-                                "id": "cmip6.seaice.grid.horizontal.time_step", 
+                                "label": "Thermodynamics Time Step", 
+                                "description": "What is the time step in the sea ice model thermodynamic component in seconds.", 
+                                "id": "cmip6.seaice.grid.horizontal.thermodynamics_time_step", 
                                 "uiOrdinal": 4, 
+                                "cardinality": "1.1", 
+                                "type": "int"
+                            }, 
+                            {
+                                "label": "Dynamics Time Step", 
+                                "description": "What is the time step in the sea ice model dynamic component in seconds.", 
+                                "id": "cmip6.seaice.grid.horizontal.dynamics_time_step", 
+                                "uiOrdinal": 5, 
                                 "cardinality": "1.1", 
                                 "type": "int"
                             }, 
@@ -715,7 +723,7 @@
                                 "label": "Additional Details", 
                                 "description": "Specify any additional horizontal discretisation details.", 
                                 "id": "cmip6.seaice.grid.horizontal.additional_details", 
-                                "uiOrdinal": 5, 
+                                "uiOrdinal": 6, 
                                 "cardinality": "0.1", 
                                 "type": "str"
                             }

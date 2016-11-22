@@ -2,7 +2,8 @@ cmip6-id, cmip6-label, cmip6-type
 cmip6.seaice.grid.horizontal.grid, Seaice > Grid > Horizontal > Grid, detail
 cmip6.seaice.grid.horizontal.grid_type, Seaice > Grid > Horizontal > Grid Type, detail
 cmip6.seaice.grid.horizontal.scheme, Seaice > Grid > Horizontal > Scheme, detail
-cmip6.seaice.grid.horizontal.time_step, Seaice > Grid > Horizontal > Time Step, detail
+cmip6.seaice.grid.horizontal.thermodynamics_time_step, Seaice > Grid > Horizontal > Thermodynamics Time Step, detail
+cmip6.seaice.grid.horizontal.dynamics_time_step, Seaice > Grid > Horizontal > Dynamics Time Step, detail
 cmip6.seaice.grid.horizontal.additional_details, Seaice > Grid > Horizontal > Additional Details, detail
 cmip6.seaice.grid.vertical.layering, Seaice > Grid > Vertical > Layering, detail
 cmip6.seaice.grid.vertical.multi-layers, Seaice > Grid > Vertical > Multi-layers, detail
@@ -42,7 +43,7 @@ cmip6.seaice.dynamics.general.redistribution, Seaice > Dynamics > General > Redi
 cmip6.seaice.dynamics.general.rheology, Seaice > Dynamics > General > Rheology, detail
 cmip6.seaice.dynamics.general.rheology_details, Seaice > Dynamics > General > Rheology Details, detail
 , , 
-cmip6.seaice.thermodynamics.energy_conservation.formulation, Seaice > Thermodynamics > Energy Conservation > Formulation, detail
+cmip6.seaice.thermodynamics.energy_conservation.enthalpy_formulation, Seaice > Thermodynamics > Energy Conservation > Enthalpy Formulation, detail
 cmip6.seaice.thermodynamics.energy_conservation.thermal_conductivity, Seaice > Thermodynamics > Energy Conservation > Thermal Conductivity, detail
 cmip6.seaice.thermodynamics.energy_conservation.heat_diffusion, Seaice > Thermodynamics > Energy Conservation > Heat Diffusion, detail
 cmip6.seaice.thermodynamics.energy_conservation.basal_heat_flux, Seaice > Thermodynamics > Energy Conservation > Basal Heat Flux, detail

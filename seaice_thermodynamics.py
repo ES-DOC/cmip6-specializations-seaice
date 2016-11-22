@@ -43,6 +43,8 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
             "What information required to close the thermodynamics budget?"),
         ('transport_in_thickness_space', 'ENUM:transport_methods', '0.1',
             "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
+        ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
+            "Does sea ice salinity impact the thermal properties of sea ice?"),
         ]
     }
 """
@@ -90,11 +92,13 @@ SUB_PROCESSES['salt_conservation'] = {
     'properties': [
         ('has_constant_salinity', 'bool', '1.1',
              "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
+        ('constant_salinity_value', 'float', '0.1',
+            "If using a constant salinity value specify this value in PSU?"),
+        ('sea_ice_salinity_', 'bool', '1.1',
+            "Does your model use two different salinities for thermodynamic calculations and for the salt budget?"),
         ('has_prescribed_salinity_profile', 'str', '1.1',
             """Set to true if sea ice has prescribed salinity profile for ice thermodynamics
                but has constant salinity for ice-ocean exchanges"""),
-        ('constant_salinity_value', 'float', '0.1',
-            "If using a constant salinity value specify this value in PSU?"),
         ('prognostic_bulk_salinity', 'str', '1.1',
             "Describe the prognostic bulk salinity, parameterized profile shape."),
         ('prognostic_salinity_profile', 'str', '1.1',
