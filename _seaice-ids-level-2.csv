@@ -14,3 +14,5 @@ cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation
 , , 
 cmip6.seaice.dynamics.general, Seaice > Dynamics > General, detail-set
 , , 
+cmip6.seaice.thermodynamics.general, Seaice > Thermodynamics > General, detail-set
+, , 

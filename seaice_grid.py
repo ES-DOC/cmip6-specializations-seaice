@@ -66,7 +66,7 @@ DETAILS['discretisation:vertical'] = {
     'properties': [
         ('layering', 'ENUM:vertical_layering', '1.N',
             "What type of sea ice vertical layers are implemented?"),
-        ('multi-layers', 'str', '1.1',
+        ('multi-layers', 'str', '0.1',
             "If using multi-layers specify how many."),
         ('additional_details', 'str', '0.1',
             "Specify any additional vertical discretisation details.")
@@ -133,7 +133,7 @@ ENUMERATIONS['vertical_layering'] = {
     'members': [
         ('zero-layer',
             'Simulation has no internal ice thermodynamics.'),
-        ('two-levels',
+        ('2-levels',
             'Simulation uses two layers.'),
         ('Multi-level',
             'Simulation uses more than two layers'),

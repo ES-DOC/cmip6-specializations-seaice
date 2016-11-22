@@ -38,9 +38,9 @@ DESCRIPTION = 'Sea Ice key properties'
 DETAILS['general'] = {
     'description': "General key properties in sea ice",
     'properties': [
-        #        ('basic_approximations', 'ENUM:seaice_basic_approx_types', '0.N',
-        #    "Basic approximations made in the ice."),
-        ('prognostic_variables', 'ENUM:prognostic_vars_types', '1.N',
+#        ('basic_approximations', 'ENUM:seaice_basic_approx_types', '0.N',
+#            "Basic approximations made in the ice."),
+        ('prognostic_variables', 'ENUM:prognostic_vars_types', '0.N',
             "List of prognostic variables in the sea ice component."),
         ]
     }
@@ -105,6 +105,8 @@ DETAILS['assumptions'] = {
             """General overview description of any key assumptions made in this model,
                particularly where this may affect the diagnostic sea ice variables."""),
         ('missing_processes', 'str', '0.N',
+             "Are there any *key* processes missing in this model configuration that affect the diagnostic sea ice variables?"),
+        ('missing_processeses', 'str', '0.N',
              "Are there any *key* processes missing in this model configuration that affect the diagnostic sea ice variables?"),
         ]
     }

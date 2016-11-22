@@ -41,7 +41,7 @@ DETAILS['general'] = {
     'properties': [
         ('budget', 'str', '0.1',
             "What information required to close the thermodynamics budget?"),
-        ('transport_in_thickness_space', 'ENUM:transport_methods', '0.1',
+        ('transport_in_thickness_space', 'ENUM:transport_methods', '1.1',
             "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
         ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
             "Does sea ice salinity impact the thermal properties of sea ice?"),
