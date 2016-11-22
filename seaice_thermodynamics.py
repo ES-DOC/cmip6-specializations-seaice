@@ -36,7 +36,7 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
 # --------------------------------------------------------------------
 # DETAILS : General process details.
 # --------------------------------------------------------------------
-"""DETAILS['general'] = {
+DETAILS['general'] = {
     'description': 'General properties of sea ice thermodynamics',
     'properties': [
         ('budget', 'str', '0.1',
@@ -47,7 +47,7 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
             "Does sea ice salinity impact the thermal properties of sea ice?"),
         ]
     }
-"""
+
 # --------------------------------------------------------------------
 # SUB-PROCESS: Ice thermodynamic processes.
 # --------------------------------------------------------------------
@@ -62,9 +62,9 @@ SUB_PROCESSES['energy_conservation'] = {
             "Method of heat diffusion"),
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
             "Method by which basal ocean heat flux is handled"),
-#        ('fixed_salinity_value', 'float', '0.1',
-#         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
-#            please supply the fixed salinity value for each sea ice layer."""),
+        ('fixed_salinity_value', 'float', '0.1',
+         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
+            please supply the fixed salinity value for each sea ice layer."""),
     ]
     }
 
@@ -90,6 +90,8 @@ SUB_PROCESSES['mass_conservation'] = {
 SUB_PROCESSES['salt_conservation'] = {
     'description': 'Salt conservation in sea ice thermodynamics.',
     'properties': [
+        ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
+            "Does sea ice salinity impact the thermal properties of sea ice?"),
         ('has_constant_salinity', 'bool', '1.1',
              "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
         ('constant_salinity_value', 'float', '0.1',
@@ -172,6 +174,9 @@ ENUMERATIONS['basal_heat_flux_method'] = {
         ('linear', None),
         ('quadratic', None),
         ('prescribed', None),
+        ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
+        ('Thermal Fixed Salinity', 'Thermal properties depend on S-T (with fixed salinity)'),
+        ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
     ]
 }
 
