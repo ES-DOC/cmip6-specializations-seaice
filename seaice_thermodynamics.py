@@ -34,60 +34,50 @@ QC_STATUS = 'draft'
 DESCRIPTION = 'Sea Ice Thermodynamics'
 
 # --------------------------------------------------------------------
-# DETAILS : General process details.
-# --------------------------------------------------------------------
-"""
-DETAILS['general'] = {
-    'description': 'General properties of sea ice thermodynamics',
-    'properties': [
-        ]
-    }
-"""
-# --------------------------------------------------------------------
-# SUB-PROCESS: Ice thermodynamic processes.
+# SUB-PROCESS: Processes related to energy in sea ice thermodynamics
 # --------------------------------------------------------------------
 SUB_PROCESSES['energy'] = {
-    'description': 'Energy conservation in sea ice thermodynamics',
+    'description': 'Processes related to energy in sea ice thermodynamics',
     'properties': [
         ('enthalpy_formulation', 'ENUM:energy_formulation', '1.1',
-            "Formulation of energy conservation"),
+            "What is the energy formulation?"),
         ('thermal_conductivity', 'ENUM:thermal_conductivity_type', '1.1',
-            "Method of thermal conductivity"),
-        ('heat_diffusion', 'ENUM:heat_diffusion_type', '1.N',
-            "Method of heat diffusion"),
+            "What type of thermal conductivity is used?"),
+        ('heat_diffusion', 'ENUM:heat_diffusion_type', '1.1',
+            "What is the method of heat diffusion?"),
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
-            "Method by which basal ocean heat flux is handled"),
+            "Method by which basal ocean heat flux is handled?"),
         ('fixed_salinity_value', 'float', '0.1',
-         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
-            please supply the fixed salinity value for each sea ice layer."""),
+         """If you have selected "Thermal properties depend on S-T (with fixed salinity),
+            supply the fixed salinity value for each sea ice layer."""),
         ('heat_content_precip', 'str', '1.1',
-         "Method by which the heat content of precipitation is handled ?")
+         "Describe the method by which the heat content of precipitation is handled.")
     ]
     }
 
 
 SUB_PROCESSES['mass'] = {
-    'description': 'Mass conservation in sea ice thermodynamics',
+    'description': 'Processes related to mass in sea ice thermodynamics',
     'properties': [
         ('new_ice_formation', 'str', '1.1',
-             "Method by which new sea ice is formed in open water"),
+             "Describe the method by which new sea ice is formed in open water."),
         ('ice_vertical_growth_and_melt', 'str', '1.1',
-             "Method describing the vertical growth and melt of sea ice."),
-        ('ice_surface_sublimation', 'str', '1.1',
-             "Method sea ice surface sublimation"),
-        ('frazil_ice', 'str', '1.1',
-             "Method of frazil ice formation"),
+             "Describe the method that governs the vertical growth and melt of sea ice."),
         ('ice_lateral_melting', 'ENUM:lateral_melting_types', '1.1',
-             "Method of sea ice lateral melting"),
+             "What is the method of sea ice lateral melting?"),
+        ('ice_surface_sublimation', 'str', '1.1',
+             "Describe the method that governs sea ice surface sublimation."),
+        ('frazil_ice', 'str', '1.1',
+             "Describe the method of frazil ice formation."),
         ]
     }
 
 SUB_PROCESSES['salt'] = {
-    'description': 'Salt conservation in sea ice thermodynamics.',
+    'description': 'Processes related to salt in sea ice thermodynamics.',
     'properties': [
         ('has_multiple_sea_ice_salinities', 'bool', '1.1',
-         """Does your model use two different salinities for thermodynamic
-         calculations and for the salt budget?"""),
+         """Does the sea ice model use two different salinities; one for thermodynamic
+         calculations and one for the salt budget?"""),
         ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
          "Does sea ice salinity impact the thermal properties of sea ice?"),
     ],
@@ -101,23 +91,23 @@ SUB_PROCESSES['salt:mass_transport']={
     'description':'Mass transport of salt',
     'properties': [
         ('salinity_type', 'ENUM:salinity_method', '1.1',
-            "Some text"),
-        ('constant_salinity_value_mass_transport', 'float', '0.1',
+            "How is salinity determined in the mass transport of salt calculation?"),
+        ('constant_salinity_value', 'float', '0.1',
              "If using a constant salinity value specify this value in PSU?"),
-        ('additional_details', 'str', '1.1',
-            "Describe the prognostic salinity profile method used."),
+        ('additional_details', 'str', '0.1',
+            "Describe the salinity profile used."),
         ]
     }
 
 SUB_PROCESSES['salt:thermodynamics']={
     'description':'Salt thermodynamics',
     'properties': [
-        ('salinity_type', 'ENUM:salinity_method', '1.1',
-            "Some text"),
-        ('constant_salinity_value_thermodynamics', 'float', '0.1',
+        ('salinity', 'ENUM:salinity_method', '1.1',
+            "How is salinity determined in the thermodynamic calculation?"),
+        ('constant_salinity_value', 'float', '0.1',
              "If using a constant salinity value specify this value in PSU?"),
-        ('additional_details', 'str', '1.1',
-            "Describe the prognostic salinity profile method used."),
+        ('additional_details', 'str', '0.1',
+            "Describe the salinity profile used."),
         ]
     }
 
@@ -126,7 +116,7 @@ SUB_PROCESSES['ice_thickness_distribution'] = {
     'description': 'Characteristics of melt ponds.',
     'properties': [
         ('representation', 'ENUM:ice_thickness_representation', '1.1',
-            "Representation of the sea ice thickness distribution"),
+            "How is the sea ice thickness distribution represented?"),
         ]
     }
 
@@ -135,11 +125,11 @@ SUB_PROCESSES['melt_ponds'] = {
     'description': 'Characteristics of melt ponds.',
     'properties': [
         ('are_included', 'bool', '1.1',
-            "Are melt ponds included in sea ice model?"),
-        ('formulation', 'ENUM:melt_pond_formulation', '0.1',
-            "Method of melt pond formulation"),
-        ('impacts', 'ENUM:melt_pond_impacts', '0.N',
-            "Impacts of the melt ponds?")
+            "Are melt ponds included in the sea ice model?"),
+        ('formulation', 'ENUM:melt_pond_formulation', '1.1',
+            "What method of melt pond formulation is used?"),
+        ('impacts', 'ENUM:melt_pond_impacts', '1.N',
+            "What do melt ponds have an impact on?")
         ]
     }
 
@@ -149,23 +139,21 @@ SUB_PROCESSES['melt_ponds'] = {
 SUB_PROCESSES['snow_processes'] = {
     'description': 'Thermodynamic processes in snow on sea ice',
     'properties': [
-        ('has_snow_aging', 'bool', '1.N', "Snow redistribution"),
-        ('snow_aging_schem', 'str', '1.N', "Snow redistribution"),
-        ('has_snow_ice_formation', 'bool', '1.N', "Snow ice formation"),
-        ('snow_ice_formation_scheme', 'str', '1.N', "Snow ice formation"),
+        ('has_snow_aging', 'bool', '1.N', "Set to True if the sea ice model has a snow aging scheme."),
+        ('snow_aging_scheme', 'str', '1.N', "Describe the snow aging scheme."),
+        ('has_snow_ice_formation', 'bool', '1.N', "Set to True if the sea ice model has snow ice formation."),
+        ('snow_ice_formation_scheme', 'str', '1.N', "Describe the snow ice formation scheme."),
         ('redistribution', 'str', '1.N', "What is the impact of ridging on snow cover?"),
         ('heat_diffusion', 'ENUM:snow_process_types', '1.1',
-            "Snow processes in sea ice thermodynamics"),
+            "What is the heat diffusion through snow methodology in sea ice thermodynamics?"),
     ]
 }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
-# TODO If fixed salinity want to ask what is the salinity constant used
-# TODO Ask: Does the sea ice salinity impact the thermal properties of sea ice
 ENUMERATIONS['energy_formulation'] = {
-    'description': 'Thermodynamic formulation of energy conservation',
+    'description': 'Thermodynamic energy formulations',
     'is_open': True,
     'members': [
         ('Pure ice latent heat (Semtner 0-layer)', None),
@@ -176,7 +164,7 @@ ENUMERATIONS['energy_formulation'] = {
 }
 
 ENUMERATIONS['thermal_conductivity_type'] = {
-    'description': 'Thermal conductivity in sea ice thermodynamics',
+    'description': 'Types of thermal conductivity',
     'is_open': True,
     'members': [
         ('Pure ice', None),
@@ -199,7 +187,7 @@ ENUMERATIONS['basal_heat_flux_method'] = {
 }
 
 ENUMERATIONS['heat_diffusion_type'] = {
-    'description': 'Thermal conductivity in sea ice thermodynamics',
+    'description': 'Heat diffusion types',
     'is_open': True,
     'members': [
         ('Conduction fluxes', None),
@@ -209,7 +197,7 @@ ENUMERATIONS['heat_diffusion_type'] = {
 }
 
 ENUMERATIONS['lateral_melting_types'] = {
-    'description': 'Ice lateral melting method',
+    'description': 'Ice lateral melting methods',
     'is_open': True,
     'members': [
         ('Floe-size dependent (Bitz et al 2001)', None),
@@ -218,7 +206,7 @@ ENUMERATIONS['lateral_melting_types'] = {
 }
 
 ENUMERATIONS['ice_thickness_representation'] = {
-    'description': 'Type of sea ice thickness representation',
+    'description': 'Types of sea ice thickness representation',
     'is_open': True,
     'members': [
         ('Explicit', None),
@@ -227,7 +215,7 @@ ENUMERATIONS['ice_thickness_representation'] = {
 }
 
 ENUMERATIONS['thermo_brine_types'] = {
-    'description': 'Brine inclusion methodology',
+    'description': 'Brine inclusion methodologies',
     'is_open': True,
     'members': [
         ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
@@ -237,16 +225,16 @@ ENUMERATIONS['thermo_brine_types'] = {
 }
 
 ENUMERATIONS['melt_pond_formulation'] = {
-    'description': 'Formulation of melt ponds.',
+    'description': 'Formulations of melt ponds',
     'is_open': True,
     'members': [
-        ('Flocco and Feltham (year)', None),
+        ('Flocco and Feltham (2010)', None),
         ('Level-ice melt ponds', None),
     ]
 }
 
 ENUMERATIONS['melt_pond_impacts'] = {
-    'description': 'Melt ponds have impacts on',
+    'description': 'Impacts of melt ponds',
     'is_open': True,
     'members': [
         ('Albedo', None),
@@ -265,7 +253,7 @@ ENUMERATIONS['snow_process_types'] = {
 }
 
 ENUMERATIONS['salinity_method'] = {
-    'description': 'Salinity',
+    'description': 'Method of describing the value(s) of salinity',
     'is_open': True,
     'members': [
         ('constant', None),

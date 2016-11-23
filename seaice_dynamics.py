@@ -38,16 +38,16 @@ DESCRIPTION = 'Sea Ice Dynamics'
 DETAILS['general'] = {
     'description': 'Methods of mechanical redistribution of sea ice',
     'properties': [
-        ('horizontal_transport', 'ENUM:transport_methods', '0.1',
+        ('horizontal_transport', 'ENUM:transport_methods', '1.1',
             "What is the method of horizontal advection of sea ice?"),
-        ('transport_in_thickness_space', 'ENUM:transport_methods', '0.1',
-            "What is the method of sea ice transport in thickness space (i.e. thickness categories)?"),
-        ('sea_ice_strength_formulation', 'ENUM:ice_strength', '1.1',
-             "Describe how sea ice strength is formulated"),
-        ('redistribution', 'ENUM:redistribution_types', '0.N',
+        ('transport_in_thickness_space', 'ENUM:transport_methods', '1.1',
+            "What is the method of sea ice transport in thickness space (i.e. in thickness categories)?"),
+        ('ice_strength_formulation', 'ENUM:ice_strength', '1.1',
+             "Which method of sea ice strength formulation is used?"),
+        ('redistribution', 'ENUM:redistribution_types', '1.N',
              "Which processes can redistribute sea ice?"),
         ('rheology', 'ENUM:rheology_types', '1.1',
-             "Rheology, what is the ice deformation method?"),
+             "Rheology, what is the ice deformation formulation?"),
         ]
     }
 
@@ -65,7 +65,7 @@ ENUMERATIONS['transport_methods'] = {
 }
 
 ENUMERATIONS['redistribution_types'] = {
-    'description':'Sea Ice Redistribution Types',
+    'description': 'Sea Ice Redistribution types',
     'is_open': True,
     'members': [
         ('Rafting', None),
@@ -74,7 +74,7 @@ ENUMERATIONS['redistribution_types'] = {
 }
 
 ENUMERATIONS['ice_strength'] = {
-    'description': 'Sea Ice rheology types',
+    'description': 'Ice strength formulation methods',
     'is_open': True,
     'members': [
         ('Hibler 1979', None),
@@ -83,7 +83,7 @@ ENUMERATIONS['ice_strength'] = {
 }
 
 ENUMERATIONS['rheology_types'] = {
-    'description': 'Sea Ice rheology types',
+    'description': 'Sea ice rheology types',
     'is_open': True,
     'members': [
         ('free-drift', None),

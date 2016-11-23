@@ -34,19 +34,16 @@ DESCRIPTION = 'Sea Ice key properties'
 # --------------------------------------------------------------------
 # GENERAL details.
 # --------------------------------------------------------------------
-# TODO check if model family needed for sea ice
-DETAILS['general'] = {
+DETAILS['variables'] = {
     'description': "General key properties in sea ice",
     'properties': [
-        #        ('basic_approximations', 'ENUM:seaice_basic_approx_types', '0.N',
-        #    "Basic approximations made in the ice."),
-        ('prognostic_variables', 'ENUM:prognostic_vars_types', '1.N',
+        ('prognostic', 'ENUM:prognostic_variables', '1.N',
             "List of prognostic variables in the sea ice component."),
         ]
     }
 
 DETAILS['seawater_properties'] = {
-    'description': "Physical properties of seawater relevant to sea ice",
+    'description': "Properties of seawater relevant to sea ice",
     'properties': [
         ('ocean_freezing_point', 'ENUM:seawater_freezing_point', '1.1',
             "Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure"),
@@ -64,9 +61,9 @@ DETAILS['resolution'] = {
         ('name', 'str', '1.1',
           """This is a string usually used by the modelling group to describe the resolution of this grid
                e.g. N512L180, T512L70, ORCA025 etc."""),
-        ('canonical_horizontal_resolution', 'str', '0.N',
+        ('canonical_horizontal_resolution', 'str', '1.1',
             "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc."),
-        ('number_of_horizontal_gridpoints', 'int', '0.1',
+        ('number_of_horizontal_gridpoints', 'int', '1.1',
             "Total number of horizontal (XY) points (or degrees of freedom) on computational grid."),
         ]
     }
@@ -82,53 +79,48 @@ DETAILS['tuning_applied'] = {
                Document the relative weight given to climate performance metrics versus process oriented metrics,
                and on the possible conflicts with parameterization level tuning. In particular describe any struggle
                with a parameter value that required pushing it to its limits to solve a particular model deficiency."""),
-        ('target', 'str', '0.1',
+        ('target', 'str', '1.1',
             "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle."),
-        ('simulations', 'str', '0.1',
+        ('simulations', 'str', '1.1',
             "Which simulations had tuning applied, e.g. all, not historical, only pi-control? "),
-        ('metrics_used', 'str', '0.1',
+        ('metrics_used', 'str', '1.1',
             "List any observed metrics used in tuning model/parameters"),
         ('variables', 'str', '0.1',
-             "Which variables were changed during the tuning process."),
+             "Which variables were changed during the tuning process?"),
         ]
     }
 
 # --------------------------------------------------------------------
 # ASSUMPTIONS: Any key assumptions made in this realm
 # --------------------------------------------------------------------
-# TODO Check this section in detail with Alex Jahn
-
 DETAILS['assumptions'] = {
     'description': "Assumptions made in the sea ice model",
     'properties': [
-        ('description', 'str', '0.N',
-            """General overview description of any key assumptions made in this model,
-               particularly where this may affect the diagnostic sea ice variables."""),
-        ('on_diagnostic_variables', 'str', '0.N',
-            """General overview description of any key assumptions made in this model,
-               particularly where this may affect the diagnostic sea ice variables."""),
-        ('missing_processes', 'str', '0.N',
-             "Are there any *key* processes missing in this model configuration that affect the diagnostic sea ice variables?"),
+        ('description', 'str', '1.N',
+            "General overview description of any *key* assumptions made in this model."),
+        ('on_diagnostic_variables', 'str', '1.N',
+            "Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables."),
+        ('missing_processes', 'str', '1.N',
+             """List any *key* processes missing in this model configuration? Provide full details
+             where this affects the CMIP6 diagnostic sea ice variables?"""),
         ]
     }
 
 # --------------------------------------------------------------------
 # EXTRA CONSERVATION PROPERTIES: Details of methodology needed to conserve variables between processes
 # --------------------------------------------------------------------
-# TODO Check budget information
-
 DETAILS['conservation'] = {
     'description': "Conservation in the sea ice component",
     'properties': [
         ('description', 'str', '1.1',
-            "Description of conservation methodology"),
-        ('properties', 'ENUM:conservation_props_types', '1.N',
-            "Properties conserved in sea ice by the numerical schemes"),
+            "Provide a general description of conservation methodology."),
+        ('properties', 'ENUM:conserved_properties', '1.N',
+            "Properties conserved in sea ice by the numerical schemes."),
         ('budget', 'str', '1.1',
-            "For each conserved property, specify the output variables which close the related budget"),
-        ('was_flux_correction_used', 'bool', '0.1',
+            "For each conserved property, specify the output variables which close the related budgets."),
+        ('was_flux_correction_used', 'bool', '1.1',
             "Does conservation involved flux correction ?"),
-        ('corrected_conserved_prognostic_variables', 'str', '0.N',
+        ('corrected_conserved_prognostic_variables', 'str', '1.1',
             "List any variables which are conserved by *more* than the numerical scheme alone."),
         ]
     }
@@ -136,8 +128,8 @@ DETAILS['conservation'] = {
 # --------------------------------------------------------------------
 # ENUMERATIONS
 # --------------------------------------------------------------------
-ENUMERATIONS['prognostic_vars_types'] = {
-    'description': 'List of prognostic variables in sea ice',
+ENUMERATIONS['prognostic_variables'] = {
+    'description': 'Prognostic variables in sea ice model',
     'is_open': True,
     'members': [
         ('Sea ice Temperature', None),
@@ -156,15 +148,12 @@ ENUMERATIONS['seawater_freezing_point'] = {
     'description': 'Types of seawater freezing point equation in sea ice.',
     'is_open': True,
     'members': [
-        ('TEOS XXX', None),
-# todo check
-        ('TEOS ', None),
-        ('TEOS 2010', None),
+        ('TEOS-10', 'Thermodynamic equation of seawater 2010'),
         ('Constant', 'Constant value of seawater freezing point is used.'),
         ]
 }
 
-ENUMERATIONS['conservation_props_types'] = {
+ENUMERATIONS['conserved_properties'] = {
     'description': 'List of properties that can be conserved in sea ice',
     'is_open': True,
     'members': [

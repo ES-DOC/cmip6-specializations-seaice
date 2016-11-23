@@ -16,7 +16,7 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence, David Hassell, Mark Greenslade'
 # --------------------------------------------------------------------
 # CONTRIBUTORS: Set to realm specialization contributors (comma delimited).
 # --------------------------------------------------------------------
-CONTRIBUTORS = 'Jamie Rae (UKMO), Martin Vancopppenolle (IPSL)'
+CONTRIBUTORS = 'Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)'
 
 # --------------------------------------------------------------------
 # CHANGE HISTORY: Set to list: (version, date, comment, who).
@@ -28,6 +28,7 @@ CHANGE_HISTORY = [
     ("0.1.3", "2016-11-15", "Refactored based to fit in the new schema", "Mark Greenslade"),
     ("0.1.4", "2016-11-17", "Update DETAILS and SUBPROCESS names", "Ruth Petrie"),
     ("0.1.5", "2016-11-18", "Update based on discussions with Martin Vancopppenolle (IPSL)", "Ruth Petrie"),
+    ("0.1.6", "2016-11-23", "Update based on discussions with Alexandra Jahn (University of Colorado)", "Ruth Petrie"),
 ]
 
 # --------------------------------------------------------------------
