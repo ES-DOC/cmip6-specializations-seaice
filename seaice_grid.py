@@ -135,9 +135,9 @@ ENUMERATIONS['vertical_layering'] = {
     'members': [
         ('zero-layer',
             'Simulation has no internal ice thermodynamics.'),
-        ('2-levels',
+        ('two-levels',
             'Simulation uses two layers.'),
-        ('Multi-level',
+        ('multi-level',
             'Simulation uses more than two layers'),
        ]
     }
@@ -158,5 +158,6 @@ ENUMERATIONS['grid_structure'] = {
     'members': [
         ('Structured grid', None),
         ('Unstructured grid', None),
-       ]
+        ('Adaptive grid', None),
+    ]
     }

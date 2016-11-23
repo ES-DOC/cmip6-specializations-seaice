@@ -68,8 +68,6 @@ DETAILS['resolution'] = {
             "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc."),
         ('number_of_horizontal_gridpoints', 'int', '0.1',
             "Total number of horizontal (XY) points (or degrees of freedom) on computational grid."),
-        ('is_adaptive_grid', 'bool', '0.1',
-            "Default is False. Set true if grid resolution changes during execution."),
         ]
     }
 
