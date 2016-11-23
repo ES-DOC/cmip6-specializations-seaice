@@ -57,11 +57,11 @@ SUB_PROCESSES['energy'] = {
             "Method of heat diffusion"),
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
             "Method by which basal ocean heat flux is handled"),
+        ('fixed_salinity_value', 'float', '0.1',
+         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
+            please supply the fixed salinity value for each sea ice layer."""),
         ('heat_content_precip', 'str', '1.1',
-            "Method by which the heat content of precipitation is handled ?")
-#        ('fixed_salinity_value', 'float', '0.1',
-#         """If you have selected "Thermal properties depend on S-T (with fixed salinity)
-#            please supply the fixed salinity value for each sea ice layer."""),
+         "Method by which the heat content of precipitation is handled ?")
     ]
     }
 
@@ -118,8 +118,6 @@ SUB_PROCESSES['salt:thermodynamics']={
              "If using a constant salinity value specify this value in PSU?"),
         ('additional_details', 'str', '1.1',
             "Describe the prognostic salinity profile method used."),
- #       ('has_constant_thermodynamic_salinity', 'bool', '1.1',
-#             "Set to True if sea ice has constant salinity for both ice thermodynamics and ice-ocean exchanges."),
         ]
     }
 
@@ -235,16 +233,6 @@ ENUMERATIONS['thermo_brine_types'] = {
         ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
         ('Thermal Fixed Salinity', 'Thermal properties depend on S-T (with fixed salinity)'),
         ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
-    ]
-}
-
-ENUMERATIONS['transport_methods'] = {
-    'description': 'Transport Methods',
-    'is_open': True,
-    'members': [
-        ('Incremental Re-mapping', '(including Semi-Lagrangian)'),
-        ('Prather', None),
-        ('Eulerian', None),
     ]
 }
 
