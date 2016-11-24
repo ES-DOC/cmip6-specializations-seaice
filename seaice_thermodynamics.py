@@ -113,7 +113,7 @@ SUB_PROCESSES['salt:thermodynamics']={
 
 
 SUB_PROCESSES['ice_thickness_distribution'] = {
-    'description': 'Characteristics of melt ponds.',
+    'description': 'Ice thickness distribution details.',
     'properties': [
         ('representation', 'ENUM:ice_thickness_representation', '1.1',
             "How is the sea ice thickness distribution represented?"),
