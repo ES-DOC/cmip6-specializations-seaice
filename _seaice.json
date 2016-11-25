@@ -14,7 +14,7 @@
             "detailSets": [
                 {
                     "label": "General", 
-                    "description": "Methods of mechanical redistribution of sea ice", 
+                    "description": "Dynamic processes in sea ice.", 
                     "id": "cmip6.seaice.dynamics.general", 
                     "details": [
                         {
@@ -257,7 +257,7 @@
                             "description": "Method by which basal ocean heat flux is handled?", 
                             "id": "cmip6.seaice.thermodynamics.energy.basal_heat_flux", 
                             "uiOrdinal": 4, 
-                            "cardinality": "0.1", 
+                            "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
                                 "choices": [
@@ -409,7 +409,7 @@
                                                 "description": null
                                             }
                                         ], 
-                                        "description": "Method of describing the value(s) of salinity", 
+                                        "description": "Method of describing the value of salinity", 
                                         "isOpen": true, 
                                         "label": "salinity_method"
                                     }
@@ -459,7 +459,7 @@
                                                 "description": null
                                             }
                                         ], 
-                                        "description": "Method of describing the value(s) of salinity", 
+                                        "description": "Method of describing the value of salinity", 
                                         "isOpen": true, 
                                         "label": "salinity_method"
                                     }
@@ -597,7 +597,7 @@
                             "description": "Describe the snow aging scheme.", 
                             "id": "cmip6.seaice.thermodynamics.snow_processes.snow_aging_scheme", 
                             "uiOrdinal": 2, 
-                            "cardinality": "1.N", 
+                            "cardinality": "0.1", 
                             "type": "str"
                         }, 
                         {
@@ -613,7 +613,7 @@
                             "description": "Describe the snow ice formation scheme.", 
                             "id": "cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme", 
                             "uiOrdinal": 4, 
-                            "cardinality": "1.N", 
+                            "cardinality": "0.1", 
                             "type": "str"
                         }, 
                         {
@@ -621,7 +621,7 @@
                             "description": "What is the impact of ridging on snow cover?", 
                             "id": "cmip6.seaice.thermodynamics.snow_processes.redistribution", 
                             "uiOrdinal": 5, 
-                            "cardinality": "1.N", 
+                            "cardinality": "1.1", 
                             "type": "str"
                         }, 
                         {
@@ -668,7 +668,7 @@
                             "description": "Method used to handle surface albedo.", 
                             "id": "cmip6.seaice.radiative_processes.details.surface_albedo", 
                             "uiOrdinal": 1, 
-                            "cardinality": "1.N", 
+                            "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
                                 "choices": [
@@ -737,7 +737,7 @@
                 "detailSets": [
                     {
                         "label": "Horizontal", 
-                        "description": "Sea ice discretisation", 
+                        "description": "Sea ice discretisation in the horizontal", 
                         "id": "cmip6.seaice.grid.horizontal", 
                         "details": [
                             {
@@ -849,7 +849,7 @@
                     }, 
                     {
                         "label": "Vertical", 
-                        "description": "Sea ice discretisation", 
+                        "description": "Sea ice vertical properties", 
                         "id": "cmip6.seaice.grid.vertical", 
                         "details": [
                             {
@@ -965,7 +965,7 @@
                         "id": "cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels", 
                         "uiOrdinal": 2, 
                         "cardinality": "1.1", 
-                        "type": "str"
+                        "type": "int"
                     }, 
                     {
                         "label": "Snow Fraction", 
@@ -995,7 +995,7 @@
         "detailSets": [
             {
                 "label": "Variables", 
-                "description": "General key properties in sea ice", 
+                "description": "List of prognostic variable in the sea ice model.", 
                 "id": "cmip6.seaice.key_properties.variables", 
                 "details": [
                     {
@@ -1248,7 +1248,7 @@
                     }, 
                     {
                         "label": "Was Flux Correction Used", 
-                        "description": "Does conservation involved flux correction ?", 
+                        "description": "Does conservation involved flux correction?", 
                         "id": "cmip6.seaice.key_properties.conservation.was_flux_correction_used", 
                         "uiOrdinal": 4, 
                         "cardinality": "1.1", 
