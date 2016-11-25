@@ -36,7 +36,7 @@ DESCRIPTION = 'Sea Ice Dynamics'
 # DETAILS : General process details.
 # --------------------------------------------------------------------
 DETAILS['general'] = {
-    'description': 'Methods of mechanical redistribution of sea ice',
+    'description': 'Dynamic processes in sea ice.',
     'properties': [
         ('horizontal_transport', 'ENUM:transport_methods', '1.1',
             "What is the method of horizontal advection of sea ice?"),

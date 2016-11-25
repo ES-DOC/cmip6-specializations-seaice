@@ -44,7 +44,7 @@ DETAILS['discretisation'] = {
     }
 
 DETAILS['discretisation:horizontal'] = {
-    'description': 'Sea ice discretisation',
+    'description': 'Sea ice discretisation in the horizontal',
     'properties': [
         ('grid', 'ENUM:horizontal_grid', '1.1',
             "Grid on which sea ice is horizontal discretised?"),
@@ -62,7 +62,7 @@ DETAILS['discretisation:horizontal'] = {
     }
 
 DETAILS['discretisation:vertical'] = {
-    'description': 'Sea ice discretisation',
+    'description': 'Sea ice vertical properties',
     'properties': [
         ('layering', 'ENUM:vertical_layering', '1.N',
             "What type of sea ice vertical layers are implemented for purposes of thermodynamic calculations?"),
@@ -102,7 +102,7 @@ DETAILS['snow_on_seaice'] = {
     'properties': [
         ('has_snow_on_ice', 'bool', '1.1',
             "Is snow on ice represented in this model?"),
-        ('number_of_snow_levels', 'str', '1.1',
+        ('number_of_snow_levels', 'int', '1.1',
             "Number of vertical levels of snow on ice?"),
         ('snow_fraction', 'str', '1.1',
             "Describe how the snow fraction on sea ice is determined"),

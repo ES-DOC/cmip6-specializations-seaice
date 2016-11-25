@@ -486,7 +486,7 @@
                 }, 
                 {
                     "label": "Ice Thickness Distribution", 
-                    "description": "Characteristics of melt ponds.", 
+                    "description": "Ice thickness distribution details.", 
                     "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution", 
                     "details": [
                         {

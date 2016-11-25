@@ -47,6 +47,13 @@
         <dt><b>Version</b></dt><dd>0.1.5</dd><dt><b>Date</b></dt><dd>2016-11-18</dd><dt><b>Person</b></dt><dd>Update based on discussions with Martin Vancopppenolle (IPSL)</dd><dt><b>Comment</b></dt><dd>Ruth Petrie</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="0.1.6"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>0.1.6</dd><dt><b>Date</b></dt><dd>2016-11-23</dd><dt><b>Person</b></dt><dd>Update based on discussions with Alexandra Jahn (University of Colorado)</dd><dt><b>Comment</b></dt><dd>Ruth Petrie</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="realm"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -1703,7 +1710,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of melt ponds.</dd>
+        <dt><b>Description</b></dt><dd>Ice thickness distribution details.</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

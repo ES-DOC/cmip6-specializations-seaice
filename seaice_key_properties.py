@@ -35,7 +35,7 @@ DESCRIPTION = 'Sea Ice key properties'
 # GENERAL details.
 # --------------------------------------------------------------------
 DETAILS['variables'] = {
-    'description': "General key properties in sea ice",
+    'description': "List of prognostic variable in the sea ice model.",
     'properties': [
         ('prognostic', 'ENUM:prognostic_variables', '1.N',
             "List of prognostic variables in the sea ice component."),
@@ -119,7 +119,7 @@ DETAILS['conservation'] = {
         ('budget', 'str', '1.1',
             "For each conserved property, specify the output variables which close the related budgets."),
         ('was_flux_correction_used', 'bool', '1.1',
-            "Does conservation involved flux correction ?"),
+            "Does conservation involved flux correction?"),
         ('corrected_conserved_prognostic_variables', 'str', '1.1',
             "List any variables which are conserved by *more* than the numerical scheme alone."),
         ]

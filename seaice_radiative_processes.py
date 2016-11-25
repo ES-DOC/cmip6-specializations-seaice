@@ -38,7 +38,7 @@ DESCRIPTION = 'Sea Ice Radiative Processes'
 SUB_PROCESSES['details'] = {
     'description': "Radiative processes in sea ice",
     'properties': [
-        ('surface_albedo', 'ENUM:seaice_albedo', '1.N',
+        ('surface_albedo', 'ENUM:seaice_albedo', '1.1',
             "Method used to handle surface albedo."),
         ('ice_radiation_transmission', 'ENUM:ice_trans', '1.N',
             "Method by which solar radiation through sea ice is handled."),

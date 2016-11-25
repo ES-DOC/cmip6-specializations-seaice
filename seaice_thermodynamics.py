@@ -45,7 +45,7 @@ SUB_PROCESSES['energy'] = {
             "What type of thermal conductivity is used?"),
         ('heat_diffusion', 'ENUM:heat_diffusion_type', '1.1',
             "What is the method of heat diffusion?"),
-        ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '0.1',
+        ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '1.1',
             "Method by which basal ocean heat flux is handled?"),
         ('fixed_salinity_value', 'float', '0.1',
          """If you have selected "Thermal properties depend on S-T (with fixed salinity),
@@ -140,10 +140,10 @@ SUB_PROCESSES['snow_processes'] = {
     'description': 'Thermodynamic processes in snow on sea ice',
     'properties': [
         ('has_snow_aging', 'bool', '1.N', "Set to True if the sea ice model has a snow aging scheme."),
-        ('snow_aging_scheme', 'str', '1.N', "Describe the snow aging scheme."),
+        ('snow_aging_scheme', 'str', '0.1', "Describe the snow aging scheme."),
         ('has_snow_ice_formation', 'bool', '1.N', "Set to True if the sea ice model has snow ice formation."),
-        ('snow_ice_formation_scheme', 'str', '1.N', "Describe the snow ice formation scheme."),
-        ('redistribution', 'str', '1.N', "What is the impact of ridging on snow cover?"),
+        ('snow_ice_formation_scheme', 'str', '0.1', "Describe the snow ice formation scheme."),
+        ('redistribution', 'str', '1.1', "What is the impact of ridging on snow cover?"),
         ('heat_diffusion', 'ENUM:snow_process_types', '1.1',
             "What is the heat diffusion through snow methodology in sea ice thermodynamics?"),
     ]
@@ -176,10 +176,6 @@ ENUMERATIONS['basal_heat_flux_method'] = {
     'description': 'Basal ocean heat flux methodology',
     'is_open': True,
     'members': [
-# TODO Check with Martin
-#        ('linear', None),
-#        ('quadratic', None),
-#        ('prescribed', None),
         ('Heat Reservoir', 'Brine inclusions treated as a heat reservoir'),
         ('Thermal Fixed Salinity', 'Thermal properties depend on S-T (with fixed salinity)'),
         ('Thermal Varying Salinity', 'Thermal properties depend on S-T (with varying salinity'),
@@ -253,7 +249,7 @@ ENUMERATIONS['snow_process_types'] = {
 }
 
 ENUMERATIONS['salinity_method'] = {
-    'description': 'Method of describing the value(s) of salinity',
+    'description': 'Method of describing the value of salinity',
     'is_open': True,
     'members': [
         ('constant', None),
