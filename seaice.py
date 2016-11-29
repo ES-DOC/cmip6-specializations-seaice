@@ -27,6 +27,11 @@ AUTHORS = 'Ruth Petrie, Bryan Lawrence, David Hassell, Mark Greenslade'
 CONTRIBUTORS = 'Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)'
 
 # --------------------------------------------------------------------
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
+# --------------------------------------------------------------------
+QC_STATUS = 'draft'
+
+# --------------------------------------------------------------------
 # CHANGE HISTORY: Set to list: (version, date, comment, who).
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
@@ -38,11 +43,6 @@ CHANGE_HISTORY = [
     ("0.1.5", "2016-11-18", "Update based on discussions with Martin Vancopppenolle (IPSL)", "Ruth Petrie"),
     ("0.1.6", "2016-11-23", "Update based on discussions with Alexandra Jahn (University of Colorado)", "Ruth Petrie"),
 ]
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
 # DESCRIPTION: Scientific context of this scientific realm
