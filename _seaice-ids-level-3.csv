@@ -1,13 +1,13 @@
 cmip6-id, cmip6-label, cmip6-type
-cmip6.seaice.grid.horizontal.grid, Seaice > Grid > Horizontal > Grid, detail
-cmip6.seaice.grid.horizontal.grid_type, Seaice > Grid > Horizontal > Grid Type, detail
-cmip6.seaice.grid.horizontal.scheme, Seaice > Grid > Horizontal > Scheme, detail
-cmip6.seaice.grid.horizontal.thermodynamics_time_step, Seaice > Grid > Horizontal > Thermodynamics Time Step, detail
-cmip6.seaice.grid.horizontal.dynamics_time_step, Seaice > Grid > Horizontal > Dynamics Time Step, detail
-cmip6.seaice.grid.horizontal.additional_details, Seaice > Grid > Horizontal > Additional Details, detail
-cmip6.seaice.grid.vertical.layering, Seaice > Grid > Vertical > Layering, detail
-cmip6.seaice.grid.vertical.number_of_layers, Seaice > Grid > Vertical > Number Of Layers, detail
-cmip6.seaice.grid.vertical.additional_details, Seaice > Grid > Vertical > Additional Details, detail
+cmip6.seaice.grid.discretisation.horizontal.grid, Seaice > Grid > Discretisation > Horizontal > Grid, detail
+cmip6.seaice.grid.discretisation.horizontal.grid_type, Seaice > Grid > Discretisation > Horizontal > Grid Type, detail
+cmip6.seaice.grid.discretisation.horizontal.scheme, Seaice > Grid > Discretisation > Horizontal > Scheme, detail
+cmip6.seaice.grid.discretisation.horizontal.thermodynamics_time_step, Seaice > Grid > Discretisation > Horizontal > Thermodynamics Time Step, detail
+cmip6.seaice.grid.discretisation.horizontal.dynamics_time_step, Seaice > Grid > Discretisation > Horizontal > Dynamics Time Step, detail
+cmip6.seaice.grid.discretisation.horizontal.additional_details, Seaice > Grid > Discretisation > Horizontal > Additional Details, detail
+cmip6.seaice.grid.discretisation.vertical.layering, Seaice > Grid > Discretisation > Vertical > Layering, detail
+cmip6.seaice.grid.discretisation.vertical.number_of_layers, Seaice > Grid > Discretisation > Vertical > Number Of Layers, detail
+cmip6.seaice.grid.discretisation.vertical.additional_details, Seaice > Grid > Discretisation > Vertical > Additional Details, detail
 cmip6.seaice.grid.seaice_categories.has_mulitple_categories, Seaice > Grid > Seaice Categories > Has Mulitple Categories, detail
 cmip6.seaice.grid.seaice_categories.number_of_categories, Seaice > Grid > Seaice Categories > Number Of Categories, detail
 cmip6.seaice.grid.seaice_categories.category_limits, Seaice > Grid > Seaice Categories > Category Limits, detail
@@ -38,11 +38,11 @@ cmip6.seaice.key_properties.conservation.budget, Seaice > Key Properties > Conse
 cmip6.seaice.key_properties.conservation.was_flux_correction_used, Seaice > Key Properties > Conservation > Was Flux Correction Used, detail
 cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables, Seaice > Key Properties > Conservation > Corrected Conserved Prognostic Variables, detail
 , , 
-cmip6.seaice.dynamics.general.horizontal_transport, Seaice > Dynamics > General > Horizontal Transport, detail
-cmip6.seaice.dynamics.general.transport_in_thickness_space, Seaice > Dynamics > General > Transport In Thickness Space, detail
-cmip6.seaice.dynamics.general.ice_strength_formulation, Seaice > Dynamics > General > Ice Strength Formulation, detail
-cmip6.seaice.dynamics.general.redistribution, Seaice > Dynamics > General > Redistribution, detail
-cmip6.seaice.dynamics.general.rheology, Seaice > Dynamics > General > Rheology, detail
+cmip6.seaice.dynamics.horizontal_transport, Seaice > Dynamics > Horizontal Transport, detail
+cmip6.seaice.dynamics.transport_in_thickness_space, Seaice > Dynamics > Transport In Thickness Space, detail
+cmip6.seaice.dynamics.ice_strength_formulation, Seaice > Dynamics > Ice Strength Formulation, detail
+cmip6.seaice.dynamics.redistribution, Seaice > Dynamics > Redistribution, detail
+cmip6.seaice.dynamics.rheology, Seaice > Dynamics > Rheology, detail
 , , 
 cmip6.seaice.thermodynamics.energy.enthalpy_formulation, Seaice > Thermodynamics > Energy > Enthalpy Formulation, detail
 cmip6.seaice.thermodynamics.energy.thermal_conductivity, Seaice > Thermodynamics > Energy > Thermal Conductivity, detail
@@ -74,6 +74,6 @@ cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme, Seaice > T
 cmip6.seaice.thermodynamics.snow_processes.redistribution, Seaice > Thermodynamics > Snow Processes > Redistribution, detail
 cmip6.seaice.thermodynamics.snow_processes.heat_diffusion, Seaice > Thermodynamics > Snow Processes > Heat Diffusion, detail
 , , 
-cmip6.seaice.radiative_processes.details.surface_albedo, Seaice > Radiative Processes > Details > Surface Albedo, detail
-cmip6.seaice.radiative_processes.details.ice_radiation_transmission, Seaice > Radiative Processes > Details > Ice Radiation Transmission, detail
+cmip6.seaice.radiative_processes.surface_albedo, Seaice > Radiative Processes > Surface Albedo, detail
+cmip6.seaice.radiative_processes.ice_radiation_transmission, Seaice > Radiative Processes > Ice Radiation Transmission, detail
 , , 

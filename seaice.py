@@ -4,6 +4,14 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 
 """
 # --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
+from collections import OrderedDict
+
+DETAILS = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# --------------------------------------------------------------------
 # CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Ruth Petrie'
@@ -64,3 +72,14 @@ PROCESSES = [
     'seaice_thermodynamics',
     'seaice_radiative_processes',
 ]
+
+# --------------------------------------------------------------------
+# REALM: top level details
+# --------------------------------------------------------------------
+DETAILS = OrderedDict()
+
+# --------------------------------------------------------------------
+# REALM: ENUMERATIONS
+# --------------------------------------------------------------------
+ENUMERATIONS = OrderedDict()
+

@@ -10,7 +10,6 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 from collections import OrderedDict
 
 DETAILS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
@@ -36,7 +35,7 @@ DESCRIPTION = 'Sea Ice Thermodynamics'
 # --------------------------------------------------------------------
 # SUB-PROCESS: Processes related to energy in sea ice thermodynamics
 # --------------------------------------------------------------------
-SUB_PROCESSES['energy'] = {
+DETAILS['energy'] = {
     'description': 'Processes related to energy in sea ice thermodynamics',
     'properties': [
         ('enthalpy_formulation', 'ENUM:energy_formulation', '1.1',
@@ -56,7 +55,10 @@ SUB_PROCESSES['energy'] = {
     }
 
 
-SUB_PROCESSES['mass'] = {
+# --------------------------------------------------------------------
+# SUB-PROCESS: Mass.
+# --------------------------------------------------------------------
+DETAILS['mass'] = {
     'description': 'Processes related to mass in sea ice thermodynamics',
     'properties': [
         ('new_ice_formation', 'str', '1.1',
@@ -72,7 +74,10 @@ SUB_PROCESSES['mass'] = {
         ]
     }
 
-SUB_PROCESSES['salt'] = {
+# --------------------------------------------------------------------
+# SUB-PROCESS: Salt.
+# --------------------------------------------------------------------
+DETAILS['salt'] = {
     'description': 'Processes related to salt in sea ice thermodynamics.',
     'properties': [
         ('has_multiple_sea_ice_salinities', 'bool', '1.1',
@@ -87,7 +92,7 @@ SUB_PROCESSES['salt'] = {
     ]
 }
 
-SUB_PROCESSES['salt:mass_transport']={
+DETAILS['salt:mass_transport']={
     'description':'Mass transport of salt',
     'properties': [
         ('salinity_type', 'ENUM:salinity_method', '1.1',
@@ -99,7 +104,7 @@ SUB_PROCESSES['salt:mass_transport']={
         ]
     }
 
-SUB_PROCESSES['salt:thermodynamics']={
+DETAILS['salt:thermodynamics']={
     'description':'Salt thermodynamics',
     'properties': [
         ('salinity', 'ENUM:salinity_method', '1.1',
@@ -112,7 +117,10 @@ SUB_PROCESSES['salt:thermodynamics']={
     }
 
 
-SUB_PROCESSES['ice_thickness_distribution'] = {
+# --------------------------------------------------------------------
+# SUB-PROCESS: Ice Thickness Distribution.
+# --------------------------------------------------------------------
+DETAILS['ice_thickness_distribution'] = {
     'description': 'Ice thickness distribution details.',
     'properties': [
         ('representation', 'ENUM:ice_thickness_representation', '1.1',
@@ -121,7 +129,10 @@ SUB_PROCESSES['ice_thickness_distribution'] = {
     }
 
 
-SUB_PROCESSES['melt_ponds'] = {
+# --------------------------------------------------------------------
+# SUB-PROCESS: Melt Ponds
+# --------------------------------------------------------------------
+DETAILS['melt_ponds'] = {
     'description': 'Characteristics of melt ponds.',
     'properties': [
         ('are_included', 'bool', '1.1',
@@ -136,7 +147,7 @@ SUB_PROCESSES['melt_ponds'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: Snow thermodynamic processes.
 # --------------------------------------------------------------------
-SUB_PROCESSES['snow_processes'] = {
+DETAILS['snow_processes'] = {
     'description': 'Thermodynamic processes in snow on sea ice',
     'properties': [
         ('has_snow_aging', 'bool', '1.N', "Set to True if the sea ice model has a snow aging scheme."),

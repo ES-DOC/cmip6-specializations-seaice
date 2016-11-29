@@ -9,7 +9,6 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 from collections import OrderedDict
 
 DETAILS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
@@ -35,7 +34,7 @@ DESCRIPTION = 'Sea Ice Dynamics'
 # --------------------------------------------------------------------
 # DETAILS : General process details.
 # --------------------------------------------------------------------
-DETAILS['general'] = {
+DETAILS['toplevel'] = {
     'description': 'Dynamic processes in sea ice.',
     'properties': [
         ('horizontal_transport', 'ENUM:transport_methods', '1.1',

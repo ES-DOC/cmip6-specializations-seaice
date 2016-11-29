@@ -1,7 +1,7 @@
 cmip6-id, cmip6-label, cmip6-type
 cmip6.seaice.grid.discretisation, Seaice > Grid > Discretisation, detail-set
-cmip6.seaice.grid.horizontal, Seaice > Grid > Horizontal, detail-set
-cmip6.seaice.grid.vertical, Seaice > Grid > Vertical, detail-set
+cmip6.seaice.grid.discretisation.horizontal, Seaice > Grid > Discretisation > Horizontal, detail-set
+cmip6.seaice.grid.discretisation.vertical, Seaice > Grid > Discretisation > Vertical, detail-set
 cmip6.seaice.grid.seaice_categories, Seaice > Grid > Seaice Categories, detail-set
 cmip6.seaice.grid.snow_on_seaice, Seaice > Grid > Snow On Seaice, detail-set
 , , 
@@ -11,8 +11,6 @@ cmip6.seaice.key_properties.resolution, Seaice > Key Properties > Resolution, de
 cmip6.seaice.key_properties.tuning_applied, Seaice > Key Properties > Tuning Applied, detail-set
 cmip6.seaice.key_properties.assumptions, Seaice > Key Properties > Assumptions, detail-set
 cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation, detail-set
-, , 
-cmip6.seaice.dynamics.general, Seaice > Dynamics > General, detail-set
 , , 
 cmip6.seaice.thermodynamics.salt.mass_transport, Seaice > Thermodynamics > Salt > Mass Transport, detail-set
 cmip6.seaice.thermodynamics.salt.thermodynamics, Seaice > Thermodynamics > Salt > Thermodynamics, detail-set

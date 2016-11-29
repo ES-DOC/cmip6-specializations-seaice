@@ -9,7 +9,6 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 from collections import OrderedDict
 
 DETAILS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
@@ -33,9 +32,9 @@ QC_STATUS = 'draft'
 DESCRIPTION = 'Sea Ice Radiative Processes'
 
 # --------------------------------------------------------------------
-# SUB PROCESS: Properties of radiation in sea ice
+# PROCESS: top level properties
 # --------------------------------------------------------------------
-SUB_PROCESSES['details'] = {
+DETAILS['toplevel'] = {
     'description': "Radiative processes in sea ice",
     'properties': [
         ('surface_albedo', 'ENUM:seaice_albedo', '1.1',
