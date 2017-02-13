@@ -13,7 +13,7 @@
     ],
     "PROPERTIES": {
         "priority1": [
-            "cmip6.seaice.key_properties.model_name",
+            "cmip6.seaice.key_properties.model.model_name",
             "cmip6.seaice.key_properties.resolution.name",
             "cmip6.seaice.key_properties.canonical_horizontal_resolution",
             "cmip6.seaice.grid.discretisation.vertical.layering",
