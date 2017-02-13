@@ -688,8 +688,8 @@
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "enum": {
-                        "label": "Ice Trans", 
-                        "description": "Surface albedo of sea ice component", 
+                        "label": "Ice Transmission", 
+                        "description": "Ice radiative transmission", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -983,6 +983,22 @@
         "id": "cmip6.seaice.key_properties", 
         "contact": "Ruth Petrie", 
         "subProcesses": [
+            {
+                "label": "Model", 
+                "description": "Name of seaice model used.", 
+                "id": "cmip6.seaice.key_properties.model", 
+                "contact": "Ruth Petrie", 
+                "properties": [
+                    {
+                        "label": "Model Name", 
+                        "description": "Name of seaice model (e.g. CICE 4.2, LIM 2.1, etc.)", 
+                        "id": "cmip6.seaice.key_properties.model.model_name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
             {
                 "label": "Variables", 
                 "description": "List of prognostic variable in the sea ice model.", 

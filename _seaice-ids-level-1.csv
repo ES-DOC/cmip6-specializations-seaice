@@ -7,6 +7,7 @@ cmip6.seaice.grid.seaice_categories, Seaice > Grid > Seaice Categories, sub-proc
 cmip6.seaice.grid.snow_on_seaice, Seaice > Grid > Snow On Seaice, sub-process
 , , 
 cmip6.seaice.key_properties, Seaice > Key Properties, key-properties
+cmip6.seaice.key_properties.model, Seaice > Key Properties > Model, sub-process
 cmip6.seaice.key_properties.variables, Seaice > Key Properties > Variables, sub-process
 cmip6.seaice.key_properties.seawater_properties, Seaice > Key Properties > Seawater Properties, sub-process
 cmip6.seaice.key_properties.resolution, Seaice > Key Properties > Resolution, sub-process

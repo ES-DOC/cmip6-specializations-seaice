@@ -18,6 +18,7 @@ cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels, Seaice > Grid > Snow On 
 cmip6.seaice.grid.snow_on_seaice.snow_fraction, Seaice > Grid > Snow On Seaice > Snow Fraction, property
 cmip6.seaice.grid.snow_on_seaice.additional_details, Seaice > Grid > Snow On Seaice > Additional Details, property
 , , 
+cmip6.seaice.key_properties.model.model_name, Seaice > Key Properties > Model > Model Name, property
 cmip6.seaice.key_properties.variables.prognostic, Seaice > Key Properties > Variables > Prognostic, property
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, property
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point Value, property
