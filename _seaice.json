@@ -432,9 +432,9 @@
                             "id": "cmip6.seaice.thermodynamics.salt.thermodynamics", 
                             "properties": [
                                 {
-                                    "label": "Salinity", 
+                                    "label": "Salinity Type", 
                                     "description": "How is salinity determined in the thermodynamic calculation?", 
-                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "enum": {
@@ -856,11 +856,11 @@
                                             "description": "Simulation has no internal ice thermodynamics."
                                         }, 
                                         {
-                                            "label": "Two-levels", 
+                                            "label": "Two-layers", 
                                             "description": "Simulation uses two layers."
                                         }, 
                                         {
-                                            "label": "Multi-level", 
+                                            "label": "Multi-layers", 
                                             "description": "Simulation uses more than two layers"
                                         }
                                     ]
@@ -1026,6 +1026,10 @@
                                 }, 
                                 {
                                     "label": "Sea ice thickness", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Sea ice volume per grid cell area", 
                                     "description": null
                                 }, 
                                 {
