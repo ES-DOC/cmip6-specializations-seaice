@@ -64,7 +64,7 @@ DETAILS['seawater_properties'] = {
 # RESOLUTION: Description of the resolution in the sea ice grid.
 # --------------------------------------------------------------------
 DETAILS['resolution'] = {
-    'description': "Resolution in the sea ice grid",
+    'description': "Resolution of the sea ice grid",
     'properties': [
         ('name', 'str', '1.1',
             "This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc."),
