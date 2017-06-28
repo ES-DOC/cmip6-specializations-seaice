@@ -141,7 +141,7 @@ ENUMERATIONS['prognostic_variables'] = {
         ('Sea ice volume per grid cell area', None),
         ('Sea ice u-velocity', None),
         ('Sea ice v-velocity', None),
-        ('Sea ice enthalpy', None),
+        ('Sea ice enthalpy', None ),
         ('Internal ice stress', None),
         ('Salinity', None),
         ('Snow temperature', 'Snow on ice temperature'),
