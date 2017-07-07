@@ -45,7 +45,7 @@ _ENCODINGS = {
 
 # Map of generator types to file suffixes.
 _FILE_SUFFIXES = {
-    'qconfig': 'json',
+    'qconfig': 'qconfig',
     'ids-level-1': 'ids-level-1',
     'ids-level-2': 'ids-level-2',
     'ids-level-3': 'ids-level-3'
