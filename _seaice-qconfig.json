@@ -4,7 +4,7 @@
   "documentation": "Sea ice realm specialization", 
   "ontology_type": "SPECIALIZATION", 
   "ontology_base": "cim_2.0.0", 
-  "date": "2017-06-06 02:07:50.724686", 
+  "date": "2017-07-07 15:37:31.976707", 
   "classes": {
     "defined": [
       {
@@ -24,48 +24,48 @@
               "name": "grid", 
               "cardinality": "0.1", 
               "property_type": "RELATIONSHIP", 
+              "documentation": "", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "", 
+              "values": [
+                "cmip6.seaice.grid"
+              ], 
               "relationship_targets": [
                 "science.topic"
               ], 
-              "is_hierarchical": true, 
-              "values": [
-                "cmip6.seaice.grid"
-              ]
+              "is_hierarchical": true
             }, 
             {
               "name": "key_properties", 
-              "cardinality": "1,1", 
+              "cardinality": "1.1", 
               "property_type": "RELATIONSHIP", 
-              "is_meta": false, 
-              "is_nillable": false, 
               "documentation": "", 
+              "is_meta": false, 
+              "is_nillable": true, 
+              "values": [
+                "cmip6.seaice.key_properties"
+              ], 
               "relationship_targets": [
                 "science.topic"
               ], 
-              "is_hierarchical": true, 
-              "values": [
-                "cmip6.seaice.key_properties"
-              ]
+              "is_hierarchical": true
             }, 
             {
               "name": "processes", 
               "cardinality": "3.3", 
               "property_type": "RELATIONSHIP", 
+              "documentation": "", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "", 
-              "relationship_targets": [
-                "science.topic"
-              ], 
-              "is_hierarchical": true, 
               "values": [
                 "cmip6.seaice.dynamics", 
                 "cmip6.seaice.thermodynamics", 
                 "cmip6.seaice.radiative_processes"
-              ]
+              ], 
+              "relationship_targets": [
+                "science.topic"
+              ], 
+              "is_hierarchical": true
             }
           ], 
           "excluded": [], 
@@ -121,10 +121,10 @@
               "name": "grid", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "Grid on which sea ice is horizontal discretised?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Grid on which sea ice is horizontal discretised?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -142,18 +142,18 @@
                   "documentation": "Sea ice is horizontally discretised on its own independent grid"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.grid.discretisation.horizontal.grid", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.horizontal"
             }, 
             {
               "name": "grid_type", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the type of sea ice grid?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the type of sea ice grid?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -169,18 +169,18 @@
                   "documentation": "Computational grid changes during the run"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.grid.discretisation.horizontal.grid_type", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.horizontal"
             }, 
             {
               "name": "scheme", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the advection scheme?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the advection scheme?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -195,54 +195,54 @@
                   "value": "Finite volumes"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.grid.discretisation.horizontal.scheme", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.horizontal"
             }, 
             {
               "name": "thermodynamics_time_step", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "What is the time step in the sea ice model thermodynamic component in seconds.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the time step in the sea ice model thermodynamic component in seconds.", 
+              "values": [], 
               "atomic_type": "INTEGER", 
               "id": "cmip6.seaice.grid.discretisation.horizontal.thermodynamics_time_step", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.horizontal"
             }, 
             {
               "name": "dynamics_time_step", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "What is the time step in the sea ice model dynamic component in seconds.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the time step in the sea ice model dynamic component in seconds.", 
+              "values": [], 
               "atomic_type": "INTEGER", 
               "id": "cmip6.seaice.grid.discretisation.horizontal.dynamics_time_step", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.horizontal"
             }, 
             {
               "name": "additional_details", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Specify any additional horizontal discretisation details.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Specify any additional horizontal discretisation details.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.discretisation.horizontal.additional_details", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.horizontal"
             }, 
             {
               "name": "layering", 
               "cardinality": "1.N", 
               "property_type": "ENUMERATION", 
+              "documentation": "What type of sea ice vertical layers are implemented for purposes of thermodynamic calculations?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What type of sea ice vertical layers are implemented for purposes of thermodynamic calculations?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -251,149 +251,149 @@
                 }, 
                 {
                   "order": 1, 
-                  "value": "Two-levels", 
+                  "value": "Two-layers", 
                   "documentation": "Simulation uses two layers."
                 }, 
                 {
                   "order": 2, 
-                  "value": "Multi-level", 
+                  "value": "Multi-layers", 
                   "documentation": "Simulation uses more than two layers"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.grid.discretisation.vertical.layering", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.vertical"
             }, 
             {
               "name": "number_of_layers", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If using multi-layers specify how many.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If using multi-layers specify how many.", 
+              "values": [], 
               "atomic_type": "INTEGER", 
               "id": "cmip6.seaice.grid.discretisation.vertical.number_of_layers", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.vertical"
             }, 
             {
               "name": "additional_details", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Specify any additional vertical grid details.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Specify any additional vertical grid details.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.discretisation.vertical.additional_details", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.discretisation.vertical"
             }, 
             {
               "name": "has_mulitple_categories", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Set to true if the sea ice model has multiple sea ice categories.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Set to true if the sea ice model has multiple sea ice categories.", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.grid.seaice_categories.has_mulitple_categories", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.seaice_categories"
             }, 
             {
               "name": "number_of_categories", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If using sea ice categories specify how many.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If using sea ice categories specify how many.", 
+              "values": [], 
               "atomic_type": "INTEGER", 
               "id": "cmip6.seaice.grid.seaice_categories.number_of_categories", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.seaice_categories"
             }, 
             {
               "name": "category_limits", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If using sea ice categories specify each of the category limits.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If using sea ice categories specify each of the category limits.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.seaice_categories.category_limits", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.seaice_categories"
             }, 
             {
               "name": "ice_thickness_distribution_scheme", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the sea ice thickness distribution scheme", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the sea ice thickness distribution scheme", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.seaice_categories"
             }, 
             {
               "name": "other", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If the sea ice model does not use sea ice categories specify any additional details.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If the sea ice model does not use sea ice categories specify any additional details.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.seaice_categories.other", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.seaice_categories"
             }, 
             {
               "name": "has_snow_on_ice", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Is snow on ice represented in this model?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Is snow on ice represented in this model?", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.snow_on_seaice"
             }, 
             {
               "name": "number_of_snow_levels", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Number of vertical levels of snow on ice?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Number of vertical levels of snow on ice?", 
+              "values": [], 
               "atomic_type": "INTEGER", 
               "id": "cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.snow_on_seaice"
             }, 
             {
               "name": "snow_fraction", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe how the snow fraction on sea ice is determined", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe how the snow fraction on sea ice is determined", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.snow_on_seaice.snow_fraction", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.snow_on_seaice"
             }, 
             {
               "name": "additional_details", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Specify any additional details related to snow on ice.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Specify any additional details related to snow on ice.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.grid.snow_on_seaice.additional_details", 
-              "values": [], 
               "category_id": "cmip6.seaice.grid.snow_on_seaice"
             }
           ], 
@@ -415,6 +415,11 @@
         "categories": {
           "defined": [
             {
+              "name": "model", 
+              "id": "cmip6.seaice.key_properties.model", 
+              "documentation": "Name of seaice model used."
+            }, 
+            {
               "name": "variables", 
               "id": "cmip6.seaice.key_properties.variables", 
               "documentation": "List of prognostic variable in the sea ice model."
@@ -427,7 +432,7 @@
             {
               "name": "resolution", 
               "id": "cmip6.seaice.key_properties.resolution", 
-              "documentation": "Resolution in the sea ice grid"
+              "documentation": "Resolution of the sea ice grid"
             }, 
             {
               "name": "tuning_applied", 
@@ -451,17 +456,29 @@
         "properties": {
           "defined": [
             {
+              "name": "model_name", 
+              "cardinality": "1.1", 
+              "property_type": "ATOMIC", 
+              "documentation": "Name of seaice model (e.g. CICE 4.2, LIM 2.1, etc.)", 
+              "is_meta": false, 
+              "is_nillable": true, 
+              "values": [], 
+              "atomic_type": "STRING", 
+              "id": "cmip6.seaice.key_properties.model.model_name", 
+              "category_id": "cmip6.seaice.key_properties.model"
+            }, 
+            {
               "name": "prognostic", 
               "cardinality": "1.N", 
               "property_type": "ENUMERATION", 
+              "documentation": "List of prognostic variables in the sea ice component.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "List of prognostic variables in the sea ice component.", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
-                  "value": "Sea ice Temperature"
+                  "value": "Sea ice temperature"
                 }, 
                 {
                   "order": 1, 
@@ -473,43 +490,51 @@
                 }, 
                 {
                   "order": 3, 
-                  "value": "Sea ice U-velocity"
+                  "value": "Sea ice volume per grid cell area"
                 }, 
                 {
                   "order": 4, 
-                  "value": "Sea ice V-velocity"
+                  "value": "Sea ice u-velocity"
                 }, 
                 {
                   "order": 5, 
-                  "value": "Internal ice stress"
+                  "value": "Sea ice v-velocity"
                 }, 
                 {
                   "order": 6, 
-                  "value": "Salinity"
+                  "value": "Sea ice enthalpy"
                 }, 
                 {
                   "order": 7, 
+                  "value": "Internal ice stress"
+                }, 
+                {
+                  "order": 8, 
+                  "value": "Salinity"
+                }, 
+                {
+                  "order": 9, 
                   "value": "Snow temperature", 
                   "documentation": "Snow on ice temperature"
                 }, 
                 {
-                  "order": 8, 
+                  "order": 10, 
                   "value": "Snow depth", 
                   "documentation": "Snow on ice thickness"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.key_properties.variables.prognostic", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.variables"
             }, 
             {
               "name": "ocean_freezing_point", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -522,174 +547,174 @@
                   "documentation": "Constant value of seawater freezing point is used."
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.seawater_properties"
             }, 
             {
               "name": "ocean_freezing_point_value", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If using a constant seawater freezing point, specify this value.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If using a constant seawater freezing point, specify this value.", 
+              "values": [], 
               "atomic_type": "DECIMAL", 
               "id": "cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.seawater_properties"
             }, 
             {
               "name": "name", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.resolution.name", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.resolution"
             }, 
             {
               "name": "canonical_horizontal_resolution", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.resolution"
             }, 
             {
               "name": "number_of_horizontal_gridpoints", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+              "values": [], 
               "atomic_type": "INTEGER", 
               "id": "cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.resolution"
             }, 
             {
               "name": "description", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.tuning_applied.description", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.tuning_applied"
             }, 
             {
               "name": "target", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.tuning_applied.target", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.tuning_applied"
             }, 
             {
               "name": "simulations", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Which simulations had tuning applied, e.g. all, not historical, only pi-control? ", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Which simulations had tuning applied, e.g. all, not historical, only pi-control? ", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.tuning_applied.simulations", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.tuning_applied"
             }, 
             {
               "name": "metrics_used", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "List any observed metrics used in tuning model/parameters", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "List any observed metrics used in tuning model/parameters", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.tuning_applied.metrics_used", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.tuning_applied"
             }, 
             {
               "name": "variables", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Which variables were changed during the tuning process?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Which variables were changed during the tuning process?", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.tuning_applied.variables", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.tuning_applied"
             }, 
             {
               "name": "description", 
               "cardinality": "1.N", 
               "property_type": "ATOMIC", 
+              "documentation": "General overview description of any *key* assumptions made in this model.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "General overview description of any *key* assumptions made in this model.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.assumptions.description", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.assumptions"
             }, 
             {
               "name": "on_diagnostic_variables", 
               "cardinality": "1.N", 
               "property_type": "ATOMIC", 
+              "documentation": "Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.assumptions.on_diagnostic_variables", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.assumptions"
             }, 
             {
               "name": "missing_processes", 
               "cardinality": "1.N", 
               "property_type": "ATOMIC", 
+              "documentation": "List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.assumptions.missing_processes", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.assumptions"
             }, 
             {
               "name": "description", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Provide a general description of conservation methodology.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Provide a general description of conservation methodology.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.conservation.description", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.conservation"
             }, 
             {
               "name": "properties", 
               "cardinality": "1.N", 
               "property_type": "ENUMERATION", 
+              "documentation": "Properties conserved in sea ice by the numerical schemes.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Properties conserved in sea ice by the numerical schemes.", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -704,44 +729,44 @@
                   "value": "Salt"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.key_properties.conservation.properties", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.conservation"
             }, 
             {
               "name": "budget", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "For each conserved property, specify the output variables which close the related budgets.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "For each conserved property, specify the output variables which close the related budgets.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.conservation.budget", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.conservation"
             }, 
             {
               "name": "was_flux_correction_used", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Does conservation involved flux correction?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Does conservation involved flux correction?", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.key_properties.conservation.was_flux_correction_used", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.conservation"
             }, 
             {
               "name": "corrected_conserved_prognostic_variables", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "List any variables which are conserved by *more* than the numerical scheme alone.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "List any variables which are conserved by *more* than the numerical scheme alone.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables", 
-              "values": [], 
               "category_id": "cmip6.seaice.key_properties.conservation"
             }
           ], 
@@ -771,10 +796,10 @@
               "name": "horizontal_transport", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the method of horizontal advection of sea ice?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the method of horizontal advection of sea ice?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -790,17 +815,17 @@
                   "value": "Eulerian"
                 }
               ], 
-              "id": "cmip6.seaice.dynamics.horizontal_transport", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.dynamics.horizontal_transport"
             }, 
             {
               "name": "transport_in_thickness_space", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the method of sea ice transport in thickness space (i.e. in thickness categories)?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the method of sea ice transport in thickness space (i.e. in thickness categories)?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -816,17 +841,17 @@
                   "value": "Eulerian"
                 }
               ], 
-              "id": "cmip6.seaice.dynamics.transport_in_thickness_space", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.dynamics.transport_in_thickness_space"
             }, 
             {
               "name": "ice_strength_formulation", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "Which method of sea ice strength formulation is used?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Which method of sea ice strength formulation is used?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -837,17 +862,17 @@
                   "value": "Rothrock 1975"
                 }
               ], 
-              "id": "cmip6.seaice.dynamics.ice_strength_formulation", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.dynamics.ice_strength_formulation"
             }, 
             {
               "name": "redistribution", 
               "cardinality": "1.N", 
               "property_type": "ENUMERATION", 
+              "documentation": "Which processes can redistribute sea ice?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Which processes can redistribute sea ice?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -858,21 +883,21 @@
                   "value": "Ridging"
                 }
               ], 
-              "id": "cmip6.seaice.dynamics.redistribution", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.dynamics.redistribution"
             }, 
             {
               "name": "rheology", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "Rheology, what is the ice deformation formulation?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Rheology, what is the ice deformation formulation?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
-                  "value": "free-drift"
+                  "value": "Free-drift"
                 }, 
                 {
                   "order": 1, 
@@ -880,12 +905,12 @@
                 }, 
                 {
                   "order": 2, 
-                  "value": "visco-plastic", 
+                  "value": "Visco-plastic", 
                   "documentation": "VP"
                 }, 
                 {
                   "order": 3, 
-                  "value": "elastic-visco-plastic", 
+                  "value": "Elastic-visco-plastic", 
                   "documentation": "EVP"
                 }, 
                 {
@@ -894,11 +919,11 @@
                 }, 
                 {
                   "order": 5, 
-                  "value": "granular"
+                  "value": "Granular"
                 }
               ], 
-              "id": "cmip6.seaice.dynamics.rheology", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.dynamics.rheology"
             }
           ], 
           "excluded": [], 
@@ -968,10 +993,10 @@
               "name": "enthalpy_formulation", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the energy formulation?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the energy formulation?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -990,18 +1015,18 @@
                   "value": "Pure ice latent and sensible heat + explicit brine inclusions (Bitz and Lipscomb)"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.energy.enthalpy_formulation", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.energy"
             }, 
             {
               "name": "thermal_conductivity", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What type of thermal conductivity is used?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What type of thermal conductivity is used?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1012,18 +1037,18 @@
                   "value": "Saline ice"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.energy.thermal_conductivity", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.energy"
             }, 
             {
               "name": "heat_diffusion", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the method of heat diffusion?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the method of heat diffusion?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1038,18 +1063,18 @@
                   "value": "Conduction, radiation and latent heat transport"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.energy.heat_diffusion", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.energy"
             }, 
             {
               "name": "basal_heat_flux", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "Method by which basal ocean heat flux is handled?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Method by which basal ocean heat flux is handled?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1067,66 +1092,66 @@
                   "documentation": "Thermal properties depend on S-T (with varying salinity"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.energy.basal_heat_flux", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.energy"
             }, 
             {
               "name": "fixed_salinity_value", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.", 
+              "values": [], 
               "atomic_type": "DECIMAL", 
               "id": "cmip6.seaice.thermodynamics.energy.fixed_salinity_value", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.energy"
             }, 
             {
-              "name": "heat_content_precip", 
+              "name": "heat_content_of_precipitation", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the method by which the heat content of precipitation is handled.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the method by which the heat content of precipitation is handled.", 
-              "atomic_type": "STRING", 
-              "id": "cmip6.seaice.thermodynamics.energy.heat_content_precip", 
               "values": [], 
+              "atomic_type": "STRING", 
+              "id": "cmip6.seaice.thermodynamics.energy.heat_content_of_precipitation", 
               "category_id": "cmip6.seaice.thermodynamics.energy"
             }, 
             {
               "name": "new_ice_formation", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the method by which new sea ice is formed in open water.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the method by which new sea ice is formed in open water.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.mass.new_ice_formation", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.mass"
             }, 
             {
               "name": "ice_vertical_growth_and_melt", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the method that governs the vertical growth and melt of sea ice.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the method that governs the vertical growth and melt of sea ice.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.mass.ice_vertical_growth_and_melt", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.mass"
             }, 
             {
               "name": "ice_lateral_melting", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the method of sea ice lateral melting?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the method of sea ice lateral melting?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1137,166 +1162,166 @@
                   "value": "Virtual thin ice melting (for single-category)"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.mass.ice_lateral_melting", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.mass"
             }, 
             {
               "name": "ice_surface_sublimation", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the method that governs sea ice surface sublimation.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the method that governs sea ice surface sublimation.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.mass.ice_surface_sublimation", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.mass"
             }, 
             {
               "name": "frazil_ice", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the method of frazil ice formation.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the method of frazil ice formation.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.mass.frazil_ice", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.mass"
             }, 
             {
               "name": "has_multiple_sea_ice_salinities", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt"
             }, 
             {
               "name": "sea_ice_salinity_thermal_impacts", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Does sea ice salinity impact the thermal properties of sea ice?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Does sea ice salinity impact the thermal properties of sea ice?", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.thermodynamics.salt.sea_ice_salinity_thermal_impacts", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt"
             }, 
             {
               "name": "salinity_type", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "How is salinity determined in the mass transport of salt calculation?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "How is salinity determined in the mass transport of salt calculation?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
-                  "value": "constant"
+                  "value": "Constant"
                 }, 
                 {
                   "order": 1, 
-                  "value": "prescribed salinity profile"
+                  "value": "Prescribed salinity profile"
                 }, 
                 {
                   "order": 2, 
-                  "value": "prognostic salinity profile"
+                  "value": "Prognostic salinity profile"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.salt.mass_transport.salinity_type", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt.mass_transport"
             }, 
             {
               "name": "constant_salinity_value", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If using a constant salinity value specify this value in PSU?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If using a constant salinity value specify this value in PSU?", 
+              "values": [], 
               "atomic_type": "DECIMAL", 
               "id": "cmip6.seaice.thermodynamics.salt.mass_transport.constant_salinity_value", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt.mass_transport"
             }, 
             {
               "name": "additional_details", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the salinity profile used.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the salinity profile used.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.salt.mass_transport.additional_details", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt.mass_transport"
             }, 
             {
-              "name": "salinity", 
+              "name": "salinity_type", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "How is salinity determined in the thermodynamic calculation?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "How is salinity determined in the thermodynamic calculation?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
-                  "value": "constant"
+                  "value": "Constant"
                 }, 
                 {
                   "order": 1, 
-                  "value": "prescribed salinity profile"
+                  "value": "Prescribed salinity profile"
                 }, 
                 {
                   "order": 2, 
-                  "value": "prognostic salinity profile"
+                  "value": "Prognostic salinity profile"
                 }
               ], 
-              "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity", 
-              "values": [], 
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 
               "category_id": "cmip6.seaice.thermodynamics.salt.thermodynamics"
             }, 
             {
               "name": "constant_salinity_value", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "If using a constant salinity value specify this value in PSU?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "If using a constant salinity value specify this value in PSU?", 
+              "values": [], 
               "atomic_type": "DECIMAL", 
               "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.constant_salinity_value", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt.thermodynamics"
             }, 
             {
               "name": "additional_details", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the salinity profile used.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the salinity profile used.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.additional_details", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.salt.thermodynamics"
             }, 
             {
               "name": "representation", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "How is the sea ice thickness distribution represented?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "How is the sea ice thickness distribution represented?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1307,30 +1332,30 @@
                   "value": "Virtual (enhancement of thermal conductivity, thin ice melting)"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution.representation", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.ice_thickness_distribution"
             }, 
             {
               "name": "are_included", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Are melt ponds included in the sea ice model?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Are melt ponds included in the sea ice model?", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.thermodynamics.melt_ponds.are_included", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.melt_ponds"
             }, 
             {
               "name": "formulation", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What method of melt pond formulation is used?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What method of melt pond formulation is used?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1341,18 +1366,18 @@
                   "value": "Level-ice melt ponds"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.melt_ponds.formulation", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.melt_ponds"
             }, 
             {
               "name": "impacts", 
               "cardinality": "1.N", 
               "property_type": "ENUMERATION", 
+              "documentation": "What do melt ponds have an impact on?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What do melt ponds have an impact on?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1367,90 +1392,90 @@
                   "value": "Heat"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.melt_ponds.impacts", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.melt_ponds"
             }, 
             {
               "name": "has_snow_aging", 
               "cardinality": "1.N", 
               "property_type": "ATOMIC", 
+              "documentation": "Set to True if the sea ice model has a snow aging scheme.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Set to True if the sea ice model has a snow aging scheme.", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_aging", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.snow_processes"
             }, 
             {
               "name": "snow_aging_scheme", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the snow aging scheme.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the snow aging scheme.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.snow_processes.snow_aging_scheme", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.snow_processes"
             }, 
             {
               "name": "has_snow_ice_formation", 
               "cardinality": "1.N", 
               "property_type": "ATOMIC", 
+              "documentation": "Set to True if the sea ice model has snow ice formation.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Set to True if the sea ice model has snow ice formation.", 
+              "values": [], 
               "atomic_type": "BOOLEAN", 
               "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_ice_formation", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.snow_processes"
             }, 
             {
               "name": "snow_ice_formation_scheme", 
               "cardinality": "0.1", 
               "property_type": "ATOMIC", 
+              "documentation": "Describe the snow ice formation scheme.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Describe the snow ice formation scheme.", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.snow_processes"
             }, 
             {
               "name": "redistribution", 
               "cardinality": "1.1", 
               "property_type": "ATOMIC", 
+              "documentation": "What is the impact of ridging on snow cover?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the impact of ridging on snow cover?", 
+              "values": [], 
               "atomic_type": "STRING", 
               "id": "cmip6.seaice.thermodynamics.snow_processes.redistribution", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.snow_processes"
             }, 
             {
               "name": "heat_diffusion", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "What is the heat diffusion through snow methodology in sea ice thermodynamics?", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "What is the heat diffusion through snow methodology in sea ice thermodynamics?", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
-                  "value": "single-layered heat diffusion"
+                  "value": "Single-layered heat diffusion"
                 }, 
                 {
                   "order": 1, 
-                  "value": "multi-layered heat diffusion"
+                  "value": "Multi-layered heat diffusion"
                 }
               ], 
+              "enumeration_is_open": true, 
               "id": "cmip6.seaice.thermodynamics.snow_processes.heat_diffusion", 
-              "values": [], 
               "category_id": "cmip6.seaice.thermodynamics.snow_processes"
             }
           ], 
@@ -1480,10 +1505,10 @@
               "name": "surface_albedo", 
               "cardinality": "1.1", 
               "property_type": "ENUMERATION", 
+              "documentation": "Method used to handle surface albedo.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Method used to handle surface albedo.", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1500,17 +1525,17 @@
                   "documentation": "Albedo value has a spectral dependence"
                 }
               ], 
-              "id": "cmip6.seaice.radiative_processes.surface_albedo", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.radiative_processes.surface_albedo"
             }, 
             {
               "name": "ice_radiation_transmission", 
               "cardinality": "1.N", 
               "property_type": "ENUMERATION", 
+              "documentation": "Method by which solar radiation through sea ice is handled.", 
               "is_meta": false, 
               "is_nillable": true, 
-              "documentation": "Method by which solar radiation through sea ice is handled.", 
-              "enumeration_is_open": true, 
+              "values": [], 
               "enumeration_members": [
                 {
                   "order": 0, 
@@ -1526,8 +1551,8 @@
                   "documentation": "Radiation transmission through ice is different for each sea ice category"
                 }
               ], 
-              "id": "cmip6.seaice.radiative_processes.ice_radiation_transmission", 
-              "values": []
+              "enumeration_is_open": true, 
+              "id": "cmip6.seaice.radiative_processes.ice_radiation_transmission"
             }
           ], 
           "excluded": [], 
