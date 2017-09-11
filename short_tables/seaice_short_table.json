@@ -16,6 +16,7 @@
         "Martin Vancopppenolle (IPSL)",
         "Alexandra Jahn (Univeristy of Colorado)"
     ],
+    "LABEL": "Main",
     "PROPERTIES": {
         "priority1": [
             "cmip6.seaice.key_properties.model.model_name",
