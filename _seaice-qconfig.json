@@ -4,7 +4,7 @@
   "documentation": "Sea ice realm specialization", 
   "ontology_type": "SPECIALIZATION", 
   "ontology_base": "cim_2.0.0", 
-  "date": "2017-07-07 15:37:31.976707", 
+  "date": "2017-09-04 14:32:19.092628", 
   "classes": {
     "defined": [
       {
@@ -83,7 +83,7 @@
         "id": "cmip6.seaice.grid", 
         "package": "science", 
         "documentation": "Sea Ice grid", 
-        "is_document": true, 
+        "is_document": false, 
         "categories": {
           "defined": [
             {
