@@ -17,21 +17,19 @@
         "Alexandra Jahn (Univeristy of Colorado)"
     ],
     "LABEL": "Main",
-    "PROPERTIES": {
-        "priority1": [
-            "cmip6.seaice.key_properties.model.model_name",
-            "cmip6.seaice.key_properties.resolution.name",
-            "cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution",
-            "cmip6.seaice.grid.discretisation.horizontal.grid_type",
-            "cmip6.seaice.grid.discretisation.vertical.layering",
-            "cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme",
-            "cmip6.seaice.dynamics.rheology",
-            "cmip6.seaice.thermodynamics.energy.enthalpy_formulation",
-            "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type",
-            "cmip6.seaice.thermodynamics.melt_ponds.formulation",
-            "cmip6.seaice.radiative_processes.surface_albedo",
-            "cmip6.seaice.radiative_processes.ice_radiation_transmission"
-        ]
-    },
+    "PROPERTIES": [
+        ["cmip6.seaice.key_properties.model.model_name", 1],
+        ["cmip6.seaice.key_properties.resolution.name", 1],
+        ["cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution", 1],
+        ["cmip6.seaice.grid.discretisation.horizontal.grid_type", 1],
+        ["cmip6.seaice.grid.discretisation.vertical.layering", 1],
+        ["cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme", 1],
+        ["cmip6.seaice.dynamics.rheology", 1],
+        ["cmip6.seaice.thermodynamics.energy.enthalpy_formulation", 1],
+        ["cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 1],
+        ["cmip6.seaice.thermodynamics.melt_ponds.formulation", 1],
+        ["cmip6.seaice.radiative_processes.surface_albedo", 1],
+        ["cmip6.seaice.radiative_processes.ice_radiation_transmission", 1]
+    ],
     "QC_STATUS": "draft"
 }
