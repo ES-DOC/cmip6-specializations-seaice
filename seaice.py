@@ -60,14 +60,14 @@ DESCRIPTION = 'Sea ice realm specialization'
 REALM = 'seaice'
 
 # --------------------------------------------------------------------
-# GRID: The grid used to layout the variables
-# --------------------------------------------------------------------
-GRID = 'seaice_grid'
-
-# --------------------------------------------------------------------
 # KEY PROPERTIES: Key properties for the realm which differ from model defaults (grid, timestep etc)
 # --------------------------------------------------------------------
 KEY_PROPERTIES = 'seaice_key_properties'
+
+# --------------------------------------------------------------------
+# GRID: The grid used to layout the variables
+# --------------------------------------------------------------------
+GRID = 'seaice_grid'
 
 # --------------------------------------------------------------------
 # PROCESSES: Processes simulated within the realm
