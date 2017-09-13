@@ -9,49 +9,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2016-05-24</dd><dt><b>Person</b></dt><dd>Initialised</dd><dt><b>Comment</b></dt><dd>David Hassell</dd>
+        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2016-05-24</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Initialised</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.1"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.1</dd><dt><b>Date</b></dt><dd>2016-09-28</dd><dt><b>Person</b></dt><dd>Modified to include work done by Bryan Lawerence</dd><dt><b>Comment</b></dt><dd>Petrie</dd>
+        <dt><b>Version</b></dt><dd>0.1.1</dd><dt><b>Date</b></dt><dd>2016-09-28</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Modified to include work done by Bryan Lawerence</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.2"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.2</dd><dt><b>Date</b></dt><dd>2016-11-07</dd><dt><b>Person</b></dt><dd>Updated on the basis of discussion with Jamie Rae (UKMO)</dd><dt><b>Comment</b></dt><dd>Ruth Petrie</dd>
+        <dt><b>Version</b></dt><dd>0.1.2</dd><dt><b>Date</b></dt><dd>2016-11-07</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Updated on the basis of discussion with Jamie Rae (UKMO)</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.3"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.3</dd><dt><b>Date</b></dt><dd>2016-11-15</dd><dt><b>Person</b></dt><dd>Refactored based to fit in the new schema</dd><dt><b>Comment</b></dt><dd>Mark Greenslade</dd>
+        <dt><b>Version</b></dt><dd>0.1.3</dd><dt><b>Date</b></dt><dd>2016-11-15</dd><dt><b>Person</b></dt><dd>Mark Greenslade</dd><dt><b>Comment</b></dt><dd>Refactored based to fit in the new schema</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.4"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.4</dd><dt><b>Date</b></dt><dd>2016-11-17</dd><dt><b>Person</b></dt><dd>Update DETAILS and SUBPROCESS names</dd><dt><b>Comment</b></dt><dd>Ruth Petrie</dd>
+        <dt><b>Version</b></dt><dd>0.1.4</dd><dt><b>Date</b></dt><dd>2016-11-17</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Update DETAILS and SUBPROCESS names</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.5"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.5</dd><dt><b>Date</b></dt><dd>2016-11-18</dd><dt><b>Person</b></dt><dd>Update based on discussions with Martin Vancopppenolle (IPSL)</dd><dt><b>Comment</b></dt><dd>Ruth Petrie</dd>
+        <dt><b>Version</b></dt><dd>0.1.5</dd><dt><b>Date</b></dt><dd>2016-11-18</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Update based on discussions with Martin Vancopppenolle (IPSL)</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.6"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.6</dd><dt><b>Date</b></dt><dd>2016-11-23</dd><dt><b>Person</b></dt><dd>Update based on discussions with Alexandra Jahn (University of Colorado)</dd><dt><b>Comment</b></dt><dd>Ruth Petrie</dd>
+        <dt><b>Version</b></dt><dd>0.1.6</dd><dt><b>Date</b></dt><dd>2016-11-23</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Update based on discussions with Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
