@@ -42,6 +42,7 @@ CHANGE_HISTORY = [
     ("0.1.4", "2016-11-17", "Ruth Petrie", "Update DETAILS and SUBPROCESS names"),
     ("0.1.5", "2016-11-18", "Ruth Petrie", "Update based on discussions with Martin Vancopppenolle (IPSL)"),
     ("0.1.6", "2016-11-23", "Ruth Petrie", "Update based on discussions with Alexandra Jahn (University of Colorado)"),
+    ("0.1.7", "2017-11-21", "Ruth Petrie", "Update based on community feedback"),
 ]
 
 # --------------------------------------------------------------------
