@@ -128,6 +128,19 @@ DETAILS['ice_thickness_distribution'] = {
 
 
 # --------------------------------------------------------------------
+# SUB-PROCESS: Ice floe-size Distribution.
+# --------------------------------------------------------------------
+DETAILS['ice_floe_size_distribution'] = {
+    'description': 'Ice floe-size distribution details.',
+    'properties': [
+        ('representation', 'ENUM:ice_floe_size', '1.1',
+            "How is the sea ice floe-size represented?"),
+        ('additional_details', 'str', '0.1',
+         "Please provide further details on any parameterisation of floe-size."),
+        ]
+    }
+
+# --------------------------------------------------------------------
 # SUB-PROCESS: Melt Ponds
 # --------------------------------------------------------------------
 DETAILS['melt_ponds'] = {
@@ -216,6 +229,15 @@ ENUMERATIONS['ice_thickness_representation'] = {
     'members': [
         ('Explicit', None),
         ('Virtual (enhancement of thermal conductivity, thin ice melting)', None),
+    ]
+}
+
+ENUMERATIONS['ice_floe_size'] = {
+    'description': 'Ice floe-size representation',
+    'is_open': True,
+    'members': [
+        ('Explicit', None),
+        ('Parameterised', None),
     ]
 }
 
