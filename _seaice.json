@@ -89,7 +89,7 @@
                 }, 
                 {
                     "label": "Redistribution", 
-                    "description": "Which processes can redistribute sea ice?", 
+                    "description": "Which processes can redistribute sea ice (including thickness)?", 
                     "id": "cmip6.seaice.dynamics.redistribution", 
                     "cardinality": "1.N", 
                     "type": "enum", 
@@ -138,7 +138,7 @@
                                 "description": "EVP"
                             }, 
                             {
-                                "label": "Elastic-aniostropic-plastic", 
+                                "label": "Elastic-anisotropic-plastic", 
                                 "description": null
                             }, 
                             {
@@ -857,7 +857,7 @@
                                         }, 
                                         {
                                             "label": "Two-layers", 
-                                            "description": "Simulation uses two layers."
+                                            "description": "Simulation uses two layers (i.e. one ice and one snow layer)."
                                         }, 
                                         {
                                             "label": "Multi-layers", 
@@ -927,7 +927,7 @@
                     }, 
                     {
                         "label": "Other", 
-                        "description": "If the sea ice model does not use sea ice categories specify any additional details.", 
+                        "description": "If the sea ice model does not use sea ice categories specify any additional details. For example models that paramterise the ice thickness distribution ITD (i.e there is no explicit ITD) but there is assumed distribution and fluxes are computed accordingly.", 
                         "id": "cmip6.seaice.grid.seaice_categories.other", 
                         "cardinality": "0.1", 
                         "type": "str", 
