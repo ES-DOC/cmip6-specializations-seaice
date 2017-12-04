@@ -44,6 +44,7 @@ CHANGE_HISTORY = [
     ("0.1.6", "2016-11-23", "Ruth Petrie", "Update based on discussions with Alexandra Jahn (University of Colorado)"),
     ("0.1.7", "2017-11-21", "Ruth Petrie", "Update based on community feedback"),
     ("0.1.8", "2017-11-23", "Ruth Petrie", "Include ice floe-size distribution"),
+    ("1.0.0", "2017-12-4", "Ruth Petrie", "Include section on parameter values, first completed revision"),
 ]
 
 # --------------------------------------------------------------------
