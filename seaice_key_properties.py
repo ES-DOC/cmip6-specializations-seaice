@@ -120,7 +120,8 @@ DETAILS['conservation'] = {
         ('properties', 'ENUM:conserved_properties', '1.N',
             "Properties conserved in sea ice by the numerical schemes."),
         ('budget', 'str', '1.1',
-            "For each conserved property, specify the output variables which close the related budgets."),
+           "For each conserved property, specify the output variables which close the related budgets. as a comma "
+           "separated list. For example: Conserved property, variable1, variable2, variable3"),
         ('was_flux_correction_used', 'bool', '1.1',
             "Does conservation involved flux correction?"),
         ('corrected_conserved_prognostic_variables', 'str', '1.1',
