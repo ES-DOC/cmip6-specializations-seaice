@@ -286,6 +286,14 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "uiOrdinal": 6
+                        }, 
+                        {
+                            "label": "Precipitation Effects On Salinity", 
+                            "description": "If precipitation (freshwater) that falls on sea ice affects the ocean surface salinity please provide further details.", 
+                            "id": "cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 7
                         }
                     ]
                 }, 
@@ -506,6 +514,45 @@
                                 ]
                             }, 
                             "uiOrdinal": 1
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Ice Floe Size Distribution", 
+                    "description": "Ice floe-size distribution details.", 
+                    "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution", 
+                    "contact": "Ruth Petrie", 
+                    "properties": [
+                        {
+                            "label": "Representation", 
+                            "description": "How is the sea ice floe-size represented?", 
+                            "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.representation", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ice Floe Size", 
+                                "description": "Ice floe-size representation", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Explicit", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Parameterised", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Additional Details", 
+                            "description": "Please provide further details on any parameterisation of floe-size.", 
+                            "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1186,6 +1233,49 @@
                 ]
             }, 
             {
+                "label": "Parameterisation Values", 
+                "description": "Values of key parameters", 
+                "id": "cmip6.seaice.key_properties.parameterisation_values", 
+                "contact": "Ruth Petrie", 
+                "properties": [
+                    {
+                        "label": "Parameters", 
+                        "description": "What values were specificed for the following parameters if used?", 
+                        "id": "cmip6.seaice.key_properties.parameterisation_values.parameters", 
+                        "cardinality": "0.N", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Parameter Values", 
+                            "description": "Specify the values of the following parameters if used", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Ice strength (P*) in units of N m{-2}", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Snow conductivity (ks) in units of W m{-1} K{-1} ", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Minimum thickness of ice created in leads (h0) in units of m", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Additional Parameters", 
+                        "description": "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list", 
+                        "id": "cmip6.seaice.key_properties.parameterisation_values.additional_parameters", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }
+                ]
+            }, 
+            {
                 "label": "Assumptions", 
                 "description": "Assumptions made in the sea ice model", 
                 "id": "cmip6.seaice.key_properties.assumptions", 
@@ -1260,7 +1350,7 @@
                     }, 
                     {
                         "label": "Budget", 
-                        "description": "For each conserved property, specify the output variables which close the related budgets.", 
+                        "description": "For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3", 
                         "id": "cmip6.seaice.key_properties.conservation.budget", 
                         "cardinality": "1.1", 
                         "type": "str", 
