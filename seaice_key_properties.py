@@ -98,7 +98,7 @@ DETAILS['tuning_applied'] = {
 # --------------------------------------------------------------------
 # PARAMETERISATIONS: Parameter values used in parameterisations
 # --------------------------------------------------------------------
-DETAILS['key_parameters'] = {
+DETAILS['key_parameter_values'] = {
     'description': "Values of key parameters",
     'properties': [
         ('typical_parameters', 'ENUM:parameter_values', '0.N',
