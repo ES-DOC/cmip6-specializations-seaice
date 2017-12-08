@@ -98,10 +98,10 @@ DETAILS['tuning_applied'] = {
 # --------------------------------------------------------------------
 # PARAMETERISATIONS: Parameter values used in parameterisations
 # --------------------------------------------------------------------
-DETAILS['parameterisation_values'] = {
+DETAILS['key_parameters'] = {
     'description': "Values of key parameters",
     'properties': [
-        ('parameters', 'ENUM:parameter_values', '0.N',
+        ('typical_parameters', 'ENUM:parameter_values', '0.N',
              "What values were specificed for the following parameters if used?"),
         ('additional_parameters', 'str', '0.N',
              "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list"),
