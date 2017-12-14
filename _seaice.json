@@ -1233,15 +1233,15 @@
                 ]
             }, 
             {
-                "label": "Parameterisation Values", 
+                "label": "Key Parameter Values", 
                 "description": "Values of key parameters", 
-                "id": "cmip6.seaice.key_properties.parameterisation_values", 
+                "id": "cmip6.seaice.key_properties.key_parameter_values", 
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Parameters", 
+                        "label": "Typical Parameters", 
                         "description": "What values were specificed for the following parameters if used?", 
-                        "id": "cmip6.seaice.key_properties.parameterisation_values.parameters", 
+                        "id": "cmip6.seaice.key_properties.key_parameter_values.typical_parameters", 
                         "cardinality": "0.N", 
                         "type": "enum", 
                         "enum": {
@@ -1268,7 +1268,7 @@
                     {
                         "label": "Additional Parameters", 
                         "description": "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list", 
-                        "id": "cmip6.seaice.key_properties.parameterisation_values.additional_parameters", 
+                        "id": "cmip6.seaice.key_properties.key_parameter_values.additional_parameters", 
                         "cardinality": "0.N", 
                         "type": "str", 
                         "uiOrdinal": 2

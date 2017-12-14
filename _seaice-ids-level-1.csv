@@ -7,7 +7,7 @@ cmip6.seaice.key_properties.variables, Seaice > Key Properties > Variables, subp
 cmip6.seaice.key_properties.seawater_properties, Seaice > Key Properties > Seawater Properties, subprocess
 cmip6.seaice.key_properties.resolution, Seaice > Key Properties > Resolution, subprocess
 cmip6.seaice.key_properties.tuning_applied, Seaice > Key Properties > Tuning Applied, subprocess
-cmip6.seaice.key_properties.parameterisation_values, Seaice > Key Properties > Parameterisation Values, subprocess
+cmip6.seaice.key_properties.key_parameter_values, Seaice > Key Properties > Key Parameter Values, subprocess
 cmip6.seaice.key_properties.assumptions, Seaice > Key Properties > Assumptions, subprocess
 cmip6.seaice.key_properties.conservation, Seaice > Key Properties > Conservation, subprocess
 , , 

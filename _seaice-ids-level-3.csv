@@ -11,8 +11,8 @@ cmip6.seaice.key_properties.tuning_applied.target, Seaice > Key Properties > Tun
 cmip6.seaice.key_properties.tuning_applied.simulations, Seaice > Key Properties > Tuning Applied > Simulations, property
 cmip6.seaice.key_properties.tuning_applied.metrics_used, Seaice > Key Properties > Tuning Applied > Metrics Used, property
 cmip6.seaice.key_properties.tuning_applied.variables, Seaice > Key Properties > Tuning Applied > Variables, property
-cmip6.seaice.key_properties.parameterisation_values.parameters, Seaice > Key Properties > Parameterisation Values > Parameters, property
-cmip6.seaice.key_properties.parameterisation_values.additional_parameters, Seaice > Key Properties > Parameterisation Values > Additional Parameters, property
+cmip6.seaice.key_properties.key_parameter_values.typical_parameters, Seaice > Key Properties > Key Parameter Values > Typical Parameters, property
+cmip6.seaice.key_properties.key_parameter_values.additional_parameters, Seaice > Key Properties > Key Parameter Values > Additional Parameters, property
 cmip6.seaice.key_properties.assumptions.description, Seaice > Key Properties > Assumptions > Description, property
 cmip6.seaice.key_properties.assumptions.on_diagnostic_variables, Seaice > Key Properties > Assumptions > On Diagnostic Variables, property
 cmip6.seaice.key_properties.assumptions.missing_processes, Seaice > Key Properties > Assumptions > Missing Processes, property
