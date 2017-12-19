@@ -1,4 +1,5 @@
 cmip6-id, cmip6-label, cmip6-type
+cmip6.seaice.key_properties.model.model_overview, Seaice > Key Properties > Model > Model Overview, property
 cmip6.seaice.key_properties.model.model_name, Seaice > Key Properties > Model > Model Name, property
 cmip6.seaice.key_properties.variables.prognostic, Seaice > Key Properties > Variables > Prognostic, property
 cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, property

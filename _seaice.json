@@ -1037,12 +1037,20 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Model Name", 
-                        "description": "Name of seaice model (e.g. CICE 4.2, LIM 2.1, etc.)", 
-                        "id": "cmip6.seaice.key_properties.model.model_name", 
+                        "label": "Model Overview", 
+                        "description": "Overview of sea ice model.", 
+                        "id": "cmip6.seaice.key_properties.model.model_overview", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Model Name", 
+                        "description": "Name of sea ice model code (e.g. CICE 4.2, LIM 2.1, etc.)", 
+                        "id": "cmip6.seaice.key_properties.model.model_name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
                     }
                 ]
             }, 
