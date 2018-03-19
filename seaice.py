@@ -45,6 +45,7 @@ CHANGE_HISTORY = [
     ("0.1.7", "2017-11-21", "Ruth Petrie", "Update based on community feedback"),
     ("0.1.8", "2017-11-23", "Ruth Petrie", "Include ice floe-size distribution"),
     ("1.0.0", "2017-12-4", "Ruth Petrie", "Include section on parameter values, first completed revision"),
+    ("1.0.1", "2018-3-19", "Ruth Petrie", "Add in space for parameter values in key properties."),
 ]
 
 # --------------------------------------------------------------------

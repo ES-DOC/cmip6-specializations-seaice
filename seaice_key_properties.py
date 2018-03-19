@@ -103,13 +103,14 @@ DETAILS['tuning_applied'] = {
 DETAILS['key_parameter_values'] = {
     'description': "Values of key parameters",
     'properties': [
-        ('typical_parameters', 'ENUM:parameter_values', '0.N',
-             "What values were specificed for the following parameters if used?"),
+        ('ice_strength', 'float', '0.1', "Ice strength (P*) in units of N m{-2}"),
+        ('snow_conductivity', 'float', '0.1', 'Snow conductivity (ks) in units of W m{-1} K{-1}'),
+        ('ice_thickness_in_leads', 'float', '0.1', 'Minimum thickness of ice created in leads (h0) in units of m'),
         ('additional_parameters', 'str', '0.N',
-             "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list"),
+         "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), "
+         "please provide them here as a comma separated list in the form <parameter1>: <value1>, <parameter2>: <value2>, etc."),
         ]
-    }
-
+}
 
 # --------------------------------------------------------------------
 # ASSUMPTIONS: Any key assumptions made in this realm
