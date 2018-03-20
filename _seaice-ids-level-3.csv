@@ -1,28 +1,5 @@
 cmip6-id, cmip6-label, cmip6-type
-cmip6.seaice.key_properties.model.model_overview, Seaice > Key Properties > Model > Model Overview, property
-cmip6.seaice.key_properties.model.model_name, Seaice > Key Properties > Model > Model Name, property
-cmip6.seaice.key_properties.variables.prognostic, Seaice > Key Properties > Variables > Prognostic, property
-cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, property
-cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point Value, property
-cmip6.seaice.key_properties.resolution.name, Seaice > Key Properties > Resolution > Name, property
-cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution, Seaice > Key Properties > Resolution > Canonical Horizontal Resolution, property
-cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints, Seaice > Key Properties > Resolution > Number Of Horizontal Gridpoints, property
-cmip6.seaice.key_properties.tuning_applied.description, Seaice > Key Properties > Tuning Applied > Description, property
-cmip6.seaice.key_properties.tuning_applied.target, Seaice > Key Properties > Tuning Applied > Target, property
-cmip6.seaice.key_properties.tuning_applied.simulations, Seaice > Key Properties > Tuning Applied > Simulations, property
-cmip6.seaice.key_properties.tuning_applied.metrics_used, Seaice > Key Properties > Tuning Applied > Metrics Used, property
-cmip6.seaice.key_properties.tuning_applied.variables, Seaice > Key Properties > Tuning Applied > Variables, property
-cmip6.seaice.key_properties.key_parameter_values.typical_parameters, Seaice > Key Properties > Key Parameter Values > Typical Parameters, property
-cmip6.seaice.key_properties.key_parameter_values.additional_parameters, Seaice > Key Properties > Key Parameter Values > Additional Parameters, property
-cmip6.seaice.key_properties.assumptions.description, Seaice > Key Properties > Assumptions > Description, property
-cmip6.seaice.key_properties.assumptions.on_diagnostic_variables, Seaice > Key Properties > Assumptions > On Diagnostic Variables, property
-cmip6.seaice.key_properties.assumptions.missing_processes, Seaice > Key Properties > Assumptions > Missing Processes, property
-cmip6.seaice.key_properties.conservation.description, Seaice > Key Properties > Conservation > Description, property
-cmip6.seaice.key_properties.conservation.properties, Seaice > Key Properties > Conservation > Properties, property
-cmip6.seaice.key_properties.conservation.budget, Seaice > Key Properties > Conservation > Budget, property
-cmip6.seaice.key_properties.conservation.was_flux_correction_used, Seaice > Key Properties > Conservation > Was Flux Correction Used, property
-cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables, Seaice > Key Properties > Conservation > Corrected Conserved Prognostic Variables, property
-, , 
+cmip6.seaice.grid.overview, Seaice > Grid > Overview, property
 cmip6.seaice.grid.discretisation.horizontal.grid, Seaice > Grid > Discretisation > Horizontal > Grid, property
 cmip6.seaice.grid.discretisation.horizontal.grid_type, Seaice > Grid > Discretisation > Horizontal > Grid Type, property
 cmip6.seaice.grid.discretisation.horizontal.scheme, Seaice > Grid > Discretisation > Horizontal > Scheme, property
@@ -42,12 +19,42 @@ cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels, Seaice > Grid > Snow On 
 cmip6.seaice.grid.snow_on_seaice.snow_fraction, Seaice > Grid > Snow On Seaice > Snow Fraction, property
 cmip6.seaice.grid.snow_on_seaice.additional_details, Seaice > Grid > Snow On Seaice > Additional Details, property
 , , 
+cmip6.seaice.key_properties.name, Seaice > Key Properties > Name, property
+cmip6.seaice.key_properties.overview, Seaice > Key Properties > Overview, property
+cmip6.seaice.key_properties.variables.prognostic, Seaice > Key Properties > Variables > Prognostic, property
+cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point, property
+cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value, Seaice > Key Properties > Seawater Properties > Ocean Freezing Point Value, property
+cmip6.seaice.key_properties.resolution.name, Seaice > Key Properties > Resolution > Name, property
+cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution, Seaice > Key Properties > Resolution > Canonical Horizontal Resolution, property
+cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints, Seaice > Key Properties > Resolution > Number Of Horizontal Gridpoints, property
+cmip6.seaice.key_properties.tuning_applied.description, Seaice > Key Properties > Tuning Applied > Description, property
+cmip6.seaice.key_properties.tuning_applied.target, Seaice > Key Properties > Tuning Applied > Target, property
+cmip6.seaice.key_properties.tuning_applied.simulations, Seaice > Key Properties > Tuning Applied > Simulations, property
+cmip6.seaice.key_properties.tuning_applied.metrics_used, Seaice > Key Properties > Tuning Applied > Metrics Used, property
+cmip6.seaice.key_properties.tuning_applied.variables, Seaice > Key Properties > Tuning Applied > Variables, property
+cmip6.seaice.key_properties.key_parameter_values.ice_strength, Seaice > Key Properties > Key Parameter Values > Ice Strength, property
+cmip6.seaice.key_properties.key_parameter_values.snow_conductivity, Seaice > Key Properties > Key Parameter Values > Snow Conductivity, property
+cmip6.seaice.key_properties.key_parameter_values.ice_thickness_in_leads, Seaice > Key Properties > Key Parameter Values > Ice Thickness In Leads, property
+cmip6.seaice.key_properties.key_parameter_values.additional_parameters, Seaice > Key Properties > Key Parameter Values > Additional Parameters, property
+cmip6.seaice.key_properties.assumptions.description, Seaice > Key Properties > Assumptions > Description, property
+cmip6.seaice.key_properties.assumptions.on_diagnostic_variables, Seaice > Key Properties > Assumptions > On Diagnostic Variables, property
+cmip6.seaice.key_properties.assumptions.missing_processes, Seaice > Key Properties > Assumptions > Missing Processes, property
+cmip6.seaice.key_properties.conservation.description, Seaice > Key Properties > Conservation > Description, property
+cmip6.seaice.key_properties.conservation.properties, Seaice > Key Properties > Conservation > Properties, property
+cmip6.seaice.key_properties.conservation.budget, Seaice > Key Properties > Conservation > Budget, property
+cmip6.seaice.key_properties.conservation.was_flux_correction_used, Seaice > Key Properties > Conservation > Was Flux Correction Used, property
+cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables, Seaice > Key Properties > Conservation > Corrected Conserved Prognostic Variables, property
+, , 
+cmip6.seaice.dynamics.name, Seaice > Dynamics > Name, property
+cmip6.seaice.dynamics.overview, Seaice > Dynamics > Overview, property
 cmip6.seaice.dynamics.horizontal_transport, Seaice > Dynamics > Horizontal Transport, property
 cmip6.seaice.dynamics.transport_in_thickness_space, Seaice > Dynamics > Transport In Thickness Space, property
 cmip6.seaice.dynamics.ice_strength_formulation, Seaice > Dynamics > Ice Strength Formulation, property
 cmip6.seaice.dynamics.redistribution, Seaice > Dynamics > Redistribution, property
 cmip6.seaice.dynamics.rheology, Seaice > Dynamics > Rheology, property
 , , 
+cmip6.seaice.thermodynamics.name, Seaice > Thermodynamics > Name, property
+cmip6.seaice.thermodynamics.overview, Seaice > Thermodynamics > Overview, property
 cmip6.seaice.thermodynamics.energy.enthalpy_formulation, Seaice > Thermodynamics > Energy > Enthalpy Formulation, property
 cmip6.seaice.thermodynamics.energy.thermal_conductivity, Seaice > Thermodynamics > Energy > Thermal Conductivity, property
 cmip6.seaice.thermodynamics.energy.heat_diffusion, Seaice > Thermodynamics > Energy > Heat Diffusion, property
@@ -81,6 +88,8 @@ cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme, Seaice > T
 cmip6.seaice.thermodynamics.snow_processes.redistribution, Seaice > Thermodynamics > Snow Processes > Redistribution, property
 cmip6.seaice.thermodynamics.snow_processes.heat_diffusion, Seaice > Thermodynamics > Snow Processes > Heat Diffusion, property
 , , 
+cmip6.seaice.radiative_processes.name, Seaice > Radiative Processes > Name, property
+cmip6.seaice.radiative_processes.overview, Seaice > Radiative Processes > Overview, property
 cmip6.seaice.radiative_processes.surface_albedo, Seaice > Radiative Processes > Surface Albedo, property
 cmip6.seaice.radiative_processes.ice_radiation_transmission, Seaice > Radiative Processes > Ice Radiation Transmission, property
 , , 

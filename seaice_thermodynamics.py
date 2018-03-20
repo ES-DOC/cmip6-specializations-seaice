@@ -13,21 +13,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Ruth Petrie'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'Ruth Petrie, Bryan Lawrence'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Sea Ice Thermodynamics'
@@ -56,7 +41,6 @@ DETAILS['energy'] = {
              "salinity please provide further details.")
     ]
     }
-
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: Mass.
@@ -87,10 +71,6 @@ DETAILS['salt'] = {
             "Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?"),
         ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
             "Does sea ice salinity impact the thermal properties of sea ice?"),
-    ],
-    'detail_sets': [
-        'mass_transport',
-        'thermodynamics',
     ]
 }
 
@@ -292,4 +272,3 @@ ENUMERATIONS['salinity_method'] = {
         ('Prognostic salinity profile', None),
     ]
 }
-

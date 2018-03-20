@@ -12,21 +12,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Ruth Petrie'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'Ruth Petrie'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Sea Ice grid'
@@ -35,12 +20,7 @@ DESCRIPTION = 'Sea Ice grid'
 # DISCRETISATION: Description of the horizontal discretization and numerics.
 # --------------------------------------------------------------------
 DETAILS['discretisation'] = {
-    'description': 'Sea ice discretisation',
-    'properties': [],
-    'detail_sets': [
-        'horizontal',
-        'vertical',
-        ]
+    'description': 'Sea ice discretisation'
     }
 
 DETAILS['discretisation:horizontal'] = {

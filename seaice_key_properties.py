@@ -12,21 +12,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Ruth Petrie'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'Ruth Petrie'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Sea Ice key properties'
@@ -34,16 +19,6 @@ DESCRIPTION = 'Sea Ice key properties'
 # --------------------------------------------------------------------
 # GENERAL details.
 # --------------------------------------------------------------------
-DETAILS['model'] = {
-    'description': "Name of seaice model used.",
-    'properties': [
-        ('model_overview', 'str', '1.1',
-             'Overview of sea ice model.'),
-        ('model_name', 'str', '1.1',
-             'Name of sea ice model code (e.g. CICE 4.2, LIM 2.1, etc.)')
-    ]
-}
-
 DETAILS['variables'] = {
     'description': "List of prognostic variable in the sea ice model.",
     'properties': [
@@ -108,7 +83,7 @@ DETAILS['key_parameter_values'] = {
         ('ice_thickness_in_leads', 'float', '0.1', 'Minimum thickness of ice created in leads (h0) in units of m'),
         ('additional_parameters', 'str', '0.N',
          "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), "
-         "please provide them here as a comma separated list in the form <parameter1>: <value1>, <parameter2>: <value2>, etc."),
+         "please provide them here as a comma separated list in the form {parameter1}: {value1}, {parameter2}: {value2}, etc."),
         ]
 }
 

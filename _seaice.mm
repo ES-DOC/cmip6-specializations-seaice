@@ -2,7 +2,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea ice realm specialization</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence, David Hassell, Mark Greenslade</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea ice</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="CHANGE HISTORY"><node STYLE="bubble" TEXT="0.1.0"><richcontent TYPE="NOTE"><html>
@@ -75,6 +75,13 @@
         <dt><b>Version</b></dt><dd>1.0.0</dd><dt><b>Date</b></dt><dd>2017-12-4</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Include section on parameter values, first completed revision</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.1"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.1</dd><dt><b>Date</b></dt><dd>2018-3-19</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Add in space for parameter values in key properties.</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -131,536 +138,32 @@
         <dt><b>Description</b></dt><dd>A sub-process simulated within a realm process.</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="DETAILS INHERITED FROM CIM"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="grid"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keyprops"><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="process"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="realm"><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="canonical_name" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="subprocess"><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="DETAILS INHERITED FROM CIM"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="grid"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keyprops"><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="process"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="realm"><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="canonical_name" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="subprocess"><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice key properties</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea Ice grid</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="model"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Name of seaice model used.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.model.model_overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.model.model_overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.overview</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="discretisation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Name of sea ice model code (e.g. CICE 4.2, LIM 2.1, etc.)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.model.model_name</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Name of sea ice model code (e.g. CICE 4.2, LIM 2.1, etc.)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.model.model_name</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="variables"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List of prognostic variable in the sea ice model.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List of prognostic variables in the sea ice component.</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List of prognostic variables in the sea ice component.</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice temperature"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice thickness"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice volume per grid cell area"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice u-velocity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice v-velocity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice enthalpy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Internal ice stress"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Salinity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Snow temperature"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Snow on ice temperature</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Snow depth"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Snow on ice thickness</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="seawater_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Properties of seawater relevant to sea ice</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_freezing_point"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="TEOS-10"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Thermodynamic equation of seawater 2010</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Constant"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Constant value of seawater freezing point is used.</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_freezing_point_value"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>If using a constant seawater freezing point, specify this value.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>If using a constant seawater freezing point, specify this value.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="resolution"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Resolution of the sea ice grid</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.name</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.name</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_horizontal_gridpoints"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Total number of horizontal (XY) points (or degrees of freedom) on computational grid.</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Total number of horizontal (XY) points (or degrees of freedom) on computational grid.</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Tuning applied to sea ice model component</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="target"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="simulations"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Which simulations had tuning applied, e.g. all, not historical, only pi-control? </dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.simulations</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Which simulations had tuning applied, e.g. all, not historical, only pi-control? </dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.simulations</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List any observed metrics used in tuning model/parameters</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.metrics_used</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List any observed metrics used in tuning model/parameters</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.metrics_used</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Which variables were changed during the tuning process?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Which variables were changed during the tuning process?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_parameter_values"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Values of key parameters</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="typical_parameters"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>What values were specificed for the following parameters if used?</dd><dt><b>Type</b></dt><dd>ENUM:parameter_values</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.typical_parameters</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>What values were specificed for the following parameters if used?</dd><dt><b>Type</b></dt><dd>ENUM:parameter_values</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.typical_parameters</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Ice strength (P*) in units of N m{-2}"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Snow conductivity (ks) in units of W m{-1} K{-1} "><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Minimum thickness of ice created in leads (h0) in units of m"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_parameters"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="assumptions"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Assumptions made in the sea ice model</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>General overview description of any *key* assumptions made in this model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>General overview description of any *key* assumptions made in this model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="on_diagnostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.on_diagnostic_variables</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.on_diagnostic_variables</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="missing_processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="conservation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Conservation in the sea ice component</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Provide a general description of conservation methodology.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.description</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Provide a general description of conservation methodology.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.description</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="properties"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes.</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes.</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Energy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Mass"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Salt"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="budget"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="was_flux_correction_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Does conservation involved flux correction?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.was_flux_correction_used</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Does conservation involved flux correction?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.was_flux_correction_used</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="corrected_conserved_prognostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice grid</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="discretisation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Sea ice discretisation</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea ice discretisation</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -891,7 +394,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What method is used to represent sea ice categories ?</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>What method is used to represent sea ice categories ?</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="has_mulitple_categories"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -968,7 +471,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Snow on sea ice details</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Snow on sea ice details</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="has_snow_on_ice"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1027,21 +530,567 @@
         <dt><b>Description</b></dt><dd>Specify any additional details related to snow on ice.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.additional_details</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="dynamics"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice Dynamics</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea Ice key properties</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Name of seaice model code</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice Dynamics</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Name of seaice model code</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.name</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="variables"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List of prognostic variable in the sea ice model.</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List of prognostic variables in the sea ice component.</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List of prognostic variables in the sea ice component.</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice temperature"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice thickness"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice volume per grid cell area"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice u-velocity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice v-velocity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice enthalpy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Internal ice stress"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Salinity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Snow temperature"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Snow on ice temperature</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Snow depth"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Snow on ice thickness</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="seawater_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Properties of seawater relevant to sea ice</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_freezing_point"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="TEOS-10"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Thermodynamic equation of seawater 2010</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Constant"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Constant value of seawater freezing point is used.</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_freezing_point_value"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>If using a constant seawater freezing point, specify this value.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>If using a constant seawater freezing point, specify this value.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="resolution"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Resolution of the sea ice grid</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_horizontal_gridpoints"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Total number of horizontal (XY) points (or degrees of freedom) on computational grid.</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Total number of horizontal (XY) points (or degrees of freedom) on computational grid.</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Tuning applied to sea ice model component</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="target"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="simulations"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Which simulations had tuning applied, e.g. all, not historical, only pi-control? </dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.simulations</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Which simulations had tuning applied, e.g. all, not historical, only pi-control? </dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.simulations</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any observed metrics used in tuning model/parameters</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.metrics_used</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any observed metrics used in tuning model/parameters</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.metrics_used</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Which variables were changed during the tuning process?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Which variables were changed during the tuning process?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_parameter_values"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Values of key parameters</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_strength"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Ice strength (P*) in units of N m{-2}</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.ice_strength</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Ice strength (P*) in units of N m{-2}</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.ice_strength</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="snow_conductivity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Snow conductivity (ks) in units of W m{-1} K{-1}</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.snow_conductivity</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Snow conductivity (ks) in units of W m{-1} K{-1}</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.snow_conductivity</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_thickness_in_leads"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Minimum thickness of ice created in leads (h0) in units of m</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.ice_thickness_in_leads</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Minimum thickness of ice created in leads (h0) in units of m</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.ice_thickness_in_leads</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_parameters"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list in the form {parameter1}: {value1}, {parameter2}: {value2}, etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list in the form {parameter1}: {value1}, {parameter2}: {value2}, etc.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="assumptions"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Assumptions made in the sea ice model</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>General overview description of any *key* assumptions made in this model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>General overview description of any *key* assumptions made in this model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="on_diagnostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.on_diagnostic_variables</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Note any assumptions that specifically affect the CMIP6 diagnostic sea ice variables.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.on_diagnostic_variables</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="missing_processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="conservation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Conservation in the sea ice component</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Provide a general description of conservation methodology.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.description</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Provide a general description of conservation methodology.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.description</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="properties"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes.</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes.</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Energy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Mass"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Salt"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="budget"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="was_flux_correction_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Does conservation involved flux correction?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.was_flux_correction_used</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Does conservation involved flux correction?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.was_flux_correction_used</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="corrected_conserved_prognostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="dynamics"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Sea Ice Dynamics</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Sea Ice Dynamics</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the dynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the dynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of sea ice dynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of sea ice dynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -1227,21 +1276,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice Thermodynamics</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea Ice Thermodynamics</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice Thermodynamics</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea Ice Thermodynamics</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="energy"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes related to energy in sea ice thermodynamics</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the thermodynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the thermodynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of sea ice thermodynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of sea ice thermodynamics in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="energy"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Processes related to energy in sea ice thermodynamics</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="enthalpy_formulation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1430,7 +1507,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes related to mass in sea ice thermodynamics</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Processes related to mass in sea ice thermodynamics</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="new_ice_formation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1521,7 +1598,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes related to salt in sea ice thermodynamics.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Processes related to salt in sea ice thermodynamics.</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="has_multiple_sea_ice_salinities"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1696,7 +1773,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice thickness distribution details.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Ice thickness distribution details.</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1731,7 +1808,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice floe-size distribution details.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Ice floe-size distribution details.</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1780,7 +1857,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of melt ponds.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of melt ponds.</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="are_included"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1864,7 +1941,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Thermodynamic processes in snow on sea ice</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Thermodynamic processes in snow on sea ice</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="has_snow_aging"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1969,17 +2046,45 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice Radiative Processes</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea Ice Radiative Processes</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea Ice Radiative Processes</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Ruth Petrie</dd><dt><b>Authors</b></dt><dd>Ruth Petrie, Bryan Lawrence</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
+        <dt><b>Description</b></dt><dd>Sea Ice Radiative Processes</dd><dt><b>QC status</b></dt><dd>None</dd><dt><b>Contact</b></dt><dd>None</dd><dt><b>Authors</b></dt><dd>None</dd><dt><b>Contributors</b></dt><dd>Jamie Rae (UKMO), Martin Vancopppenolle (IPSL), Alexandra Jahn (University of Colorado)</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface_albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the radiative processes in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the radiative processes in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of sea ice radiative processes in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of sea ice radiative processes in seaice model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface_albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
