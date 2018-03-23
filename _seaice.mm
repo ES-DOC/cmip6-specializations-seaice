@@ -2406,7 +2406,7 @@
         <dt><b>Description</b></dt><dd>Radiation transmission through ice is different for each sea ice category</dd><dt><b>Spec. ID</b></dt><dd>ice_transmission.Ice radiation transmission per category</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="seaice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.seaice.key_properties.model.model_name"><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="seaice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.seaice.key_properties.name"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
