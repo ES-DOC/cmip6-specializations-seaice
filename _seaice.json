@@ -23,7 +23,7 @@
                     "description": "Overview of sea ice dynamics in seaice model.", 
                     "id": "cmip6.seaice.dynamics.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -186,7 +186,7 @@
                     "description": "Overview of sea ice thermodynamics in seaice model.", 
                     "id": "cmip6.seaice.thermodynamics.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -804,7 +804,7 @@
                     "description": "Overview of sea ice radiative processes in seaice model.", 
                     "id": "cmip6.seaice.radiative_processes.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -883,7 +883,7 @@
                 "description": "Overview of grid in seaice model.", 
                 "id": "cmip6.seaice.grid.overview", 
                 "cardinality": "0.1", 
-                "type": "str", 
+                "type": "l", 
                 "uiOrdinal": 2
             }
         ], 
@@ -1189,12 +1189,20 @@
                 "uiOrdinal": 1
             }, 
             {
+                "label": "Keywords", 
+                "description": "Keywords associated with seaice model code", 
+                "id": "cmip6.seaice.key_properties.keywords", 
+                "cardinality": "1.1", 
+                "type": "cs", 
+                "uiOrdinal": 2
+            }, 
+            {
                 "label": "Overview", 
                 "description": "Overview of seaice model.", 
                 "id": "cmip6.seaice.key_properties.overview", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 2
+                "type": "l", 
+                "uiOrdinal": 3
             }
         ], 
         "subProcesses": [

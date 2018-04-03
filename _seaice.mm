@@ -159,18 +159,32 @@
         <dt><b>Description</b></dt><dd>Name of seaice model code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.name</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="keywords"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd>
+        <dt><b>Description</b></dt><dd>Keywords associated with seaice model code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.keywords</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.keywords</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd>
+        <dt><b>Description</b></dt><dd>Keywords associated with seaice model code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.keywords</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.keywords</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="variables"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -779,14 +793,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of grid in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of grid in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="discretisation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -1234,14 +1248,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice dynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of sea ice dynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice dynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of sea ice dynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.dynamics.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1458,14 +1472,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice thermodynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of sea ice thermodynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice thermodynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of sea ice thermodynamics in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="energy"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -2326,14 +2340,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice radiative processes in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of sea ice radiative processes in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of sea ice radiative processes in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of sea ice radiative processes in seaice model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface_albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

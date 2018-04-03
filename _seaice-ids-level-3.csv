@@ -1,5 +1,6 @@
 cmip6-id, cmip6-label, cmip6-type
 cmip6.seaice.key_properties.name, Seaice > Key Properties > Name, property
+cmip6.seaice.key_properties.keywords, Seaice > Key Properties > Keywords, property
 cmip6.seaice.key_properties.overview, Seaice > Key Properties > Overview, property
 cmip6.seaice.key_properties.variables.overview, Seaice > Key Properties > Variables > Overview, property
 cmip6.seaice.key_properties.variables.prognostic, Seaice > Key Properties > Variables > Prognostic, property
