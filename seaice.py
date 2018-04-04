@@ -41,6 +41,7 @@ CHANGE_HISTORY = [
     ("0.1.8", "2017-11-23", "Ruth Petrie", "Include ice floe-size distribution"),
     ("1.0.0", "2017-12-4", "Ruth Petrie", "Include section on parameter values, first completed revision"),
     ("1.0.1", "2018-3-19", "Ruth Petrie", "Add in space for parameter values in key properties."),
+    ("1.0.2", "2018-04-04", "David Hassell", "Replaced some occurences of 'str' with 'cs-str' and 'l-str'"),
 ]
 
 # --------------------------------------------------------------------
