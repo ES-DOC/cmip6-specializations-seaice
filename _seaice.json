@@ -16,6 +16,7 @@
                     "id": "cmip6.seaice.dynamics.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
                 }, 
                 {
@@ -24,6 +25,7 @@
                     "id": "cmip6.seaice.dynamics.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -32,6 +34,7 @@
                     "id": "cmip6.seaice.dynamics.horizontal_transport", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Transport Methods", 
                         "description": "Transport Methods", 
@@ -59,6 +62,7 @@
                     "id": "cmip6.seaice.dynamics.transport_in_thickness_space", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Transport Methods", 
                         "description": "Transport Methods", 
@@ -86,6 +90,7 @@
                     "id": "cmip6.seaice.dynamics.ice_strength_formulation", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Ice Strength", 
                         "description": "Ice strength formulation methods", 
@@ -109,6 +114,7 @@
                     "id": "cmip6.seaice.dynamics.redistribution", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Redistribution Types", 
                         "description": "Sea Ice Redistribution types", 
@@ -132,6 +138,7 @@
                     "id": "cmip6.seaice.dynamics.rheology", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Rheology Types", 
                         "description": "Sea ice rheology types", 
@@ -179,6 +186,7 @@
                     "id": "cmip6.seaice.thermodynamics.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
                 }, 
                 {
@@ -187,6 +195,7 @@
                     "id": "cmip6.seaice.thermodynamics.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 2
                 }
             ], 
@@ -203,6 +212,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -211,6 +221,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.enthalpy_formulation", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Energy Formulation", 
                                 "description": "Thermodynamic energy formulations", 
@@ -242,6 +253,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.thermal_conductivity", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Thermal Conductivity Type", 
                                 "description": "Types of thermal conductivity", 
@@ -265,6 +277,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.heat_diffusion", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Heat Diffusion Type", 
                                 "description": "Heat diffusion types", 
@@ -292,6 +305,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.basal_heat_flux", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Basal Heat Flux Method", 
                                 "description": "Basal ocean heat flux methodology", 
@@ -319,6 +333,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.fixed_salinity_value", 
                             "cardinality": "0.1", 
                             "type": "float", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 6
                         }, 
                         {
@@ -327,6 +342,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.heat_content_of_precipitation", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 7
                         }, 
                         {
@@ -335,6 +351,7 @@
                             "id": "cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity", 
                             "cardinality": "0.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 8
                         }
                     ]
@@ -351,6 +368,7 @@
                             "id": "cmip6.seaice.thermodynamics.mass.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -359,6 +377,7 @@
                             "id": "cmip6.seaice.thermodynamics.mass.new_ice_formation", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -367,6 +386,7 @@
                             "id": "cmip6.seaice.thermodynamics.mass.ice_vertical_growth_and_melt", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 3
                         }, 
                         {
@@ -375,6 +395,7 @@
                             "id": "cmip6.seaice.thermodynamics.mass.ice_lateral_melting", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Lateral Melting Types", 
                                 "description": "Ice lateral melting methods", 
@@ -398,6 +419,7 @@
                             "id": "cmip6.seaice.thermodynamics.mass.ice_surface_sublimation", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 5
                         }, 
                         {
@@ -406,6 +428,7 @@
                             "id": "cmip6.seaice.thermodynamics.mass.frazil_ice", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 6
                         }
                     ]
@@ -422,6 +445,7 @@
                             "id": "cmip6.seaice.thermodynamics.salt.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -430,6 +454,7 @@
                             "id": "cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities", 
                             "cardinality": "1.1", 
                             "type": "bool", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -438,6 +463,7 @@
                             "id": "cmip6.seaice.thermodynamics.salt.sea_ice_salinity_thermal_impacts", 
                             "cardinality": "1.1", 
                             "type": "bool", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 3
                         }
                     ], 
@@ -453,6 +479,7 @@
                                     "id": "cmip6.seaice.thermodynamics.salt.mass_transport.salinity_type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Salinity Method", 
                                         "description": "Method of describing the value of salinity", 
@@ -480,6 +507,7 @@
                                     "id": "cmip6.seaice.thermodynamics.salt.mass_transport.constant_salinity_value", 
                                     "cardinality": "0.1", 
                                     "type": "float", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }, 
                                 {
@@ -488,6 +516,7 @@
                                     "id": "cmip6.seaice.thermodynamics.salt.mass_transport.additional_details", 
                                     "cardinality": "0.1", 
                                     "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 3
                                 }
                             ]
@@ -503,6 +532,7 @@
                                     "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Salinity Method", 
                                         "description": "Method of describing the value of salinity", 
@@ -530,6 +560,7 @@
                                     "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.constant_salinity_value", 
                                     "cardinality": "0.1", 
                                     "type": "float", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }, 
                                 {
@@ -538,6 +569,7 @@
                                     "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.additional_details", 
                                     "cardinality": "0.1", 
                                     "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 3
                                 }
                             ]
@@ -556,6 +588,7 @@
                             "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -564,6 +597,7 @@
                             "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution.representation", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Ice Thickness Representation", 
                                 "description": "Types of sea ice thickness representation", 
@@ -595,6 +629,7 @@
                             "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -603,6 +638,7 @@
                             "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.representation", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Ice Floe Size", 
                                 "description": "Ice floe-size representation", 
@@ -626,6 +662,7 @@
                             "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details", 
                             "cardinality": "0.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 3
                         }
                     ]
@@ -642,6 +679,7 @@
                             "id": "cmip6.seaice.thermodynamics.melt_ponds.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -650,6 +688,7 @@
                             "id": "cmip6.seaice.thermodynamics.melt_ponds.are_included", 
                             "cardinality": "1.1", 
                             "type": "bool", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -658,6 +697,7 @@
                             "id": "cmip6.seaice.thermodynamics.melt_ponds.formulation", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Melt Pond Formulation", 
                                 "description": "Formulations of melt ponds", 
@@ -681,6 +721,7 @@
                             "id": "cmip6.seaice.thermodynamics.melt_ponds.impacts", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Melt Pond Impacts", 
                                 "description": "Impacts of melt ponds", 
@@ -716,6 +757,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -724,6 +766,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_aging", 
                             "cardinality": "1.1", 
                             "type": "bool", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -732,6 +775,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.snow_aging_scheme", 
                             "cardinality": "0.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 3
                         }, 
                         {
@@ -740,6 +784,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_ice_formation", 
                             "cardinality": "1.1", 
                             "type": "bool", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 4
                         }, 
                         {
@@ -748,6 +793,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme", 
                             "cardinality": "0.1", 
                             "type": "l-str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 5
                         }, 
                         {
@@ -756,6 +802,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.redistribution", 
                             "cardinality": "1.1", 
                             "type": "str", 
+                            "is_cim_property": false, 
                             "uiOrdinal": 6
                         }, 
                         {
@@ -764,6 +811,7 @@
                             "id": "cmip6.seaice.thermodynamics.snow_processes.heat_diffusion", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Snow Process Types", 
                                 "description": "Types of snow processes", 
@@ -797,6 +845,7 @@
                     "id": "cmip6.seaice.radiative_processes.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
                 }, 
                 {
@@ -805,6 +854,7 @@
                     "id": "cmip6.seaice.radiative_processes.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -813,6 +863,7 @@
                     "id": "cmip6.seaice.radiative_processes.surface_albedo", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Seaice Albedo", 
                         "description": "Surface albedo of sea ice component", 
@@ -840,6 +891,7 @@
                     "id": "cmip6.seaice.radiative_processes.ice_radiation_transmission", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Ice Transmission", 
                         "description": "Ice radiative transmission", 
@@ -876,6 +928,7 @@
                 "id": "cmip6.seaice.grid.name", 
                 "cardinality": "0.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
             }, 
             {
@@ -884,6 +937,7 @@
                 "id": "cmip6.seaice.grid.overview", 
                 "cardinality": "0.1", 
                 "type": "l-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 2
             }
         ], 
@@ -900,6 +954,7 @@
                         "id": "cmip6.seaice.grid.discretisation.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }
                 ], 
@@ -915,6 +970,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.grid", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
+                                "is_cim_property": false, 
                                 "enum": {
                                     "label": "Horizontal Grid", 
                                     "description": "Grid which is the sea ice horizontally discretised on?", 
@@ -942,6 +998,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.grid_type", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
+                                "is_cim_property": false, 
                                 "enum": {
                                     "label": "Grid Structure", 
                                     "description": "Grid structures", 
@@ -969,6 +1026,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.scheme", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
+                                "is_cim_property": false, 
                                 "enum": {
                                     "label": "Numerical Scheme", 
                                     "description": "Numerical schemes", 
@@ -996,6 +1054,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.thermodynamics_time_step", 
                                 "cardinality": "1.1", 
                                 "type": "int", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 4
                             }, 
                             {
@@ -1004,6 +1063,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.dynamics_time_step", 
                                 "cardinality": "1.1", 
                                 "type": "int", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 5
                             }, 
                             {
@@ -1012,6 +1072,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.additional_details", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 6
                             }
                         ]
@@ -1027,6 +1088,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.vertical.layering", 
                                 "cardinality": "1.N", 
                                 "type": "enum", 
+                                "is_cim_property": false, 
                                 "enum": {
                                     "label": "Vertical Layering", 
                                     "description": "Sea ice layering types", 
@@ -1054,6 +1116,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.vertical.number_of_layers", 
                                 "cardinality": "1.1", 
                                 "type": "int", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 2
                             }, 
                             {
@@ -1062,6 +1125,7 @@
                                 "id": "cmip6.seaice.grid.discretisation.vertical.additional_details", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 3
                             }
                         ]
@@ -1080,6 +1144,7 @@
                         "id": "cmip6.seaice.grid.seaice_categories.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1088,6 +1153,7 @@
                         "id": "cmip6.seaice.grid.seaice_categories.has_mulitple_categories", 
                         "cardinality": "1.1", 
                         "type": "bool", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1096,6 +1162,7 @@
                         "id": "cmip6.seaice.grid.seaice_categories.number_of_categories", 
                         "cardinality": "1.1", 
                         "type": "int", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
@@ -1104,6 +1171,7 @@
                         "id": "cmip6.seaice.grid.seaice_categories.category_limits", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }, 
                     {
@@ -1112,6 +1180,7 @@
                         "id": "cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 5
                     }, 
                     {
@@ -1120,6 +1189,7 @@
                         "id": "cmip6.seaice.grid.seaice_categories.other", 
                         "cardinality": "0.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 6
                     }
                 ]
@@ -1136,6 +1206,7 @@
                         "id": "cmip6.seaice.grid.snow_on_seaice.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1144,6 +1215,7 @@
                         "id": "cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice", 
                         "cardinality": "1.1", 
                         "type": "bool", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1152,6 +1224,7 @@
                         "id": "cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels", 
                         "cardinality": "1.1", 
                         "type": "int", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
@@ -1160,6 +1233,7 @@
                         "id": "cmip6.seaice.grid.snow_on_seaice.snow_fraction", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }, 
                     {
@@ -1168,6 +1242,7 @@
                         "id": "cmip6.seaice.grid.snow_on_seaice.additional_details", 
                         "cardinality": "0.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 5
                     }
                 ]
@@ -1186,6 +1261,7 @@
                 "id": "cmip6.seaice.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
             }, 
             {
@@ -1194,6 +1270,7 @@
                 "id": "cmip6.seaice.key_properties.keywords", 
                 "cardinality": "1.1", 
                 "type": "cs-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 2
             }, 
             {
@@ -1202,6 +1279,7 @@
                 "id": "cmip6.seaice.key_properties.overview", 
                 "cardinality": "1.1", 
                 "type": "l-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 3
             }
         ], 
@@ -1218,6 +1296,7 @@
                         "id": "cmip6.seaice.key_properties.variables.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1226,6 +1305,7 @@
                         "id": "cmip6.seaice.key_properties.variables.prognostic", 
                         "cardinality": "1.N", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Prognostic Variables", 
                             "description": "Prognostic variables in sea ice model", 
@@ -1293,6 +1373,7 @@
                         "id": "cmip6.seaice.key_properties.seawater_properties.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1301,6 +1382,7 @@
                         "id": "cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Seawater Freezing Point", 
                             "description": "Types of seawater freezing point equation in sea ice.", 
@@ -1324,6 +1406,7 @@
                         "id": "cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point_value", 
                         "cardinality": "0.1", 
                         "type": "float", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }
                 ]
@@ -1340,6 +1423,7 @@
                         "id": "cmip6.seaice.key_properties.resolution.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1348,6 +1432,7 @@
                         "id": "cmip6.seaice.key_properties.resolution.name", 
                         "cardinality": "1.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1356,6 +1441,7 @@
                         "id": "cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution", 
                         "cardinality": "1.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
@@ -1364,6 +1450,7 @@
                         "id": "cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints", 
                         "cardinality": "1.1", 
                         "type": "int", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }
                 ]
@@ -1380,6 +1467,7 @@
                         "id": "cmip6.seaice.key_properties.tuning_applied.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1388,6 +1476,7 @@
                         "id": "cmip6.seaice.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1396,6 +1485,7 @@
                         "id": "cmip6.seaice.key_properties.tuning_applied.target", 
                         "cardinality": "1.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
@@ -1404,6 +1494,7 @@
                         "id": "cmip6.seaice.key_properties.tuning_applied.simulations", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }, 
                     {
@@ -1412,6 +1503,7 @@
                         "id": "cmip6.seaice.key_properties.tuning_applied.metrics_used", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 5
                     }, 
                     {
@@ -1420,6 +1512,7 @@
                         "id": "cmip6.seaice.key_properties.tuning_applied.variables", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 6
                     }
                 ]
@@ -1436,6 +1529,7 @@
                         "id": "cmip6.seaice.key_properties.key_parameter_values.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1444,6 +1538,7 @@
                         "id": "cmip6.seaice.key_properties.key_parameter_values.ice_strength", 
                         "cardinality": "0.1", 
                         "type": "float", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1452,6 +1547,7 @@
                         "id": "cmip6.seaice.key_properties.key_parameter_values.snow_conductivity", 
                         "cardinality": "0.1", 
                         "type": "float", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
@@ -1460,6 +1556,7 @@
                         "id": "cmip6.seaice.key_properties.key_parameter_values.ice_thickness_in_leads", 
                         "cardinality": "0.1", 
                         "type": "float", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }, 
                     {
@@ -1468,6 +1565,7 @@
                         "id": "cmip6.seaice.key_properties.key_parameter_values.additional_parameters", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 5
                     }
                 ]
@@ -1484,6 +1582,7 @@
                         "id": "cmip6.seaice.key_properties.assumptions.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1492,6 +1591,7 @@
                         "id": "cmip6.seaice.key_properties.assumptions.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1500,6 +1600,7 @@
                         "id": "cmip6.seaice.key_properties.assumptions.on_diagnostic_variables", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
@@ -1508,6 +1609,7 @@
                         "id": "cmip6.seaice.key_properties.assumptions.missing_processes", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }
                 ]
@@ -1524,6 +1626,7 @@
                         "id": "cmip6.seaice.key_properties.conservation.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -1532,6 +1635,7 @@
                         "id": "cmip6.seaice.key_properties.conservation.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
@@ -1540,6 +1644,7 @@
                         "id": "cmip6.seaice.key_properties.conservation.properties", 
                         "cardinality": "1.N", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Conserved Properties", 
                             "description": "List of properties that can be conserved in sea ice", 
@@ -1567,6 +1672,7 @@
                         "id": "cmip6.seaice.key_properties.conservation.budget", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 4
                     }, 
                     {
@@ -1575,6 +1681,7 @@
                         "id": "cmip6.seaice.key_properties.conservation.was_flux_correction_used", 
                         "cardinality": "1.1", 
                         "type": "bool", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 5
                     }, 
                     {
@@ -1583,6 +1690,7 @@
                         "id": "cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 6
                     }
                 ]
