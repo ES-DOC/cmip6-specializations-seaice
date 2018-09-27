@@ -16,7 +16,7 @@
         "Martin Vancopppenolle (IPSL)",
         "Alexandra Jahn (Univeristy of Colorado)"
     ],
-    "LABEL": "Main",
+    "LABEL": "Sea ice CMIP6 short table",
     "PROPERTIES": [
         ["cmip6.seaice.key_properties.name", 1],
         ["cmip6.seaice.key_properties.resolution.name", 1],
