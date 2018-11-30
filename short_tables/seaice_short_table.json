@@ -23,7 +23,7 @@
         ["cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution", 1],
         ["cmip6.seaice.grid.discretisation.horizontal.grid_type", 1],
         ["cmip6.seaice.grid.discretisation.vertical.layering", 1],
-        ["cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme", 1],
+        ["cmip6.seaice.grid.seaice_categories.ice_thickness_distribution", 1],
         ["cmip6.seaice.dynamics.rheology", 1],
         ["cmip6.seaice.thermodynamics.energy.enthalpy_formulation", 1],
         ["cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 1],
