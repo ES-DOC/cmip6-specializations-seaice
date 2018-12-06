@@ -49,7 +49,7 @@ cmip6.seaice.grid.seaice_categories.overview, Seaice > Grid > Seaice Categories 
 cmip6.seaice.grid.seaice_categories.has_mulitple_categories, Seaice > Grid > Seaice Categories > Has Mulitple Categories, property
 cmip6.seaice.grid.seaice_categories.number_of_categories, Seaice > Grid > Seaice Categories > Number Of Categories, property
 cmip6.seaice.grid.seaice_categories.category_limits, Seaice > Grid > Seaice Categories > Category Limits, property
-cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme, Seaice > Grid > Seaice Categories > Ice Thickness Distribution Scheme, property
+cmip6.seaice.grid.seaice_categories.ice_thickness_distribution, Seaice > Grid > Seaice Categories > Ice Thickness Distribution, property
 cmip6.seaice.grid.seaice_categories.other, Seaice > Grid > Seaice Categories > Other, property
 cmip6.seaice.grid.snow_on_seaice.overview, Seaice > Grid > Snow On Seaice > Overview, property
 cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice, Seaice > Grid > Snow On Seaice > Has Snow On Ice, property

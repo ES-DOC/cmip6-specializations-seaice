@@ -32,12 +32,12 @@ DETAILS['energy'] = {
         ('basal_heat_flux', 'ENUM:basal_heat_flux_method', '1.1',
             "Method by which basal ocean heat flux is handled?"),
         ('fixed_salinity_value', 'float', '0.1',
-             """If you have selected {Thermal properties depend on S-T (with fixed salinity)}, 
+             """If you have selected {Thermal properties depend on S-T (with fixed salinity)},
              supply fixed salinity value for each sea ice layer."""),
         ('heat_content_of_precipitation', 'l-str', '1.1',
             "Describe the method by which the heat content of precipitation is handled."),
         ('precipitation_effects_on_salinity', 'l-str', '0.1',
-             """If precipitation (freshwater) that falls on sea ice affects the ocean surface 
+             """If precipitation (freshwater) that falls on sea ice affects the ocean surface
              salinity please provide further details.""")
     ]
     }
@@ -68,7 +68,7 @@ DETAILS['salt'] = {
     'description': 'Processes related to salt in sea ice thermodynamics.',
     'properties': [
         ('has_multiple_sea_ice_salinities', 'bool', '1.1',
-            """Does the sea ice model use two different salinities: one for 
+            """Does the sea ice model use two different salinities: one for
             thermodynamic calculations; and one for the salt budget?"""),
         ('sea_ice_salinity_thermal_impacts', 'bool', '1.1',
             "Does sea ice salinity impact the thermal properties of sea ice?"),
